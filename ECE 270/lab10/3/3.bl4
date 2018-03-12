@@ -1,0 +1,666 @@
+#$ TOOL ispLEVER Classic 1.7.00.05.28.13
+#$ DATE Fri Mar 31 11:52:32 2017
+#$ TITLE isp4256ZE Development Board I/O Configuration
+#$ PROPERTY Lattice OSCTIMER TIMER_DIV= 1048576;
+#$ MODULE 3
+#$ JEDECFILE step3
+#$ PINS 70 DIP0:79 DIP1:78 DIP2:77 DIP3:76 DIP4:23 DIP5:24 DIP6:25 DIP7:26 S1_NC:58 \
+#  S1_NO:59 S2_NC:60 S2_NO:61 LED0:40 LED1:39 LED2:33 LED3:32 LED4:31 LED5:30 LED6:29 \
+#  LED7:28 LED8:139 LED9:138 LED10:135 LED11:134 LED12:133 LED13:132 LED14:131 LED15:130 \
+#  DIS1a:87 DIS1b:86 DIS1c:85 DIS1d:84 DIS1e:83 DIS1f:81 DIS1g:80 DIS2a:98 DIS2b:97 \
+#  DIS2c:96 DIS2d:95 DIS2e:94 DIS2f:93 DIS2g:88 DIS3a:125 DIS3b:124 DIS3c:123 DIS3d:122 \
+#  DIS3e:121 DIS3f:120 DIS3g:116 DIS4a:44 DIS4b:48 DIS4c:49 DIS4d:50 DIS4e:51 DIS4f:52 \
+#  DIS4g:53 LED16:140 LED17:141 LED18:142 LED19:143 LED20:100 LED21:101 LED22:102 \
+#  LED23:103 LED24:104 LED25:105 LED26:111 LED27:112 LED28:63 LED29:62
+#$ NODES 31 osc_dis osc_out tmr_out timdiv1+ timdiv2+ rDIS2a rDIS2b rDIS2c rDIS2d \
+#  rDIS2e rDIS2f rDIS2g rDIS3a rDIS3b rDIS3c rDIS3d rDIS3e rDIS3f rDIS3g rDIS4a rDIS4b rDIS4c \
+#  rDIS4d rDIS4e rDIS4f rDIS4g Q0 Q1 Q2 Q3 Q4
+#$ EXTERNAL osctimer  4 DYNOSCDIS'i'  TIMERRES'i'  OSCOUT'o'  TIMEROUT'o' 
+#$ INSTANCE I1 osctimer 4 osc_dis osc_dis osc_out tmr_out
+.model step3
+.inputs tmr_out.BLIF timdiv1.Q timdiv2.Q DIP7.BLIF rDIS3a.Q rDIS3b.Q rDIS3c.Q \
+rDIS3d.Q rDIS3e.Q rDIS3f.Q rDIS3g.Q rDIS2a.Q rDIS2b.Q rDIS2c.Q rDIS2d.Q \
+rDIS2e.Q rDIS2f.Q rDIS2g.Q rDIS4a.Q rDIS4b.Q rDIS4c.Q rDIS4d.Q rDIS4e.Q \
+rDIS4f.Q rDIS4g.Q Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF
+.outputs osc_dis DIS1a DIS1b DIS1e DIS1g DIS2a DIS2b DIS2c DIS2d DIS2e DIS2f \
+DIS2g DIS3a DIS3b DIS3c DIS3d DIS3e DIS3f DIS3g DIS4a DIS4b DIS4c DIS4d DIS4e \
+DIS4f DIS4g LED28 timdiv1.C timdiv2.C Q4.C Q3.C Q2.C Q1.C Q0.C rDIS2a.C \
+rDIS2b.C rDIS2c.C rDIS2d.C rDIS2e.C rDIS2f.C rDIS2g.C rDIS3a.C rDIS3b.C \
+rDIS3c.C rDIS3d.C rDIS3e.C rDIS3f.C rDIS3g.C rDIS4a.C rDIS4b.C rDIS4c.C \
+rDIS4d.C rDIS4e.C rDIS4f.C rDIS4g.C Q4.AR Q3.AR Q2.AR Q1.AR Q0.AR rDIS2a.AR \
+rDIS2b.AR rDIS2c.AR rDIS2d.AR rDIS2e.AR rDIS2f.AR rDIS2g.AR rDIS3a.AR \
+rDIS3b.AR rDIS3c.AR rDIS3d.AR rDIS3e.AR rDIS3f.AR rDIS3g.AR rDIS4a.AR \
+rDIS4b.AR rDIS4c.AR rDIS4d.AR rDIS4e.AR rDIS4f.AR rDIS4g.AR DIS1c.X1 DIS1c.X2 \
+DIS1d.X1 DIS1d.X2 DIS1f.X1 DIS1f.X2 timdiv1.D timdiv2.D rDIS2a.D rDIS2b.D \
+rDIS2c.D rDIS2d.D rDIS2e.D rDIS2f.D rDIS2g.D rDIS3a.D rDIS3b.D rDIS3c.D \
+rDIS3d.D rDIS3e.D rDIS3f.D rDIS3g.D rDIS4a.D rDIS4b.D rDIS4c.D rDIS4d.D \
+rDIS4e.D rDIS4f.D rDIS4g.D Q0.D Q1.D Q2.T Q3.D Q4.D
+.names osc_dis
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1a
+00-1- 1
+-0101 1
+-101- 1
+1-10- 1
+10-0- 1
+-1-00 1
+0--11 1
+--0-0 1
+1---0 1
+00100 0
+01110 0
+10-11 0
+1-111 0
+-1001 0
+0-001 0
+01-01 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1b
+10-0- 1
+1-10- 1
+0--10 1
+-00-0 1
+-11-0 1
+--011 1
+01--1 1
+1--00 1
+-0111 0
+11010 0
+01000 0
+11001 0
+1011- 0
+0010- 0
+1-111 0
+00-01 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1e
+-1100 1
+0000- 1
+1111- 1
+0110- 1
+000-1 1
+10-01 1
+-0-10 0
+0-11- 0
+10-1- 0
+10--0 0
+11-01 0
+001-- 0
+-10-- 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1g
+-1100 1
+00011 1
+1101- 1
+0-000 1
+-0101 1
+10-01 1
+1--10 1
+01--1 0
+1-000 0
+-0100 0
+--111 0
+-1-01 0
+10-11 0
+0-001 0
+0--10 0
+.names rDIS2a.Q DIS2a
+0 1
+1 0
+.names rDIS2b.Q DIS2b
+0 1
+1 0
+.names rDIS2c.Q DIS2c
+0 1
+1 0
+.names rDIS2d.Q DIS2d
+0 1
+1 0
+.names rDIS2e.Q DIS2e
+0 1
+1 0
+.names rDIS2f.Q DIS2f
+0 1
+1 0
+.names rDIS2g.Q DIS2g
+0 1
+1 0
+.names rDIS3a.Q DIS3a
+0 1
+1 0
+.names rDIS3b.Q DIS3b
+0 1
+1 0
+.names rDIS3c.Q DIS3c
+0 1
+1 0
+.names rDIS3d.Q DIS3d
+0 1
+1 0
+.names rDIS3e.Q DIS3e
+0 1
+1 0
+.names rDIS3f.Q DIS3f
+0 1
+1 0
+.names rDIS3g.Q DIS3g
+0 1
+1 0
+.names rDIS4a.Q DIS4a
+0 1
+1 0
+.names rDIS4b.Q DIS4b
+0 1
+1 0
+.names rDIS4c.Q DIS4c
+0 1
+1 0
+.names rDIS4d.Q DIS4d
+0 1
+1 0
+.names rDIS4e.Q DIS4e
+0 1
+1 0
+.names rDIS4f.Q DIS4f
+0 1
+1 0
+.names rDIS4g.Q DIS4g
+0 1
+1 0
+.names timdiv2.Q LED28
+0 1
+1 0
+.names Q4.Q Q1.Q DIS1c.X1
+11 1
+0- 0
+-0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1c.X2
+00-00 1
+01001 1
+00011 1
+--110 1
+1010- 1
+11--0 1
+1111- 1
+100-- 0
+1-0-1 0
+0101- 0
+0110- 0
+10-11 0
+0-111 0
+11-01 0
+00-01 0
+0-010 0
+01-00 0
+.names Q3.Q Q0.Q DIS1d.X1
+01 1
+1- 0
+-0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1d.X2
+001-- 1
+00-0- 1
+01010 1
+--100 1
+10011 1
+1100- 1
+111-0 1
+01--1 0
+1-1-1 0
+0111- 0
+1011- 0
+1101- 0
+0001- 0
+0100- 0
+1000- 0
+100-0 0
+.names Q4.Q Q1.Q DIS1f.X1
+01 1
+1- 0
+-0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIS1f.X2
+10-0- 1
+-0000 1
+-11-0 1
+0111- 1
+1--00 1
+-0-1- 0
+--01- 0
+001-- 0
+010-- 0
+11--1 0
+00--1 0
+-1-01 0
+.names tmr_out.BLIF timdiv1.C
+1 1
+0 0
+.names timdiv1.Q timdiv2.C
+1 1
+0 0
+.names timdiv2.Q Q4.C
+1 1
+0 0
+.names timdiv2.Q Q3.C
+1 1
+0 0
+.names timdiv2.Q Q2.C
+1 1
+0 0
+.names timdiv2.Q Q1.C
+1 1
+0 0
+.names timdiv2.Q Q0.C
+1 1
+0 0
+.names timdiv2.Q rDIS2a.C
+1 1
+0 0
+.names timdiv2.Q rDIS2b.C
+1 1
+0 0
+.names timdiv2.Q rDIS2c.C
+1 1
+0 0
+.names timdiv2.Q rDIS2d.C
+1 1
+0 0
+.names timdiv2.Q rDIS2e.C
+1 1
+0 0
+.names timdiv2.Q rDIS2f.C
+1 1
+0 0
+.names timdiv2.Q rDIS2g.C
+1 1
+0 0
+.names timdiv2.Q rDIS3a.C
+1 1
+0 0
+.names timdiv2.Q rDIS3b.C
+1 1
+0 0
+.names timdiv2.Q rDIS3c.C
+1 1
+0 0
+.names timdiv2.Q rDIS3d.C
+1 1
+0 0
+.names timdiv2.Q rDIS3e.C
+1 1
+0 0
+.names timdiv2.Q rDIS3f.C
+1 1
+0 0
+.names timdiv2.Q rDIS3g.C
+1 1
+0 0
+.names timdiv2.Q rDIS4a.C
+1 1
+0 0
+.names timdiv2.Q rDIS4b.C
+1 1
+0 0
+.names timdiv2.Q rDIS4c.C
+1 1
+0 0
+.names timdiv2.Q rDIS4d.C
+1 1
+0 0
+.names timdiv2.Q rDIS4e.C
+1 1
+0 0
+.names timdiv2.Q rDIS4f.C
+1 1
+0 0
+.names timdiv2.Q rDIS4g.C
+1 1
+0 0
+.names DIP7.BLIF Q4.AR
+1 1
+0 0
+.names DIP7.BLIF Q3.AR
+1 1
+0 0
+.names DIP7.BLIF Q2.AR
+1 1
+0 0
+.names DIP7.BLIF Q1.AR
+1 1
+0 0
+.names DIP7.BLIF Q0.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2a.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2b.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2c.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2d.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2e.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2f.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS2g.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3a.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3b.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3c.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3d.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3e.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3f.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS3g.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4a.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4b.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4c.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4d.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4e.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4f.AR
+1 1
+0 0
+.names DIP7.BLIF rDIS4g.AR
+1 1
+0 0
+.names timdiv1.Q timdiv1.D
+0 1
+1 0
+.names timdiv2.Q timdiv2.D
+0 1
+1 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2a.D
+00100 1
+01110 1
+10-11 1
+1-111 1
+-1001 1
+0-001 1
+01-01 1
+00-1- 0
+-0101 0
+1-10- 0
+10-0- 0
+-101- 0
+--0-0 0
+0--11 0
+-1-00 0
+1---0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2b.D
+-0111 1
+01000 1
+11010 1
+11001 1
+0010- 1
+1011- 1
+1-111 1
+00-01 1
+10-0- 0
+1-10- 0
+0--10 0
+-11-0 0
+01--1 0
+1--00 0
+-00-0 0
+--011 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2c.D
+00-01 1
+-1010 1
+-11-1 1
+01-11 1
+01-00 1
+11-01 1
+1000- 1
+1-110 1
+0-010 1
+0-1-1 1
+1010- 0
+101-1 0
+01001 0
+1001- 0
+0-110 0
+11-00 0
+00-00 0
+-0011 0
+1-011 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2d.D
+-1-11 1
+0100- 1
+0111- 1
+0--01 1
+-11-1 1
+-0010 1
+1-01- 1
+10-10 1
+100-0 1
+0-1-1 1
+11-00 0
+1-001 0
+00011 0
+01010 0
+101-1 0
+111-0 0
+00-00 0
+001-0 0
+--100 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2e.D
+-0-10 1
+0-11- 1
+10-1- 1
+10--0 1
+11-01 1
+001-- 1
+-10-- 1
+-1100 0
+0000- 0
+1111- 0
+0110- 0
+000-1 0
+10-01 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2f.D
+11--1 1
+0010- 1
+0100- 1
+0111- 1
+1-01- 1
+10-1- 1
+0--01 1
+-0000 0
+-1100 0
+111-0 0
+10-0- 0
+0-01- 0
+00-1- 0
+1--00 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q rDIS2g.D
+01--1 1
+1-000 1
+-0100 1
+--111 1
+-1-01 1
+10-11 1
+0-001 1
+0--10 1
+-1100 0
+00011 0
+1101- 0
+0-000 0
+-0101 0
+10-01 0
+1--10 0
+.names rDIS2a.Q rDIS3a.D
+1 1
+0 0
+.names rDIS2b.Q rDIS3b.D
+1 1
+0 0
+.names rDIS2c.Q rDIS3c.D
+1 1
+0 0
+.names rDIS2d.Q rDIS3d.D
+1 1
+0 0
+.names rDIS2e.Q rDIS3e.D
+1 1
+0 0
+.names rDIS2f.Q rDIS3f.D
+1 1
+0 0
+.names rDIS2g.Q rDIS3g.D
+1 1
+0 0
+.names rDIS3a.Q rDIS4a.D
+1 1
+0 0
+.names rDIS3b.Q rDIS4b.D
+1 1
+0 0
+.names rDIS3c.Q rDIS4c.D
+1 1
+0 0
+.names rDIS3d.Q rDIS4d.D
+1 1
+0 0
+.names rDIS3e.Q rDIS4e.D
+1 1
+0 0
+.names rDIS3f.Q rDIS4f.D
+1 1
+0 0
+.names rDIS3g.Q rDIS4g.D
+1 1
+0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF Q0.D
+000000- 1
+0110010 1
+0101010 1
+11--011 1
+0-00000 1
+10--001 1
+00--000 1
+0-11-1- 0
+-1---01 0
+0-00-1- 0
+-1-1-0- 0
+-11--0- 0
+-0---1- 0
+0--1--1 0
+0-1---1 0
+1-----0 0
+----1-- 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF Q1.D
+0110110 1
+0101010 1
+0000010 1
+0000001 1
+11-1011 1
+11-0111 1
+10-1001 1
+10-0101 1
+00-1000 1
+00-0100 1
+0-1---1 0
+0----11 0
+0100--- 0
+-0--11- 0
+0-1-01- 0
+1--00-- 0
+---0000 0
+-0-1-1- 0
+-1---0- 0
+---11-- 0
+0---1-1 0
+0--1--1 0
+1-----0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF Q2.T
+0-11-1- 1
+00-0001 1
+11-1111 1
+01-1110 1
+10-1101 1
+00-1100 1
+-11--0- 1
+-01--1- 1
+1-1---0 1
+0-1---1 1
+--0-01- 0
+--001-- 0
+0-01--1 0
+00--000 0
+00-0-00 0
+01-0-10 0
+10--001 0
+10-0-01 0
+11--011 0
+11-0-11 0
+-00--1- 0
+-10--0- 0
+1-0---0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF Q3.D
+0011100 1
+0100000 1
+000001- 1
+00000-1 1
+0110-10 1
+0101-10 1
+11--011 1
+11-0-11 1
+110--11 1
+-00--00 0
+0100-1- 0
+0-11-1- 0
+--111-1 0
+---010- 0
+-1-1-0- 0
+-01-0-- 0
+-0--11- 0
+01----1 0
+-001--- 0
+--10-0- 0
+-1---01 0
+10----- 0
+1-----0 0
+.names Q4.Q Q3.Q Q2.Q Q1.Q Q0.Q DIP0.BLIF DIP1.BLIF Q4.D
+0111101 1
+0000011 1
+10--001 1
+10-0-01 1
+100--01 1
+11--011 1
+11-0-11 1
+110--11 1
+1-111-- 0
+11---0- 0
+0--0-0- 0
+0-1--1- 0
+0--10-- 0
+00--1-- 0
+010---- 0
+10---1- 0
+------0 0
+.end

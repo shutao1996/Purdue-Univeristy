@@ -1,0 +1,195 @@
+
+
+                                                                      Page 1
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+
+
+--------------------------------------------------------------------------------
+
+Module                   : 'lab8_skel'
+
+--------------------------------------------------------------------------------
+
+Input files:
+
+    ABEL PLA file        : lab8.tt3
+    Device library       : P22V10G.dev
+
+Output files:
+
+    Report file          : lab8.rpt
+    Programmer load file : lab8.jed
+
+--------------------------------------------------------------------------------
+
+
+                                                                      Page 2
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+P22V10G Programmed Logic:
+--------------------------------------------------------------------------------
+
+
+
+QS_N     = (  !QS 
+            #   CS & RS );
+
+QS     = (  !QS_N 
+          #   SS & CS );
+
+QM_N     = (  !QM 
+            #   CM & RM );
+
+QM     = (  !QM_N 
+          #   SM & CM );
+
+BQ     = (  !NO 
+          #   NC & BQ );
+
+QFF.D   = (  D ); " ISTYPE 'BUFFER'
+QFF.C   = (  CLKIN );
+
+
+
+                                                                      Page 3
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+P22V10G Chip Diagram:
+--------------------------------------------------------------------------------
+
+
+
+
+                                   P22V10G
+
+                         +---------\       /---------+
+                         |          \     /          |
+                         |           -----           |
+                   CLKIN |  1                    24  | Vcc                     
+                         |                           |
+                      CS |  2                    23  | BQ                      
+                         |                           |
+                      RS |  3                    22  |                         
+                         |                           |
+                      SS |  4                    21  |                         
+                         |                           |
+                      CM |  5                    20  |                         
+                         |                           |
+                      RM |  6                    19  |                         
+                         |                           |
+                      SM |  7                    18  | QFF                     
+                         |                           |
+                       D |  8                    17  | QM                      
+                         |                           |
+                      NC |  9                    16  | QM_N                    
+                         |                           |
+                      NO | 10                    15  | QS                      
+                         |                           |
+                         | 11                    14  | QS_N                    
+                         |                           |
+                     GND | 12                    13  |                         
+                         |                           |
+                         |                           |
+                         `---------------------------'
+
+                        SIGNATURE: N/A
+
+
+                                                                      Page 4
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+P22V10G Resource Allocations:
+--------------------------------------------------------------------------------
+
+
+
+        Device        | Resource  |   Design    |
+       Resources      | Available | Requirement | Unused
+======================|===========|=============|==============
+                      |           |             |
+Input Pins:           |           |             |
+                      |           |             |
+          Input:      |     12    |     10      |    2 ( 16 %)
+                      |           |             |
+Output Pins:          |           |             |
+                      |           |             |
+          In/Out:     |     10    |      6      |    4 ( 40 %)
+          Output:     |      -    |      -      |    -
+                      |           |             |
+Buried Nodes:         |           |             |
+                      |           |             |
+          Input Reg:  |      -    |      -      |    -
+          Pin Reg:    |     10    |      1      |    9 ( 90 %)
+          Buried Reg: |      -    |      -      |    -
+
+
+                                                                      Page 5
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+P22V10G Product Terms Distribution:
+--------------------------------------------------------------------------------
+
+
+
+            Signal                       |    Pin   | Terms | Terms | Terms
+             Name                        | Assigned | Used  |  Max  | Unused
+=========================================|==========|=======|=======|=======
+QS_N                                     |   14     |   2   |   8   |   6
+QS                                       |   15     |   2   |  10   |   8
+QM_N                                     |   16     |   2   |  12   |  10
+QM                                       |   17     |   2   |  14   |  12
+BQ                                       |   23     |   2   |   8   |   6
+QFF.D                                    |   18     |   1   |  16   |  15
+
+
+     ==== List of Inputs/Feedbacks ====
+
+Signal Name                              | Pin      | Pin Type
+=========================================|==========|=========
+NO                                       |   10     | INPUT
+NC                                       |    9     | INPUT
+BQ                                       |   23     | BIDIR
+QM_N                                     |   16     | BIDIR
+SM                                       |    7     | INPUT
+CM                                       |    5     | INPUT
+QM                                       |   17     | BIDIR
+RM                                       |    6     | INPUT
+QS_N                                     |   14     | BIDIR
+SS                                       |    4     | INPUT
+CS                                       |    2     | INPUT
+QS                                       |   15     | BIDIR
+RS                                       |    3     | INPUT
+D                                        |    8     | INPUT
+CLKIN                                    |    1     | CLK/IN
+
+
+                                                                      Page 6
+ispLEVER Classic 1.7.00.05.28.13  -  Device Utilization Chart         Thu Mar 09 19:56:15 2017
+
+Experiment 8 Skeleton File
+
+P22V10G Unused Resources:
+--------------------------------------------------------------------------------
+
+
+
+ Pin   |  Pin   |   Product   | Flip-flop
+Number |  Type  |   Terms     |   Type
+=======|========|=============|==========
+   11  |  INPUT |      -      |    -   
+   13  |  INPUT |      -      |    -   
+   19  |  BIDIR | NORMAL 16   |    D
+   20  |  BIDIR | NORMAL 14   |    D
+   21  |  BIDIR | NORMAL 12   |    D
+   22  |  BIDIR | NORMAL 10   |    D

@@ -1,0 +1,39 @@
+#define true 1
+#define false 0
+typedef struct _Adj_Node{ // Edge
+	struct _Adj_Node * next;
+	int weight;//the length between the nodes
+	int index;//index of the connected Vertex
+  //int check; // 0 means new path, 1 means already used
+}Adj_Node;
+
+typedef struct Vertex{
+	int x; //x coordinate
+	int y; //y coordinate
+	int vertices; //point index
+	Adj_Node * children;//current vertex's parent
+	int depth;//current distance from the starting point
+	struct Vertex * prev;//mark the previous node
+	struct Vertex * qprev;
+	struct Vertex * qnext;// used to build queue
+}Vnode;
+
+typedef struct _dummy{
+	int index;
+	struct _dummy* next;
+}Num;
+
+Vnode * Load_From_File(char * Filename, int* size);
+int calc_length(int x1,int y1,int x2, int y2);
+Adj_Node * create_adj_node(int index,int weight);
+void freeGraph(Vnode * map,int size);
+void freeList(Adj_Node * list);
+void printGraph(Vnode * graph,int size);
+Vnode * push(Vnode* queue, Vnode* Node);
+Vnode * pop(Vnode** queue);
+Vnode * pop_Node(Vnode* queue, Vnode* Node);
+void printqueue(Vnode* queue);
+void Load_Query(char* Filename, Vnode* map, int size);
+int Dijk(int start, int end, Vnode* map);
+void Clear_map(Vnode* map, int size);
+void Trace_back(Vnode* Node);

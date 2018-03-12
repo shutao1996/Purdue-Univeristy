@@ -1,0 +1,328 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+DIS1a = !LED0.Q & !R3.Q & !R2.Q & !R1.Q
+    # LED0.Q & R2.Q & !R1.Q
+    # R7.Q & R6.Q
+    # R3.Q & R1.Q
+    # R3.Q & R2.Q
+    # R7.Q & R5.Q ; (6 pterms, 7 signals)
+
+DIS1b = !LED0.Q & R2.Q & !R1.Q
+    # LED0.Q & R2.Q & R1.Q
+    # R7.Q & R6.Q
+    # R3.Q & R1.Q
+    # R3.Q & R2.Q
+    # R7.Q & R5.Q ; (6 pterms, 7 signals)
+
+DIS1c = LED0.Q & !R2.Q & R1.Q
+    # R7.Q & R6.Q
+    # R3.Q & R2.Q
+    # R3.Q & R1.Q
+    # R7.Q & R5.Q ; (5 pterms, 7 signals)
+
+DIS1d = !LED0.Q & !R3.Q & !R2.Q & !R1.Q
+    # LED0.Q & R2.Q & !R1.Q
+    # !LED0.Q & R2.Q & R1.Q
+    # R7.Q & R6.Q
+    # R3.Q & R1.Q
+    # R3.Q & R2.Q
+    # R7.Q & R5.Q ; (7 pterms, 7 signals)
+
+DIS1e = !( LED0.Q & !R6.Q & !R5.Q & !R2.Q & !R1.Q
+    # LED0.Q & !R6.Q & !R5.Q & !R3.Q & R1.Q
+    # LED0.Q & !R7.Q & !R2.Q & !R1.Q
+    # LED0.Q & !R7.Q & !R3.Q & R1.Q ) ; (4 pterms, 7 signals)
+
+DIS1f = !LED0.Q & !R3.Q & !R2.Q
+    # R7.Q & R6.Q
+    # R3.Q & R2.Q
+    # !LED0.Q & R1.Q
+    # !R2.Q & R1.Q
+    # R7.Q & R5.Q ; (6 pterms, 7 signals)
+
+DIS1g = !( LED0.Q & !R3.Q & R2.Q
+    # R3.Q & !R2.Q & !R1.Q
+    # !R3.Q & !R2.Q & R1.Q
+    # !R3.Q & R2.Q & !R1.Q
+    # R7.Q & R5.Q
+    # R7.Q & R6.Q
+    # R7.Q & R4.Q & R3.Q ) ; (7 pterms, 8 signals)
+
+DIS2a = !( R7.Q & !R6.Q & !R5.Q & !R2.Q & !R1.Q
+    # R7.Q & !R6.Q & !R5.Q & !R3.Q
+    # !R7.Q & R5.Q
+    # !R6.Q & !R5.Q & !R4.Q
+    # !R7.Q & R6.Q & R4.Q ) ; (5 pterms, 7 signals)
+
+DIS2b.X1 = R6.Q & !R5.Q
+    # R7.Q & R5.Q
+    # R7.Q & R4.Q & R3.Q & R1.Q
+    # R7.Q & R4.Q & R3.Q & R2.Q ; (4 pterms, 7 signals)
+DIS2b.X2 = !R7.Q & R6.Q & !R4.Q ; (1 pterm, 3 signals)
+
+DIS2c = R7.Q & R4.Q & R3.Q & R1.Q
+    # R7.Q & R4.Q & R3.Q & R2.Q
+    # !R6.Q & R5.Q & !R4.Q
+    # R7.Q & R6.Q
+    # R7.Q & R5.Q ; (5 pterms, 7 signals)
+
+DIS2d = !( R7.Q & !R6.Q & !R5.Q & !R2.Q & !R1.Q
+    # R7.Q & !R6.Q & !R5.Q & !R3.Q
+    # !R7.Q & R6.Q & !R5.Q & R4.Q
+    # !R7.Q & R5.Q & !R4.Q
+    # !R7.Q & !R6.Q & R5.Q
+    # !R6.Q & !R5.Q & !R4.Q ) ; (6 pterms, 7 signals)
+
+DIS2e = !( !R6.Q & !R5.Q & !R4.Q
+    # !R7.Q & R5.Q & !R4.Q ) ; (2 pterms, 4 signals)
+
+DIS2f = !( R7.Q & !R6.Q & !R5.Q & !R2.Q & !R1.Q
+    # R7.Q & !R6.Q & !R5.Q & !R3.Q
+    # !R7.Q & R6.Q & !R4.Q
+    # !R7.Q & R6.Q & !R5.Q
+    # !R6.Q & !R5.Q & !R4.Q ) ; (5 pterms, 7 signals)
+
+DIS2g = !R7.Q & R6.Q & R5.Q & R4.Q
+    # !R7.Q & !R6.Q & !R5.Q ; (2 pterms, 4 signals)
+
+LED0.D = !DIP0 & LED0.Q
+    # DIP0 & !LED0.Q ; (2 pterms, 2 signals)
+LED0.C = S1BC.Q ; (1 pterm, 1 signal)
+LED0.AP = !S2_NO ; (1 pterm, 1 signal)
+
+LED1 = !R1.Q ; (1 pterm, 1 signal)
+
+LED10 = !R6.Q ; (1 pterm, 1 signal)
+
+LED11 = !R7.Q ; (1 pterm, 1 signal)
+
+LED12.X1 = !Z4 & !Z3
+    # DIP1 & !DIP2 & R2.Q & R1.Q & !Z4
+    # DIP1 & DIP2 & !R2.Q & R1.Q & !Z4
+    # DIP0 & !DIP1 & !LED0.Q & !R1.Q & !Z4
+    # !DIP1 & DIP2 & R2.Q & !R1.Q & !Z4
+    # !DIP1 & !DIP2 & !R2.Q & !R1.Q & !Z4
+    # DIP0 & DIP2 & !LED0.Q & R2.Q & !Z4
+    # DIP0 & !DIP2 & !LED0.Q & !R2.Q & !Z4 ; (8 pterms, 8 signals)
+LED12.X2 = DIP0 & !LED0.Q & !Z4 & Z3 ; (1 pterm, 4 signals)
+
+LED16 = !R6.Q & !R5.Q & !R2.Q & !R1.Q
+    # !R6.Q & !R5.Q & !R3.Q
+    # !R6.Q & !R5.Q & !R4.Q
+    # !R7.Q ; (4 pterms, 7 signals)
+
+LED2 = !R2.Q ; (1 pterm, 1 signal)
+
+LED28.D = 1 ; (1 pterm, 0 signal)
+LED28.C = 0 ; (0 pterm, 0 signal)
+LED28.AR = !S1_NO ; (1 pterm, 1 signal)
+LED28.AP = !S1_NC ; (1 pterm, 1 signal)
+
+LED29.D = 1 ; (1 pterm, 0 signal)
+LED29.C = 0 ; (0 pterm, 0 signal)
+LED29.AR = !S2_NO ; (1 pterm, 1 signal)
+LED29.AP = !S2_NC ; (1 pterm, 1 signal)
+
+LED3 = !R3.Q ; (1 pterm, 1 signal)
+
+LED8 = !R4.Q ; (1 pterm, 1 signal)
+
+LED9 = !R5.Q ; (1 pterm, 1 signal)
+
+R1.T = !( !DIP1 & DIP2 & !DIP3 & !R3.Q & R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & !DIP3 & R3.Q & !R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & DIP3 & !R3.Q & !R2.Q & !R1.Q
+    # DIP0 & DIP1 & !DIP2 & !DIP3 & !LED0.Q & !R3.Q & !R1.Q
+    # DIP0 & DIP1 & !DIP3 & !LED0.Q & !R3.Q & !R2.Q & !R1.Q
+    # DIP0 & DIP1 & !DIP2 & !DIP3 & !LED0.Q & !R3.Q & !R2.Q
+    # DIP1 & DIP2 & LED0.Q & R2.Q
+    # !DIP1 & !DIP2 & !DIP3 & LED0.Q & !R3.Q
+    # !DIP1 & !DIP3 & LED0.Q & !R3.Q & !R2.Q
+    # DIP0 & !DIP1 & DIP2 & !LED0.Q & R2.Q
+    # !DIP0 & DIP1 & DIP2 & R2.Q
+    # !DIP0 & !DIP1 & !DIP2 & !DIP3 & !R3.Q
+    # !DIP0 & !DIP1 & !DIP3 & !R3.Q & !R2.Q
+    # DIP1 & DIP3 & LED0.Q
+    # DIP1 & LED0.Q & R3.Q
+    # DIP0 & !DIP1 & DIP3 & !LED0.Q
+    # DIP0 & !DIP1 & !LED0.Q & R3.Q
+    # !DIP0 & DIP1 & DIP3
+    # !DIP0 & DIP1 & R3.Q ) ; (19 pterms, 8 signals)
+R1.C = S1BC.Q ; (1 pterm, 1 signal)
+R1.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R2.T = !( DIP1 & !DIP2 & R3.Q & !R1.Q
+    # !DIP1 & !DIP2 & R3.Q & R1.Q
+    # DIP1 & !DIP2 & LED0.Q & !R1.Q
+    # !DIP1 & !DIP2 & DIP3 & R1.Q
+    # !DIP1 & !DIP2 & !DIP3 & !R3.Q & !R1.Q
+    # !DIP0 & DIP1 & !DIP2 & !R1.Q
+    # DIP1 & !DIP2 & LED0.Q & R3.Q
+    # DIP1 & !DIP2 & DIP3 & !R1.Q
+    # !DIP1 & !DIP2 & !R3.Q & !R2.Q & !R1.Q
+    # !DIP2 & !DIP3 & R3.Q & !R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & LED0.Q & R1.Q
+    # !DIP0 & DIP1 & !DIP2 & R3.Q
+    # DIP1 & !DIP2 & DIP3 & LED0.Q
+    # DIP0 & !DIP1 & !DIP2 & !LED0.Q & !R1.Q
+    # !DIP0 & !DIP1 & !DIP2 & R1.Q
+    # !DIP0 & DIP1 & !DIP2 & DIP3
+    # DIP1 & DIP2 & !DIP3 & !R3.Q & !R2.Q & R1.Q
+    # DIP0 & DIP2 & !DIP3 & !LED0.Q & !R3.Q & !R2.Q & R1.Q
+    # DIP0 & DIP1 & DIP2 & !DIP3 & !LED0.Q & !R3.Q & !R2.Q
+    # !DIP1 & DIP2 & DIP3 & LED0.Q & !R1.Q
+    # !DIP1 & DIP2 & LED0.Q & R3.Q & !R1.Q
+    # DIP0 & DIP1 & DIP2 & !LED0.Q & R1.Q
+    # !DIP0 & !DIP1 & DIP2 & DIP3 & !R1.Q
+    # !DIP0 & !DIP1 & DIP2 & R3.Q & !R1.Q ) ; (24 pterms, 8 signals)
+R2.C = S1BC.Q ; (1 pterm, 1 signal)
+R2.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R3.T = DIP0 & !DIP2 & !DIP3 & !LED0.Q & R3.Q & !R2.Q
+    # DIP1 & !DIP3 & R3.Q & !R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & !DIP3 & R3.Q & R2.Q
+    # !DIP1 & DIP2 & !DIP3 & R3.Q & !R2.Q
+    # DIP1 & !DIP2 & !DIP3 & R3.Q & !R1.Q
+    # !DIP2 & !DIP3 & R3.Q & !R2.Q & R1.Q
+    # !DIP1 & !DIP2 & DIP3 & LED0.Q & !R2.Q & !R1.Q
+    # !DIP1 & DIP2 & !DIP3 & LED0.Q & R2.Q & !R1.Q
+    # !DIP0 & !DIP1 & !DIP2 & DIP3 & !R2.Q & !R1.Q
+    # DIP1 & !DIP2 & !DIP3 & LED0.Q & R2.Q & R1.Q
+    # DIP1 & DIP2 & !DIP3 & LED0.Q & !R2.Q & R1.Q
+    # DIP0 & !DIP1 & !DIP2 & !DIP3 & !LED0.Q & R2.Q & R1.Q
+    # DIP0 & !DIP1 & DIP2 & !DIP3 & !LED0.Q & !R2.Q & R1.Q
+    # DIP0 & DIP1 & !DIP2 & !DIP3 & !LED0.Q & R2.Q & !R1.Q
+    # DIP0 & DIP1 & DIP2 & !DIP3 & !LED0.Q & !R2.Q & !R1.Q
+    # DIP0 & DIP1 & DIP2 & DIP3 & !LED0.Q & R1.Q
+    # DIP0 & DIP1 & DIP3 & !LED0.Q & R2.Q & R1.Q
+    # !DIP0 & !DIP1 & DIP2 & !DIP3 & R2.Q & !R1.Q
+    # !DIP0 & DIP1 & !DIP2 & !DIP3 & R2.Q & R1.Q
+    # !DIP0 & DIP1 & DIP2 & !DIP3 & !R2.Q & R1.Q
+    # DIP2 & DIP3 & R2.Q & R1.Q
+    # DIP1 & DIP2 & DIP3 & R2.Q
+    # DIP0 & DIP2 & DIP3 & !LED0.Q & R2.Q ; (23 pterms, 8 signals)
+R3.C = S1BC.Q ; (1 pterm, 1 signal)
+R3.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R4.T = !( !DIP1 & !DIP2 & !DIP3 & LED0.Q & !R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & LED0.Q & !R3.Q & !R2.Q & !R1.Q
+    # !DIP0 & !DIP1 & !DIP2 & !DIP3 & !R2.Q & !R1.Q
+    # !DIP0 & !DIP1 & !DIP2 & !R3.Q & !R2.Q & !R1.Q
+    # !DIP1 & !DIP3 & LED0.Q & !R3.Q & !R1.Q
+    # !DIP0 & !DIP1 & !DIP3 & !R3.Q & !R1.Q
+    # !DIP2 & !DIP3 & LED0.Q & !R3.Q
+    # !DIP3 & LED0.Q & !R3.Q & !R2.Q
+    # !DIP1 & !DIP2 & !DIP3 & !R3.Q
+    # !DIP1 & !DIP3 & !R3.Q & !R2.Q
+    # !DIP2 & !DIP3 & !R3.Q & !R1.Q
+    # !DIP3 & !R3.Q & !R2.Q & !R1.Q
+    # !DIP2 & !DIP3 & !R3.Q & !R2.Q
+    # !DIP0 & !DIP2 & !DIP3 & !R3.Q
+    # !DIP0 & !DIP3 & !R3.Q & !R2.Q ) ; (15 pterms, 8 signals)
+R4.C = S1BC.Q ; (1 pterm, 1 signal)
+R4.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R5.T = DIP0 & DIP1 & DIP2 & !LED0.Q & R4.Q & R1.Q
+    # DIP0 & DIP1 & !LED0.Q & R4.Q & R2.Q & R1.Q
+    # DIP0 & DIP2 & !LED0.Q & R4.Q & R2.Q
+    # DIP0 & DIP3 & !LED0.Q & R4.Q
+    # DIP0 & !LED0.Q & R4.Q & R3.Q
+    # DIP1 & DIP2 & R4.Q & R2.Q
+    # DIP2 & R4.Q & R2.Q & R1.Q
+    # DIP1 & DIP3 & R4.Q
+    # DIP1 & R4.Q & R3.Q
+    # DIP3 & R4.Q & R1.Q
+    # R4.Q & R3.Q & R1.Q
+    # DIP2 & DIP3 & R4.Q
+    # DIP2 & R4.Q & R3.Q
+    # DIP3 & R4.Q & R2.Q
+    # R4.Q & R3.Q & R2.Q
+    # DIP3 & R4.Q & R3.Q ; (16 pterms, 9 signals)
+R5.C = S1BC.Q ; (1 pterm, 1 signal)
+R5.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R6.T = DIP0 & DIP1 & DIP2 & !LED0.Q & R5.Q & R4.Q & R1.Q
+    # DIP0 & DIP1 & !LED0.Q & R5.Q & R4.Q & R2.Q & R1.Q
+    # DIP0 & DIP2 & !LED0.Q & R5.Q & R4.Q & R2.Q
+    # DIP0 & DIP3 & !LED0.Q & R5.Q & R4.Q
+    # DIP0 & !LED0.Q & R5.Q & R4.Q & R3.Q
+    # DIP1 & DIP2 & R5.Q & R4.Q & R2.Q
+    # DIP2 & R5.Q & R4.Q & R2.Q & R1.Q
+    # DIP1 & DIP3 & R5.Q & R4.Q
+    # DIP1 & R5.Q & R4.Q & R3.Q
+    # DIP3 & R5.Q & R4.Q & R1.Q
+    # R5.Q & R4.Q & R3.Q & R1.Q
+    # DIP2 & DIP3 & R5.Q & R4.Q
+    # DIP2 & R5.Q & R4.Q & R3.Q
+    # DIP3 & R5.Q & R4.Q & R2.Q
+    # R5.Q & R4.Q & R3.Q & R2.Q
+    # DIP3 & R5.Q & R4.Q & R3.Q ; (16 pterms, 10 signals)
+R6.C = S1BC.Q ; (1 pterm, 1 signal)
+R6.AR = !S2_NO ; (1 pterm, 1 signal)
+
+R7.T = DIP0 & DIP1 & DIP2 & !LED0.Q & R6.Q & R5.Q & R4.Q & R1.Q
+    # DIP0 & DIP1 & !LED0.Q & R6.Q & R5.Q & R4.Q & R2.Q & R1.Q
+    # DIP0 & DIP2 & !LED0.Q & R6.Q & R5.Q & R4.Q & R2.Q
+    # DIP0 & DIP3 & !LED0.Q & R6.Q & R5.Q & R4.Q
+    # DIP0 & !LED0.Q & R6.Q & R5.Q & R4.Q & R3.Q
+    # DIP1 & DIP2 & R6.Q & R5.Q & R4.Q & R2.Q
+    # DIP2 & R6.Q & R5.Q & R4.Q & R2.Q & R1.Q
+    # DIP1 & DIP3 & R6.Q & R5.Q & R4.Q
+    # DIP1 & R6.Q & R5.Q & R4.Q & R3.Q
+    # DIP3 & R6.Q & R5.Q & R4.Q & R1.Q
+    # R6.Q & R5.Q & R4.Q & R3.Q & R1.Q
+    # DIP2 & DIP3 & R6.Q & R5.Q & R4.Q
+    # DIP2 & R6.Q & R5.Q & R4.Q & R3.Q
+    # DIP3 & R6.Q & R5.Q & R4.Q & R2.Q
+    # R6.Q & R5.Q & R4.Q & R3.Q & R2.Q
+    # DIP3 & R6.Q & R5.Q & R4.Q & R3.Q ; (16 pterms, 11 signals)
+R7.C = S1BC.Q ; (1 pterm, 1 signal)
+R7.AR = !S2_NO ; (1 pterm, 1 signal)
+
+S1BC.D = 0 ; (0 pterm, 0 signal)
+S1BC.C = 0 ; (0 pterm, 0 signal)
+S1BC.AR = !S1_NC ; (1 pterm, 1 signal)
+S1BC.AP = !S1_NO ; (1 pterm, 1 signal)
+
+Z3.X1 = !DIP2 & !DIP3 & !R2.Q
+    # !DIP1 & !DIP3 & !R2.Q & !R1.Q
+    # !DIP1 & !DIP2 & !DIP3 & !R1.Q
+    # !DIP3 & LED0.Q & !R2.Q & !R1.Q
+    # !DIP2 & !DIP3 & LED0.Q & !R1.Q
+    # !DIP1 & !DIP3 & LED0.Q & !R2.Q
+    # !DIP1 & !DIP2 & !DIP3 & LED0.Q
+    # !DIP0 & !DIP3 & !R2.Q & !R1.Q
+    # !DIP0 & !DIP2 & !DIP3 & !R1.Q
+    # !DIP0 & !DIP1 & !DIP3 & !R2.Q
+    # !DIP0 & !DIP1 & !DIP2 & !DIP3
+    # DIP2 & DIP3 & R2.Q
+    # DIP1 & DIP3 & R2.Q & R1.Q
+    # DIP1 & DIP2 & DIP3 & R1.Q
+    # DIP0 & DIP3 & !LED0.Q & R2.Q & R1.Q
+    # DIP0 & DIP2 & DIP3 & !LED0.Q & R1.Q
+    # DIP0 & DIP1 & DIP3 & !LED0.Q & R2.Q
+    # DIP0 & DIP1 & DIP2 & DIP3 & !LED0.Q ; (18 pterms, 7 signals)
+Z3.X2 = !R3.Q ; (1 pterm, 1 signal)
+
+Z4.X1 = !DIP3 & !R3.Q
+    # DIP2 & R2.Q
+    # DIP1 & R2.Q & R1.Q
+    # DIP1 & DIP2 & R1.Q
+    # DIP0 & !LED0.Q & R2.Q & R1.Q
+    # DIP0 & DIP2 & !LED0.Q & R1.Q
+    # DIP0 & DIP1 & !LED0.Q & R2.Q
+    # DIP0 & DIP1 & DIP2 & !LED0.Q
+    # DIP3 & R3.Q ; (9 pterms, 8 signals)
+Z4.X2 = !DIP3 & !R3.Q ; (1 pterm, 2 signals)
+
+_dup_osc_dis = 0 ; (0 pterm, 0 signal)
+
+osc_dis = 0 ; (0 pterm, 0 signal)
+

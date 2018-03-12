@@ -1,0 +1,3 @@
+<Error>  F38018:  Pin count 70 for the design exceeds the device limit of 52.
+<Error>  F38019:  Number of logic functions 72 in the design exceeds the device limit of 64.
+Project 'untitled' failed during design rules check!

@@ -1,0 +1,161 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\ahdl2blf.exe a9.abl -mod myLP -ojhd compile -ret -def _AMDMACH_ _MACH_ _LSI5K_ _LATTICE_ _PLSI_ _MACH4ZE_  -err automake.err -gui'
+
+AHDL2BLF  ABEL-HDL Processor
+ispLEVER Classic 1.7 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Module: 'myLP'
+
+  Processing equations....
+  Processing truth table...
+  Processing truth table...
+  Processing truth table...
+  Processing truth table...
+
+  Module parsing complete. Building logic network...
+
+  Creating Open-ABEL 2 (BLIF) file mylp.bl0...
+
+
+
+Module 'mylp' processing complete.
+
+AHDL2BLF complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe myLP.bl0 -collapse none -reduce none -err automake.err -gui -keepwires'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file myLP.bl0...
+Writing Open-ABEL 2 (BLIF) file myLP.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblflink.exe "myLP.bl1" -o "l9a9.bl2" -omod "l9a9" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'myLP.bl1'
+	Referring to External Module 'osctimer'.
+
+Hierarchical BLIF: 'l9a9.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\impsrc.exe -gui -prj l9a9 -lci l9a9.lct -log l9a9.imp -err automake.err -tti l9a9.bl2 -dir u:\ece 270\lab practice\9+9'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci l9a9.lct -blifopt l9a9.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe l9a9.bl2 -sweep -mergefb -err automake.err -o l9a9.bl3 @l9a9.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file l9a9.bl2...
+Merging feedbacks...
+Note 13707: Node Z0 is collapsed...
+Note 13707: Node X3 is collapsed...
+Note 13707: Node X2 is collapsed...
+Note 13707: Node X1 is collapsed...
+Note 13707: Node X0 is collapsed...
+Note 13707: Node Y3 is collapsed...
+Note 13707: Node Y2 is collapsed...
+Note 13707: Node Y0 is collapsed...
+Note 13707: Node Y1 is collapsed...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Performing 'bypin choose' optimization...
+.....Note    0: 
+Estimated (clusters + macrocells): 51, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file l9a9.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci l9a9.lct -dev lc4k -diofft l9a9.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mdiofft.exe l9a9.bl3 -family AMDMACH -idev van -o l9a9.bl4 -oxrf l9a9.xrf -err automake.err @l9a9.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Input file: l9a9.bl3.
+Output file: l9a9.bl4.
+Cross reference file: l9a9.xrf.
+
+..................................................
+Shortening signal names...
+Writing signal name cross reference file l9a9.xrf... 
+
+Note 13707: Removing redundant GND node osc_rst.
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci l9a9.lct -dev lc4k -prefit l9a9.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp l9a9.bl4 -out l9a9.bl5 -err automake.err -log l9a9.log -mod myLP @l9a9.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Tue Apr 25 20:31:27 2017
+
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp l9a9.bl4 -out l9a9.bl5 -err automake.err -log l9a9.log -mod myLP @l9a9.l0 -gui -sc 
+<Note> F34000: S2BC is removed
+Number of pins (IO)    :    70
+Number of outputs (MC) :    45
+Number of registers    :    11
+Number of logic pterms :   120
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\lpf4k.exe @"l9a9.rs2"'
+
+<Warning>  P38466:  DYNOSCDIS and TIMERRES have the same logic.
+Project 'l9a9' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\tda.exe -i l9a9.bl5 -o l9a9.tda -lci l9a9.lct -dev m4e_256_96 -family lc4k -mod myLP -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj l9a9 -if l9a9.jed -j2s -log l9a9.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if l9a9.jed -oft -svf -of "U:\ECE 270\lab practice\9+9\l9a9_epvs.svf" -lever
+svf file '"U:\ECE 270\lab practice\9+9\l9a9_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if l9a9.jed -oft -svf -of "U:\ECE 270\lab practice\9+9\l9a9_epv.svf" -lever
+svf file '"U:\ECE 270\lab practice\9+9\l9a9_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if l9a9.jed -oft -svf -of "U:\ECE 270\lab practice\9+9\l9a9_v.svf" -lever
+svf file '"U:\ECE 270\lab practice\9+9\l9a9_v.svf"' is generated successfully
+
+Done: completed successfully.

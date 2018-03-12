@@ -1,0 +1,72 @@
+
+Timing Report
+
+//  Project = 3
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+  6.30,- 2.10     1     p79       =>  I5        DIP0                          Q2.T                          DIP0
+  6.30,- 2.10     1     p78       =>  I5        DIP1                          Q2.T                          DIP1
+  6.10,- 2.10     1     p79       =>  D4        DIP0                          Q0.D                          DIP0
+  6.10,- 2.10     1     p79       =>  M3        DIP0                          Q1.D                          DIP0
+  6.10,- 2.10     1     p79       =>  P3        DIP0                          Q3.D                          DIP0
+  6.10,- 2.10     1     p79       =>  M7        DIP0                          Q4.D.X1                       DIP0
+  6.10,- 2.10     1     p78       =>  D4        DIP1                          Q0.D                          DIP1
+  6.10,- 2.10     1     p78       =>  M3        DIP1                          Q1.D                          DIP1
+  6.10,- 2.10     1     p78       =>  P3        DIP1                          Q3.D                          DIP1
+  6.10,- 2.10     1     p78       =>  M7        DIP1                          Q4.D.X1                       DIP1
+  6.10,- 2.10     1     p78       =>  M7        DIP1                          Q4.D.X2                       DIP1
+
+
+Section tRCV
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   7.40           1     p26       =>  P2        DIP7                          DIS3a.AP
+   7.40           1     p26       =>  P4        DIP7                          DIS3b.AP
+   7.40           1     p26       =>  P6        DIP7                          DIS3c.AP
+   7.40           1     p26       =>  P8        DIP7                          DIS3d.AP
+   7.40           1     p26       =>  P0        DIP7                          DIS3e.AP
+   7.40           1     p26       =>  P1        DIP7                          DIS3f.AP
+   7.40           1     p26       =>  O2        DIP7                          DIS3g.AP
+   7.40           1     p26       =>  G3        DIP7                          DIS4a.AP
+   7.40           1     p26       =>  H0        DIP7                          DIS4b.AP
+   7.40           1     p26       =>  H1        DIP7                          DIS4c.AP
+   7.40           1     p26       =>  H9        DIP7                          DIS4d.AP
+   7.40           1     p26       =>  H7        DIP7                          DIS4e.AP
+   7.40           1     p26       =>  H5        DIP7                          DIS4f.AP
+   7.40           1     p26       =>  H2        DIP7                          DIS4g.AP
+   7.40           1     p26       =>  D4        DIP7                          Q0.AR
+   7.40           1     p26       =>  M3        DIP7                          Q1.AR
+   7.40           1     p26       =>  I5        DIP7                          Q2.AR
+   7.40           1     p26       =>  P3        DIP7                          Q3.AR
+   7.40           1     p26       =>  M7        DIP7                          Q4.AR
+   7.40           1     p26       =>  E4        DIP7                          rDIS2a.AR

@@ -1,0 +1,5 @@
+
+public class MyList {
+	public MyList next();
+	public void prainterNode();
+}

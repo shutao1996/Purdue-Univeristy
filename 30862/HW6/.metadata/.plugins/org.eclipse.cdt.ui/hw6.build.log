@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project hw6 ****
+
+**** Internal Builder is used for build               ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -omain.o ../main.cpp
+g++ -ohw6 set.o main.o
+Build complete for project hw6
+Time consumed: 551  ms.  

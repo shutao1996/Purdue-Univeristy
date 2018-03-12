@@ -1,0 +1,4207 @@
+// SDF delay-file
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "3")
+  (DATE "3/31/2017 11:19:51")
+  (VENDOR "Lattice Semiconductor")
+  (PROGRAM "SDF Generator")
+  (VERSION "1.7.00.05.28.13 Data sheet version: 0.9")
+  (DIVIDER /)
+  (VOLTAGE :1.8:)
+  (PROCESS "worst")
+  (TEMPERATURE :90:)
+  (TIMESCALE 10ps)
+  (CELL
+    (CELLTYPE "OSCTIMER")
+    (INSTANCE I1)
+    (DELAY
+      (ABSOLUTE
+        (PORT TIMERRES (75:75:75) (75:75:75) )
+        (PORT DYNOSCDIS (75:75:75) (75:75:75) )
+        (IOPATH DYNOSCDIS OSCOUT (900:900:900) (900:900:900) )
+        (IOPATH TIMERRES TIMEROUT (500:500:500) (500:500:500) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP (posedge DYNOSCDIS) (negedge OSCOUT) (500:500:500))
+        (HOLD (posedge DYNOSCDIS) (negedge OSCOUT) (500:500:500))
+        (RECOVERY (negedge TIMERRES) (negedge OSCOUT) (400:400:400))
+        (WIDTH (posedge TIMERRES) (300:300:300))
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS1g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS2g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS3g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_DIS4g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OBUF")
+    (INSTANCE OUT_LED28_I_1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH I0 O (140:140:140) (140:140:140) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS3g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFSH")
+    (INSTANCE FF_DIS4g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT S (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH S Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge S) (posedge CLK) (180:180:180))
+        (WIDTH (posedge S) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFF")
+    (INSTANCE FF_LED28_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT CLK (445:445:445) (445:445:445) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFF")
+    (INSTANCE FF_timdiv1_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT CLK (370:370:370) (370:370:370) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS2g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_rDIS3g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT D (370:370:370) (370:370:370) )
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_Q0_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_Q1_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "TFFRH")
+    (INSTANCE FF_Q2_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP T (posedge CLK) (220:220:220))
+        (HOLD T (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_Q3_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "DFFRH")
+    (INSTANCE FF_Q4_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT R (560:560:560) (560:560:560) )
+        (IOPATH CLK Q (45:45:45) (45:45:45) )
+        (IOPATH R Q (95:95:95) (95:95:95) )
+      )
+    )
+    (TIMINGCHECK
+        (SETUP D (posedge CLK) (200:200:200))
+        (HOLD D (posedge CLK) (200:200:200))
+        (RECOVERY (negedge R) (posedge CLK) (180:180:180))
+        (WIDTH (posedge R) (0:0:0))
+        (WIDTH (posedge CLK) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_DIS1b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+        (IOPATH I2 O (45:45:45) (45:45:45) )
+        (IOPATH I3 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR3")
+    (INSTANCE GATE_DIS1e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+        (IOPATH I2 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "OR4")
+    (INSTANCE GATE_DIS1g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+        (IOPATH I2 O (45:45:45) (45:45:45) )
+        (IOPATH I3 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2b_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2e_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS2g_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3a_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3a_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3b_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3b_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3c_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3c_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3d_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3d_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3e_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3e_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3f_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3f_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3g_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (370:370:370) (370:370:370) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS3g_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4a_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4a_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4b_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4b_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4c_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4c_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4d_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4d_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4e_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4e_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4f_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4f_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4g_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS4g_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_LED28_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_timdiv1_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (365:365:365) (365:365:365) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2a_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2b_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_rDIS2c_D_X2_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2c_D_X2_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2c_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2d_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2e_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2f_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS2g_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3a_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3b_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3c_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3d_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3e_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3f_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_rDIS3g_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_Q0_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_Q1_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_Q2_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_Q3_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_Q4_D_X2_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_Q4_C_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (490:490:490) (490:490:490) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_DIS1c_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_DIS1d_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_DIS1f_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+        (IOPATH I1 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_rDIS2d_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "XOR2")
+    (INSTANCE GATE_rDIS2f_D_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_DIS1a_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (IOPATH I0 O (45:45:45) (45:45:45) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_5_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_6_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_6_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_7_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (410:410:410) (410:410:410) )
+        (PORT I3 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_7_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_8_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_9_I_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_10_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_11_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_11_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_12_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_12_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_13_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_14_I_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_15_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_15_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_16_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_16_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_16_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_17_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_17_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_17_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_18_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_19_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_19_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_20_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_20_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_21_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_21_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_22_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_22_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_23_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_23_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_23_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_24_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_25_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_25_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_25_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_45_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_46_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_51_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_52_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_53_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_59_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_59_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_60_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_60_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_61_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_61_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_62_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_62_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_63_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_63_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_64_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_65_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_66_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_67_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_74_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_75_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_78_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_79_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_80_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_81_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_82_I_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_83_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_83_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_83_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_84_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_84_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_84_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_85_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_85_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_85_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_86_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_86_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_87_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_87_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_88_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_88_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_88_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_89_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_89_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_89_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_90_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_90_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_91_I_14)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_92_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_92_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_92_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_93_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_94_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_95_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND3")
+    (INSTANCE GATE_T_96_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_97_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_97_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_98_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_98_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_99_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_100_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_100_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_101_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_101_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_102_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_103_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_104_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_104_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_104_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR4")
+    (INSTANCE GATE_T_105_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_105_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_106_I_3)
+    (DELAY
+      (ABSOLUTE
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_106_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_106_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_107_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND4")
+    (INSTANCE GATE_T_108_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+        (PORT I2 (420:420:420) (420:420:420) )
+        (PORT I3 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_108_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_139_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_140_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_141_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_142_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_143_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_144_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_144_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_145_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_146_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_149_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_149_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_150_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_150_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_154_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_154_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_155_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_155_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_178_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_178_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_179_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_180_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_180_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_181_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_182_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_182_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_183_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_184_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_184_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_185_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_186_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_187_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_187_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_188_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_189_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_190_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_190_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_191_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_191_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_192_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_192_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_193_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_193_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_194_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_194_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_195_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_195_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_196_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_196_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_197_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_198_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_199_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_200_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_201_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_201_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_205_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_206_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_207_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_208_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_208_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_209_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_210_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_210_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_211_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_211_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_212_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_213_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_214_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_214_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_215_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_216_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_216_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_217_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_218_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_219_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_223_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_224_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_224_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_225_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_226_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_227_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_227_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_228_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_229_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_229_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_230_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_230_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_231_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_231_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_232_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_232_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_233_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_233_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_234_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_234_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_235_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_236_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_236_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_237_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_238_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_239_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_239_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_240_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_241_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_242_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_243_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_244_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_245_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_245_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_246_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_246_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_247_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_247_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_248_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_248_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_249_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_249_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_250_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_250_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_251_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_252_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_256_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_256_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_257_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_258_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_259_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_259_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_260_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_261_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_262_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_263_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_264_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_265_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (410:410:410) (410:410:410) )
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_266_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_267_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_268_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_268_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_269_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_269_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_270_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_270_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_271_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (410:410:410) (410:410:410) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_271_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_272_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_272_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_273_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_273_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_277_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_277_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_278_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_286_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_287_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_288_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_288_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_289_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_290_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_291_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_291_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_295_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_296_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_296_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "AND2")
+    (INSTANCE GATE_T_297_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "INV")
+    (INSTANCE GATE_T_297_I_2)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "NOR2")
+    (INSTANCE GATE_T_298_I_1)
+    (DELAY
+      (ABSOLUTE
+        (PORT I0 (420:420:420) (420:420:420) )
+        (PORT I1 (420:420:420) (420:420:420) )
+      )
+    )
+  )
+)

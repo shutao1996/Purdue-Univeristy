@@ -1,0 +1,42 @@
+<Error>  F38029:  Signal 'DIP3' is assigned to a GND pin 76.
+<Error>  F38029:  Signal 'DIP5' is assigned to a TCK pin 24.
+<Error>  F38029:  Signal 'DIP6' is assigned to a VCC pin 25.
+<Error>  F38029:  Signal 'DIP7' is assigned to a GND pin 26.
+<Error>  F38028:  Invalid pin assignment for signal 'LED0' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED1' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED2' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED3' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED8' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED9' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED10' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED11' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED12' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED13' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED14' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED15' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS1e' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS2c' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS2d' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS2g' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3a' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3b' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3c' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3d' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3e' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3f' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS3g' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS4e' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'DIS4f' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED16' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED17' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED18' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED19' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED21' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED22' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED23' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED24' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED25' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED26' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED27' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED28' in the constraint file.
+<Error>  F38028:  Invalid pin assignment for signal 'LED29' in the constraint file.

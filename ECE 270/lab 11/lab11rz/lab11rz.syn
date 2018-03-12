@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 1.7 
+PROJECT lab11rz
+DESIGN lab11rz Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY ABEL/Schematic
+MODULE lab11rz.abl
+MODSTYLE lab12_4 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab12_4

@@ -1,0 +1,30 @@
+ispLEVER Classic 1.7.00.05.28.13 SDFGEN
+Copyright(C),1992-2013, Lattice Semiconductor Corporation. All Rights Reserved.
+Output Files:
+  Netlist File: 3.vho
+  Delay   File: 3.sdf
+
+Parsing C:/ispLEVER_Classic1_7/ispcpld/dat/sdf.mdl
+Input file: u:/ece 270/lab10/3\3.tt4
+Note 18862: NODE name _dup_osc_dis being renamed to Xdup_osc_dis.
+No logic associated with node 'osc_out.'
+Reading library information ...
+Mapping to combinational gates 
+Mapping to netlist view.
+Note 18862: NODE name DIS1c.X1 being renamed to GATE_DIS1c_X1.
+Note 18862: NODE name DIS1c.X2 being renamed to GATE_DIS1c_X2.
+Note 18862: NODE name DIS1d.X1 being renamed to GATE_DIS1d_X1.
+Note 18862: NODE name DIS1d.X2 being renamed to GATE_DIS1d_X2.
+Note 18862: NODE name DIS1f.X1 being renamed to GATE_DIS1f_X1.
+Note 18862: NODE name DIS1f.X2 being renamed to GATE_DIS1f_X2.
+Note 18862: NODE name rDIS2c.D.X1 being renamed to GATE_rDIS2c_D_X1.
+Note 18862: NODE name rDIS2c.D.X2 being renamed to GATE_rDIS2c_D_X2.
+Note 18862: NODE name rDIS2d.D.X1 being renamed to GATE_rDIS2d_D_X1.
+Note 18862: NODE name rDIS2f.D.X1 being renamed to GATE_rDIS2f_D_X1.
+Note 18862: NODE name Q4.D.X1 being renamed to GATE_Q4_D_X1.
+Note 18862: NODE name Q4.D.X2 being renamed to GATE_Q4_D_X2.
+Utilization Estimate
+    Combinational Macros:        405
+    Flip-Flop and Latch Macros:   35
+    I/O Pads:                     70
+Elapsed time: 2 seconds

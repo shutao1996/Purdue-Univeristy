@@ -1,0 +1,12 @@
+JDF B
+// Created by Version 1.7 
+PROJECT Untitled
+DESIGN untitled Normal
+DEVKIT LC4256ZE-5TN100C
+ENTRY ABEL/Schematic
+DOCUMENT \\myhome.itap.purdue.edu\myhome\wang2590\ecn.data\Desktop\lab13_2.txt
+MODULE lab13.abl
+MODSTYLE lab13 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE lab13

@@ -1,0 +1,44 @@
+ispLEVER Classic 1.7.00.05.28.13 SDFGEN
+Copyright(C),1992-2013, Lattice Semiconductor Corporation. All Rights Reserved.
+Output Files:
+  Netlist File: lab11_4.vho
+  Delay   File: lab11_4.sdf
+
+Parsing C:/ispLEVER_Classic1_7/ispcpld/dat/sdf.mdl
+Input file: u:/ece 270/lab 11/step4\lab11_4.tt4
+Note 18862: NODE name _dup_osc_dis being renamed to Xdup_osc_dis.
+No logic associated with node 'osc_out.'
+Reading library information ...
+Mapping to combinational gates 
+Mapping to netlist view.
+Note 18862: NODE name LED9.D.X1 being renamed to GATE_LED9_D_X1.
+Note 18862: NODE name LED9.D.X2 being renamed to GATE_LED9_D_X2.
+Note 18862: NODE name LED10.D.X1 being renamed to GATE_LED10_D_X1.
+Note 18862: NODE name LED10.D.X2 being renamed to GATE_LED10_D_X2.
+Note 18862: NODE name LED11.D.X1 being renamed to GATE_LED11_D_X1.
+Note 18862: NODE name LED11.D.X2 being renamed to GATE_LED11_D_X2.
+Note 18862: NODE name LED12.D.X1 being renamed to GATE_LED12_D_X1.
+Note 18862: NODE name LED12.D.X2 being renamed to GATE_LED12_D_X2.
+Note 18862: NODE name LED13.D.X1 being renamed to GATE_LED13_D_X1.
+Note 18862: NODE name LED13.D.X2 being renamed to GATE_LED13_D_X2.
+Note 18862: NODE name LED14.D.X1 being renamed to GATE_LED14_D_X1.
+Note 18862: NODE name LED14.D.X2 being renamed to GATE_LED14_D_X2.
+Note 18862: NODE name LED15.D.X1 being renamed to GATE_LED15_D_X1.
+Note 18862: NODE name LED15.D.X2 being renamed to GATE_LED15_D_X2.
+Note 18862: NODE name X0.D.X1 being renamed to GATE_X0_D_X1.
+Note 18862: NODE name X0.D.X2 being renamed to GATE_X0_D_X2.
+Note 18862: NODE name Q0.D.X1 being renamed to GATE_Q0_D_X1.
+Note 18862: NODE name Q0.D.X2 being renamed to GATE_Q0_D_X2.
+Note 18862: NODE name Q2.D.X1 being renamed to GATE_Q2_D_X1.
+Note 18862: NODE name Q2.D.X2 being renamed to GATE_Q2_D_X2.
+Note 18862: NODE name P0.D.X1 being renamed to GATE_P0_D_X1.
+Note 18862: NODE name P0.D.X2 being renamed to GATE_P0_D_X2.
+Note 18862: NODE name P1.D.X1 being renamed to GATE_P1_D_X1.
+Note 18862: NODE name P1.D.X2 being renamed to GATE_P1_D_X2.
+Note 18862: NODE name P3.D.X1 being renamed to GATE_P3_D_X1.
+Note 18862: NODE name P3.D.X2 being renamed to GATE_P3_D_X2.
+Utilization Estimate
+    Combinational Macros:        537
+    Flip-Flop and Latch Macros:   63
+    I/O Pads:                     70
+Elapsed time: 2 seconds

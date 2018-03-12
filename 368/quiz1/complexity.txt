@@ -1,0 +1,4 @@
+time complexity: A total of nodes need to be traversed. Here, represents the minimum number of nodes from the two given trees.
+		this function should be O(n^2);
+Space complexity: The depth of the recursion tree can go upto in the case of a skewed tree. In average case, depth will be .
+		the space should only be O(n);one tree in the end.

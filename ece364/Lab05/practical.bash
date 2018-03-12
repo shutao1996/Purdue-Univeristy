@@ -1,0 +1,100 @@
+#! /bin/bash
+
+#----------------------------------
+# $Author: ee364f06 $
+# $Date: 2018-02-14 15:22:08 -0500 (Wed, 14 Feb 2018) $
+#----------------------------------
+
+function part_a 
+{               
+    # Fill out your answer here. Do not include exit 0 in your code.
+    Arr=(a.txt b.txt c.txt d.txt)
+    n=$(($RANDOM%4))
+    #line=$(cat ${Arr[n]} | wc -l)
+    head -n 3 ${Arr[n]} | tail -n 2
+     return                      
+}                               
+
+function part_b
+{              
+    # Fill out your answer here. Do not include exit 0 in your code.
+    i=0
+    j=0
+
+    for File in myDir1
+    do
+        i=i+1
+    done
+
+    for File in myDir2
+    do
+        j=j+1
+    done
+
+    if [[ $i == $j ]]
+    then
+        echo "Similar"
+    else
+        echo "Different"
+    fi
+
+    return                     
+}                              
+
+function part_c
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    arr=[]
+    n=0
+    for n in arr
+    do
+       arr=[n] 
+
+    done
+    return
+}
+
+function part_d
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    line=$(cat ${file.txt} | wc -l)
+    
+    
+    return
+}
+
+function part_e
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    return
+}
+
+function part_f
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    return
+}
+
+function part_g
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    return
+}
+
+
+function part_h
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    return
+}
+
+function part_i
+{
+    # Fill out your answer here. Do not include exit 0 in your code.
+    return
+}
+
+
+# To test your function, you can call it below like this:
+#
+# part_a

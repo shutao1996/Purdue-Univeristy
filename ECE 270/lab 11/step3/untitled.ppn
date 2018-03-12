@@ -1,0 +1,14 @@
+//
+// Software Version :  ispLEVER Classic 1.7.00.05.28.13  
+// Project Name	    :  untitled
+// Targeted Device  :  LC4064ZE-5UMN64C
+// Date             :  Fri Apr 07 11:23:44 2017
+//
+                   GNDIO0          SYS           D4
+                   VCCIO0          SYS           C3
+                      VCC          SYS           E4
+                   VCCIO0          SYS           F3
+                   GNDIO1          SYS           E5
+                   VCCIO1          SYS           F6
+                      VCC          SYS           D5
+                   VCCIO1          SYS           A6

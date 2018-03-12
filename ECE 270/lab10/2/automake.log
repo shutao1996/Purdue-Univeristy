@@ -1,0 +1,167 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\ahdl2blf.exe step2.abl -mod step2 -ojhd compile -ret -def _AMDMACH_ _MACH_ _LSI5K_ _LATTICE_ _PLSI_ _MACH4ZE_  -err automake.err -gui'
+
+AHDL2BLF  ABEL-HDL Processor
+ispLEVER Classic 1.7 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Module: 'step2'
+
+  Processing equations.....
+
+  Module parsing complete. Building logic network...
+
+  Creating Open-ABEL 2 (BLIF) file step2.bl0...
+
+
+
+Module 'step2' processing complete.
+
+AHDL2BLF complete - 0 errors, 0 warnings. Time: 2 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe step2.bl0 -collapse none -reduce none -err automake.err -gui -keepwires'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file step2.bl0...
+Writing Open-ABEL 2 (BLIF) file step2.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblflink.exe "step2.bl1" -o "2.bl2" -omod "2" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'step2.bl1'
+	Referring to External Module 'osctimer'.
+
+Hierarchical BLIF: '2.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\impsrc.exe -gui -prj 2 -lci 2.lct -log 2.imp -err automake.err -tti 2.bl2 -dir u:\ece 270\lab10\2'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci 2.lct -blifopt 2.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe 2.bl2 -sweep -mergefb -err automake.err -o 2.bl3 @2.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file 2.bl2...
+Merging feedbacks...
+Note 13707: Node rDIS1a is collapsed...
+Note 13707: Node rDIS1g is collapsed...
+Note 13707: Node rDIS1f is collapsed...
+Note 13707: Node rDIS1e is collapsed...
+Note 13707: Node rDIS1d is collapsed...
+Note 13707: Node rDIS1c is collapsed...
+Note 13707: Node rDIS1b is collapsed...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Warning 13707:Unused node 'Q0' removed.
+Warning 13707:Unused node 'Q1' removed.
+Warning 13707:Unused node 'Q2' removed.
+Warning 13707:Unused node 'Q3' removed.
+Warning 13707:Unused node 'Q4' removed.
+Performing 'bypin choose' optimization...
+Note    0: Estimated (clusters + macrocells): 47, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file 2.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci 2.lct -dev lc4k -diofft 2.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mdiofft.exe 2.bl3 -family AMDMACH -idev van -o 2.bl4 -oxrf 2.xrf -err automake.err @2.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Input file: 2.bl3.
+Output file: 2.bl4.
+Cross reference file: 2.xrf.
+
+.......................................................................
+............................................
+Shortening signal names...
+Writing signal name cross reference file 2.xrf... 
+
+Note 13707: Removing redundant GND node osc_rst.
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci 2.lct -dev lc4k -prefit 2.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp 2.bl4 -out 2.bl5 -err automake.err -log 2.log -mod step2 @2.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Fri Mar 31 11:18:31 2017
+
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp 2.bl4 -out 2.bl5 -err automake.err -log 2.log -mod step2 @2.l0 -gui -sc 
+<Note> F34000: timdiv2 is removed
+<Note> F34000: rDIS4a is removed
+<Note> F34000: rDIS4b is removed
+<Note> F34000: rDIS4c is removed
+<Note> F34000: rDIS4d is removed
+<Note> F34000: rDIS4e is removed
+<Note> F34000: rDIS4f is removed
+<Note> F34000: rDIS4g is removed
+Number of pins (IO)    :    70
+Number of outputs (MC) :    45
+Number of registers    :    37
+Number of logic pterms :    45
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\lpf4k.exe @"2.rs2"'
+
+<Warning>  P38466:  DYNOSCDIS and TIMERRES have the same logic.
+Project '2' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\tda.exe -i 2.bl5 -o 2.tda -lci 2.lct -dev m4e_256_96 -family lc4k -mod step2 -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj 2 -if 2.jed -j2s -log 2.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if 2.jed -oft -svf -of "U:\ECE 270\lab10\2\2_epvs.svf" -lever
+svf file '"U:\ECE 270\lab10\2\2_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if 2.jed -oft -svf -of "U:\ECE 270\lab10\2\2_epv.svf" -lever
+svf file '"U:\ECE 270\lab10\2\2_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if 2.jed -oft -svf -of "U:\ECE 270\lab10\2\2_v.svf" -lever
+svf file '"U:\ECE 270\lab10\2\2_v.svf"' is generated successfully
+
+Done: completed successfully.

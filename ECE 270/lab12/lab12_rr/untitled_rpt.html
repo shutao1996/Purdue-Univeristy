@@ -1,0 +1,2289 @@
+<HTML>
+<HEAD><TITLE>HTML_REPORT_FILE</TITLE>
+<STYLE TYPE="text/css">
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 10pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 10pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+</HEAD>
+<PRE>
+<A name="Top"></A><H2 align=center> ispLEVER Classic 1.7.00.05.28.13 Fitter Report File </H2>
+<H2 align=center>Copyright(C), 1992-2012, Lattice Semiconductor Corporation</H2>
+<H2 align=center>All Rights Reserved</H2>
+
+
+The Basic/Detailed Report Format can be selected in the dialog box
+Tools->Fitter Report File Format...
+
+<A name="Project_Summary"></A><FONT COLOR=maroon><U><B><big>Project_Summary</big></B></U></FONT>
+<BR>
+Project Name         :  untitled
+Project Path         :  U:\ECE 270\lab12\lab12_rr
+Project Fitted on    :  Thu Apr 20 18:42:08 2017
+
+Device               :  M4256_64
+Package              :  100
+GLB Input Mux Size   :  33
+Available Blocks     :  16
+Speed                :  -5.8
+Part Number          :  LC4256ZE-5TN100C
+Source Format        :  ABEL_Schematic
+
+
+<font color=red size=4><span class=blink><strong><B>&lt;Error&gt; Project 'untitled' failed during design rules check!
+&lt;Error&gt;  F38020:  Design requires a minimum of 268 clusters: the device limit is 256 clusters.</B></strong></span></font>
+
+<A name="Compilation_Times"></A><FONT COLOR=maroon><U><B><big>Compilation_Times</big></B></U></FONT>
+<BR>
+Prefit Time                     0 secs
+Load Design Time                0.03 secs
+Partition Time                  0.00 secs
+Place Time                      0.00 secs
+Route Time                      0.00 secs
+Total Fit Time                  00:00:01
+
+
+<A name="Design_Summary"></A><FONT COLOR=maroon><U><B><big>Design_Summary</big></B></U></FONT>
+<BR>
+Total Input Pins                13
+Total Logic Functions           192
+  Total Output Pins             57
+  Total Bidir I/O Pins          0
+  Total Buried Nodes            135
+Total Flip-Flops                131
+  Total D Flip-Flops            32
+  Total T Flip-Flops            99
+  Total Latches                 0
+Total Product Terms             1244
+
+Total Reserved Pins             0
+Total Locked Pins               0
+Total Locked Nodes              0
+
+Total Unique Output Enables     0
+Total Unique Clocks             4
+Total Unique Clock Enables      0
+Total Unique Resets             6
+Total Unique Presets            5
+
+<A name="Device_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>Device_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                 Device
+                                 Total    Used   Not Used   Utilization
+-----------------------------------------------------------------------
+</B>Dedicated Pins
+  Clock/Input Pins                  4        0      4    -->     0
+  Input-Only Pins                   6        0      6    -->     0
+  I/O / Enable Pins                 2        0      2    -->     0
+I/O Pins                           62        0     62    -->     0
+Logic Functions                   256      192     64    -->    75
+  Input Registers                  64        0     64    -->     0
+
+GLB Inputs                        576        0    576    -->     0
+Logical Product Terms        <FONT COLOR=red>    1280     1346      0    -->   105
+</FONT>Occupied GLBs                      16        0     16    -->     0
+Macrocells                        256        0    256    -->     0
+
+Control Product Terms:
+  GLB Clock/Clock Enables          16        0     16    -->     0
+  GLB Reset/Presets                16        0     16    -->     0
+  Macrocell Clocks                256      131    125    -->    51
+  Macrocell Clock Enables         256        0    256    -->     0
+  Macrocell Enables               256        0    256    -->     0
+  Macrocell Resets                256       20    236    -->     7
+  Macrocell Presets               256       14    242    -->     5
+
+Global Routing Pool               324        0    324    -->     0
+  GRP from IFB                     ..        0     ..    -->    ..
+    (from input signals)           ..        0     ..    -->    ..
+    (from output signals)          ..        0     ..    -->    ..
+    (from bidir signals)           ..        0     ..    -->    ..
+  GRP from MFB                     ..        0     ..    -->    ..
+----------------------------------------------------------------------
+
+&lt;Note&gt; 1 : The available PT is the product term that has not been used.
+&lt;Note&gt; 2 : IFB is I/O feedback.
+&lt;Note&gt; 3 : MFB is macrocell feedback.
+&lt;Note&gt; 4 : The Product Term Cluster and the Biput Product Term Cluster counts
+           are estimates only if the design failed during partitioning.
+
+
+<A name="GLB_Resource_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Resource_Summary</big></B></U></FONT>
+<BR>
+<B>                                                                                     # of PT
+               ---  Fanin  ---    I/O    Input  Macrocells       Macrocells   Logic  clusters
+             Unique Shared Total  Pins    Regs Used Inaccessible  available    PTs   used
+-------------------------------------------------------------------------------------------
+Maximum
+  GLB                      36      *(1)     8   --     --             16       80       16
+</B>-------------------------------------------------------------------------------------------
+  GLB    A      0     0     0      0/4      0    0      0             16        0        0
+  GLB    B      0     0     0      0/4      0    0      0             16        0        0
+  GLB    C      0     0     0      0/4      0    0      0             16        0        0
+  GLB    D      0     0     0      0/4      0    0      0             16        0        0
+-------------------------------------------------------------------------------------------
+  GLB    E      0     0     0      0/4      0    0      0             16        0        0
+  GLB    F      0     0     0      0/4      0    0      0             16        0        0
+  GLB    G      0     0     0      0/4      0    0      0             16        0        0
+  GLB    H      0     0     0      0/4      0    0      0             16        0        0
+-------------------------------------------------------------------------------------------
+  GLB    I      0     0     0      0/4      0    0      0             16        0        0
+  GLB    J      0     0     0      0/4      0    0      0             16        0        0
+  GLB    K      0     0     0      0/4      0    0      0             16        0        0
+  GLB    L      0     0     0      0/4      0    0      0             16        0        0
+-------------------------------------------------------------------------------------------
+  GLB    M      0     0     0      0/4      0    0      0             16        0        0
+  GLB    N      0     0     0      0/4      0    0      0             16        0        0
+  GLB    O      0     0     0      0/4      0    0      0             16        0        0
+  GLB    P      0     0     0      0/4      0    0      0             16        0        0
+-------------------------------------------------------------------------------------------
+TOTALS:         0     0     0      0/64     0    0      0            256        0        0
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of IOs depends on the GLB.
+&lt;Note&gt; 2 : Four rightmost columns above reflect last status of the placement process.
+
+
+<A name="GLB_Control_Summary"></A><FONT COLOR=maroon><U><B><big>GLB_Control_Summary</big></B></U></FONT>
+<BR>
+<B>           Shared Shared | Mcell  Mcell  Mcell  Mcell  Mcell 
+           Clk/CE Rst/Pr | Clock  CE     Enable Reset  Preset
+------------------------------------------------------------------------------
+Maximum
+  GLB        1      1        16     16     16     16     16  
+==============================================================================
+</B>  GLB    A   0      0         0      0      0      0      0
+  GLB    B   0      0         0      0      0      0      0
+  GLB    C   0      0         0      0      0      0      0
+  GLB    D   0      0         0      0      0      0      0
+------------------------------------------------------------------------------
+  GLB    E   0      0         0      0      0      0      0
+  GLB    F   0      0         0      0      0      0      0
+  GLB    G   0      0         0      0      0      0      0
+  GLB    H   0      0         0      0      0      0      0
+------------------------------------------------------------------------------
+  GLB    I   0      0         0      0      0      0      0
+  GLB    J   0      0         0      0      0      0      0
+  GLB    K   0      0         0      0      0      0      0
+  GLB    L   0      0         0      0      0      0      0
+------------------------------------------------------------------------------
+  GLB    M   0      0         0      0      0      0      0
+  GLB    N   0      0         0      0      0      0      0
+  GLB    O   0      0         0      0      0      0      0
+  GLB    P   0      0         0      0      0      0      0
+------------------------------------------------------------------------------
+
+&lt;Note&gt; 1 : For ispMACH 4000 devices, the number of output enables depends on the GLB.
+
+
+<A name="Optimizer_and_Fitter_Options"></A><FONT COLOR=maroon><U><B><big>Optimizer_and_Fitter_Options</big></B></U></FONT>
+<BR>
+Pin Assignment :                       Yes
+Group Assignment :                     No
+Pin Reservation :                      No
+
+@Ignore_Project_Constraints :
+  Pin Assignments :                    No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+  Group Assignments :                  No
+  Macrocell Assignment :               No
+      Keep Block Assignment            --
+      Keep Segment Assignment          --
+
+@Backannotate_Project_Constraints
+  Pin Assignments :                    No
+  Pin And Block Assignments :          No
+  Pin, Macrocell and Block :           No
+
+@Timing_Constraints :                  No
+
+@Global_Project_Optimization :
+  Balanced Partitioning :              No
+  Spread Placement :                   Yes
+
+  Note :
+    Pack Design :
+       Balanced Partitioning = No
+       Spread Placement      = No
+    Spread Design :
+       Balanced Partitioning = Yes
+       Spread Placement      = Yes
+
+
+@Logic_Synthesis :
+  Logic Reduction :                    Yes
+  Node Collapsing :                    FMAX
+  Fmax_Logic_Level :                   1
+  D/T Synthesis :                      Yes
+  XOR Synthesis :                      Yes
+  Max. P-Term for Collapsing :         16
+  Max. P-Term for Splitting :          80
+  Max Symbols :                        24
+
+@Utilization_options
+  Max. % of Macrocells used :          100
+@User_Signature                        
+@IO_Types                              Default = LVCMOS18 (2)
+@Output_Slew_Rate                      Default = FAST (2)
+@Power                                 Default = HIGH (2)
+@Pull                                  Default = PULLUP_DOWN (2)
+@Input_Registers                       Default = None (2)
+@Register_Powerup                      Default = None
+
+Device Options:
+&lt;Note&gt; 1 : Reserved unused I/Os can be independently driven to Low or High, and does not
+           follow the drive level set for the Global Configure Unused I/O Option.
+&lt;Note&gt; 2 : For user-specified constraints on individual signals, refer to the Output,
+           Bidir and Buried Signal Lists.
+
+
+<A name="Pinout_Listing"></A><FONT COLOR=maroon><U><B><big>Pinout_Listing</big></B></U></FONT>
+<BR>
+<B>      | Pin   | Bank |GLB |Assigned|                 | Signal|            | PG
+Pin No| Type  |Number|Pad |Pin     |     I/O Type    | Type  | Signal name| Enable
+</B>----------------------------------------------------------------------------------
+1     | GND   |   -  |    |        |                 |       |            |
+2     | TDI   |   -  |    |        |                 |       |            |
+3     |  I_O  |   0  |C12 |        |                 |       |            |
+4     |  I_O  |   0  |C10 |        |                 |       |            |
+5     |  I_O  |   0  |C6  |        |                 |       |            |
+6     |  I_O  |   0  |C2  |        |                 |       |            |
+7     |GNDIO0 |   -  |    |        |                 |       |            |
+8     |  I_O  |   0  |D12 |        |                 |       |            |
+9     |  I_O  |   0  |D10 |        |                 |       |            |
+10    |  I_O  |   0  |D6  |        |                 |       |            |
+11    |  I_O  |   0  |D4  |        |                 |       |            |
+12    | IN0   |   0  |    |        |                 |       |            |
+13    |VCCIO0 |   -  |    |        |                 |       |            |
+14    |  I_O  |   0  |E4  |        |                 |       |            |
+15    |  I_O  |   0  |E6  |        |                 |       |            |
+16    |  I_O  |   0  |E10 |        |                 |       |            |
+17    |  I_O  |   0  |E12 |        |                 |       |            |
+18    |GNDIO0 |   -  |    |        |                 |       |            |
+19    |  I_O  |   0  |F2  |        |                 |       |            |
+20    |  I_O  |   0  |F6  |        |                 |       |            |
+21    |  I_O  |   0  |F10 |        |                 |       |            |
+22    |  I_O  |   0  |F12 |        |                 |       |            |
+23    | IN1   |   0  |    |        |                 |       |            |
+24    | TCK   |   -  |    |        |                 |       |            |
+25    | VCC   |   -  |    |        |                 |       |            |
+26    | GND   |   -  |    |        |                 |       |            |
+27    | IN2   |   0  |    |        |                 |       |            |
+28    |  I_O  |   0  |G12 |        |                 |       |            |
+29    |  I_O  |   0  |G10 |        |                 |       |            |
+30    |  I_O  |   0  |G6  |        |                 |       |            |
+31    |  I_O  |   0  |G2  |        |                 |       |            |
+32    |GNDIO0 |   -  |    |        |                 |       |            |
+33    |VCCIO0 |   -  |    |        |                 |       |            |
+34    |  I_O  |   0  |H12 |        |                 |       |            |
+35    |  I_O  |   0  |H10 |        |                 |       |            |
+36    |  I_O  |   0  |H6  |        |                 |       |            |
+37    |  I_O  |   0  |H2  |        |                 |       |            |
+38    |INCLK1 |   0  |    |        |                 |       |            |
+39    |INCLK2 |   1  |    |        |                 |       |            |
+40    | VCC   |   -  |    |        |                 |       |            |
+41    |  I_O  |   1  |I2  |        |                 |       |            |
+42    |  I_O  |   1  |I6  |        |                 |       |            |
+43    |  I_O  |   1  |I10 |        |                 |       |            |
+44    |  I_O  |   1  |I12 |        |                 |       |            |
+45    |VCCIO1 |   -  |    |        |                 |       |            |
+46    |GNDIO1 |   -  |    |        |                 |       |            |
+47    |  I_O  |   1  |J2  |        |                 |       |            |
+48    |  I_O  |   1  |J6  |        |                 |       |            |
+49    |  I_O  |   1  |J10 |        |                 |       |            |
+50    |  I_O  |   1  |J12 |        |                 |       |            |
+51    | GND   |   -  |    |        |                 |       |            |
+52    | TMS   |   -  |    |        |                 |       |            |
+53    |  I_O  |   1  |K12 |        |                 |       |            |
+54    |  I_O  |   1  |K10 |        |                 |       |            |
+55    |  I_O  |   1  |K6  |        |                 |       |            |
+56    |  I_O  |   1  |K2  |        |                 |       |            |
+57    |GNDIO1 |   -  |    |        |                 |       |            |
+58    |  I_O  |   1  |L12 |        |                 |       |            |
+59    |  I_O  |   1  |L10 |        |                 |       |            |
+60    |  I_O  |   1  |L6  |        |                 |       |            |
+61    |  I_O  |   1  |L4  |        |                 |       |            |
+62    | IN3   |   1  |    |        |                 |       |            |
+63    |VCCIO1 |   -  |    |        |                 |       |            |
+64    |  I_O  |   1  |M4  |        |                 |       |            |
+65    |  I_O  |   1  |M6  |        |                 |       |            |
+66    |  I_O  |   1  |M10 |        |                 |       |            |
+67    |  I_O  |   1  |M12 |        |                 |       |            |
+68    |GNDIO1 |   -  |    |        |                 |       |            |
+69    |  I_O  |   1  |N2  |        |                 |       |            |
+70    |  I_O  |   1  |N6  |        |                 |       |            |
+71    |  I_O  |   1  |N10 |        |                 |       |            |
+72    |  I_O  |   1  |N12 |        |                 |       |            |
+73    | IN4   |   1  |    |        |                 |       |            |
+74    | TDO   |   -  |    |        |                 |       |            |
+75    | VCC   |   -  |    |        |                 |       |            |
+76    | GND   |   -  |    |        |                 |       |            |
+77    | IN5   |   1  |    |        |                 |       |            |
+78    |  I_O  |   1  |O12 |        |                 |       |            |
+79    |  I_O  |   1  |O10 |        |                 |       |            |
+80    |  I_O  |   1  |O6  |        |                 |       |            |
+81    |  I_O  |   1  |O2  |        |                 |       |            |
+82    |GNDIO1 |   -  |    |        |                 |       |            |
+83    |VCCIO1 |   -  |    |        |                 |       |            |
+84    |  I_O  |   1  |P12 |        |                 |       |            |
+85    |  I_O  |   1  |P10 |        |                 |       |            |
+86    |  I_O  |   1  |P6  |        |                 |       |            |
+87    | I_O/OE|   1  |P2  |        |                 |       |            |
+88    |INCLK3 |   1  |    |        |                 |       |            |
+89    |INCLK0 |   0  |    |        |                 |       |            |
+90    | VCC   |   -  |    |        |                 |       |            |
+91    | I_O/OE|   0  |A2  |        |                 |       |            |
+92    |  I_O  |   0  |A6  |        |                 |       |            |
+93    |  I_O  |   0  |A10 |        |                 |       |            |
+94    |  I_O  |   0  |A12 |        |                 |       |            |
+95    |VCCIO0 |   -  |    |        |                 |       |            |
+96    |GNDIO0 |   -  |    |        |                 |       |            |
+97    |  I_O  |   0  |B2  |        |                 |       |            |
+98    |  I_O  |   0  |B6  |        |                 |       |            |
+99    |  I_O  |   0  |B10 |        |                 |       |            |
+100   |  I_O  |   0  |B12 |        |                 |       |            |
+----------------------------------------------------------------------------------
+
+&lt;Note&gt; GLB Pad : This notation refers to the GLB I/O pad number in the device.
+&lt;Note&gt; Assigned Pin : user or dedicated input assignment (E.g. Clock pins).
+&lt;Note&gt; Pin Type : 
+          ClkIn : Dedicated input or clock pin 
+           CLK  : Dedicated clock pin
+           I_O  : Input/Output pin
+           INP  : Dedicated input pin
+           JTAG : JTAG Control and test pin
+           NC   : No connected
+
+
+<A name="Input_Signal_List"></A><FONT COLOR=maroon><U><B><big>Input_Signal_List</big></B></U></FONT>
+<BR>
+<B>                Input
+         Pin    Fanout
+ Pin GLB Type                       Pullup Signal
+</B>-------------------------------------------------
+  --  --           ----------------      Up <A name=6>DIP0</A>
+  --  --           ----------------      Up <A name=7>DIP1</A>
+  --  --           ----------------      Up <A name=8>DIP2</A>
+  --  --           ----------------      Up <A name=9>DIP3</A>
+  --  --           ----------------      Up <A name=10>DIP4</A>
+  --  --           ----------------      Up <A name=11>DIP5</A>
+  --  --           ----------------      Up <A name=12>DIP6</A>
+  --  --           ----------------      Up <A name=13>DIP7</A>
+  --  --           ----------------      Up <A name=64>LED19</A>
+  --  --           ----------------      Up <A name=14>S1_NC</A>
+  --  --           ----------------      Up <A name=15>S1_NO</A>
+  --  --           ----------------      Up <A name=16>S2_NC</A>
+  --  --           ----------------      Up <A name=17>S2_NO</A>
+-------------------------------------------------
+
+
+<A name="Output_Signal_List"></A><FONT COLOR=maroon><U><B><big>Output_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Output
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+</B>-------------------------------------------------------------------------------
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#34>DIS1a</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#35>DIS1b</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#36>DIS1c</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#37>DIS1d</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#38>DIS1e</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#39>DIS1f</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#40>DIS1g</A>
+  --  --  3  -   2  0 COM                   ----------------  Fast   Down <A href=#41>DIS2a</A>
+  --  --  3  -   2  0 COM                   ----------------  Fast   Down <A href=#42>DIS2b</A>
+  --  --  3  -   1  0 COM                   ----------------  Fast   Down <A href=#43>DIS2c</A>
+  --  --  3  -   3  0 COM                   ----------------  Fast   Down <A href=#44>DIS2d</A>
+  --  --  3  -   2  0 COM                   ----------------  Fast   Down <A href=#45>DIS2e</A>
+  --  --  3  -   3  0 COM                   ----------------  Fast   Down <A href=#46>DIS2f</A>
+  --  --  3  -   2  0 COM                   ----------------  Fast   Down <A href=#47>DIS2g</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#48>DIS3a</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#49>DIS3b</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#50>DIS3c</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#51>DIS3d</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#52>DIS3e</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#53>DIS3f</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#54>DIS3g</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#55>DIS4a</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#56>DIS4b</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#57>DIS4c</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#58>DIS4d</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#59>DIS4e</A>
+  --  --  4  -   4  0 COM                   ----------------  Fast   Down <A href=#60>DIS4f</A>
+  --  --  4  -   3  0 COM                   ----------------  Fast   Down <A href=#61>DIS4g</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#18>LED0</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#19>LED1</A>
+  --  --  7  -   4  0 DFF  *   R            ----------------  Fast   Down <A href=#28>LED10</A>
+  --  --  7  -   4  0 DFF  *   R            ----------------  Fast   Down <A href=#29>LED11</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#30>LED12</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#31>LED13</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#32>LED14</A>
+  --  --  5  -   3  0 DFF  *   R            ----------------  Fast   Down <A href=#33>LED15</A>
+  --  --  6  -   2  0 DFF  * * R            ----------------  Fast   Down <A href=#75>LED16</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#62>LED17</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#63>LED18</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#20>LED2</A>
+  --  --  2  -   1  0 COM                   ----------------  Fast   Down <A href=#65>LED20</A>
+  --  --  2  -   1  0 COM                   ----------------  Fast   Down <A href=#66>LED21</A>
+  --  --  2  -   1  0 COM                   ----------------  Fast   Down <A href=#67>LED22</A>
+  --  --  2  -   1  0 COM                   ----------------  Fast   Down <A href=#68>LED23</A>
+  --  -- 10  -   5  0 DFF  *   R            ----------------  Fast   Down <A href=#69>LED24</A>
+  --  -- 10  -   5  0 DFF  *   R            ----------------  Fast   Down <A href=#70>LED25</A>
+  --  -- 10  -   5  0 DFF  *   R            ----------------  Fast   Down <A href=#71>LED26</A>
+  --  -- 10  -   5  0 DFF  *   R            ----------------  Fast   Down <A href=#72>LED27</A>
+  --  --  2  -   3  0 DFF  * * R            ----------------  Fast   Down <A href=#73>LED28</A>
+  --  --  2  -   3  0 DFF  * * R            ----------------  Fast   Down <A href=#74>LED29</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#21>LED3</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#22>LED4</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#23>LED5</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#24>LED6</A>
+  --  --  1  -   1  0 COM                   ----------------  Fast   Down <A href=#25>LED7</A>
+  --  --  7  -   4  0 DFF  *   R            ----------------  Fast   Down <A href=#26>LED8</A>
+  --  --  7  -   4  0 DFF  *   R            ----------------  Fast   Down <A href=#27>LED9</A>
+-------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Bidir_Signal_List"></A><FONT COLOR=maroon><U><B><big>Bidir_Signal_List</big></B></U></FONT>
+<BR>
+<B>          I         C      P R P       O Bidir
+          N         L Mc   R E U C O F B Fanout
+ Pin GLB  P LL PTs  S Type E S P E E P P                     Slew Pullup Signal
+</B>-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="Buried_Signal_List"></A><FONT COLOR=maroon><U><B><big>Buried_Signal_List</big></B></U></FONT>
+<BR>
+<B>        I         C      P R P       Node
+        N         L Mc   R E U C I F Fanout
+Mc GLB  P LL PTs  S Type E S P E R P                     Signal
+</B>---------------------------------------------------------------
+--  -- 16  -  34  0 DFF    * R          ----------------  <A href=#207>CF</A>
+--  -- 20  -  40  0 DFF    * R          ----------------  <A href=#208>NF</A>
+--  --  2  -   2  0 DFF  * * R          ----------------  <A href=#76>S1BC</A>
+--  --  2  -   2  0 DFF  * * R          ----------------  <A href=#77>S2BC</A>
+--  -- 16  -  35  0 DFF    * R          ----------------  <A href=#210>VF</A>
+--  -- 23  -  38  0 DFF    * R          ----------------  <A href=#209>ZF</A>
+--  --  5  -   3  0 COM                 ----------------  <A href=#177>ab3</A>
+--  --  5  -   3  0 COM                 ----------------  <A href=#185>ale</A>
+--  --  4  -   2  0 COM                 ----------------  <A href=#186>alx</A>
+--  --  4  -   2  0 COM                 ----------------  <A href=#187>aly</A>
+--  -- 13  -   8  0 DFF    * R          ----------------  <A href=#191>areg0</A>
+--  -- 15  -  12  0 DFF    * R          ----------------  <A href=#190>areg1</A>
+--  -- 17  -  20  0 DFF    * R          ----------------  <A href=#189>areg2</A>
+--  -- 19  -  43  0 TFF    * R          ----------------  <A href=#188>areg3</A>
+--  -- 28  -  42  0 COM                 ----------------  <A href=#195>db0</A>
+--  -- 28  -  42  0 COM                 ----------------  <A href=#194>db1</A>
+--  -- 28  -  42  0 COM                 ----------------  <A href=#193>db2</A>
+--  -- 28  -  42  0 COM                 ----------------  <A href=#192>db3</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#202>dm0</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#201>dm1</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#200>dm2</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#199>dm3</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#198>dm4</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#197>dm5</A>
+--  -- 18  -  14  0 COM                 ----------------  <A href=#196>dm6</A>
+--  -- 27  -  31  0 DFF    * R          ----------------  <A href=#184>ir4</A>
+--  -- 27  -  31  0 DFF    * R          ----------------  <A href=#183>ir5</A>
+--  -- 27  -  31  0 DFF    * R          ----------------  <A href=#182>ir6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#84>m0q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#83>m0q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#82>m0q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#81>m0q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#80>m0q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#79>m0q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#78>m0q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#154>m10q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#153>m10q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#152>m10q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#151>m10q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#150>m10q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#149>m10q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#148>m10q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#161>m11q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#160>m11q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#159>m11q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#158>m11q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#157>m11q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#156>m11q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#155>m11q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#168>m12q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#167>m12q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#166>m12q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#165>m12q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#164>m12q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#163>m12q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#162>m12q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#175>m13q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#174>m13q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#173>m13q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#172>m13q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#171>m13q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#170>m13q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#169>m13q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#91>m1q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#90>m1q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#89>m1q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#88>m1q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#87>m1q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#86>m1q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#85>m1q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#98>m2q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#97>m2q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#96>m2q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#95>m2q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#94>m2q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#93>m2q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#92>m2q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#105>m3q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#104>m3q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#103>m3q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#102>m3q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#101>m3q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#100>m3q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#99>m3q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#112>m4q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#111>m4q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#110>m4q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#109>m4q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#108>m4q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#107>m4q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#106>m4q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#119>m5q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#118>m5q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#117>m5q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#116>m5q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#115>m5q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#114>m5q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#113>m5q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#126>m6q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#125>m6q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#124>m6q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#123>m6q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#122>m6q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#121>m6q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#120>m6q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#133>m7q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#132>m7q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#131>m7q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#130>m7q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#129>m7q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#128>m7q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#127>m7q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#140>m8q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#139>m8q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#138>m8q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#137>m8q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#136>m8q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#135>m8q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#134>m8q6</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#147>m9q0</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#146>m9q1</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#145>m9q2</A>
+--  -- 17  -   6  0 TFF      R          ----------------  <A href=#144>m9q3</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#143>m9q4</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#142>m9q5</A>
+--  -- 16  -   5  0 TFF      R          ----------------  <A href=#141>m9q6</A>
+--  --  3  -   4  0 DFF      R          ----------------  <A href=#206>mar0</A>
+--  --  6  -   6  0 DFF      R          ----------------  <A href=#205>mar1</A>
+--  --  6  -   6  0 DFF      R          ----------------  <A href=#204>mar2</A>
+--  --  6  -   6  0 DFF      R          ----------------  <A href=#203>mar3</A>
+--  --  3  -   2  0 COM                 ----------------  <A href=#176>memclk</A>
+--  --  6  -   4  0 DFF    * R          ----------------  <A href=#181>pc0</A>
+--  --  7  -   5  0 DFF    * R          ----------------  <A href=#180>pc1</A>
+--  --  8  -   6  0 DFF    * R          ----------------  <A href=#179>pc2</A>
+--  --  9  -   4  0 DFF    * R          ----------------  <A href=#178>pc3</A>
+---------------------------------------------------------------
+
+&lt;Note&gt; CLS = Number of clusters used
+       INP = Number of input signals
+       PTs = Number of product terms
+        LL = Number of logic levels
+       PRE = Has preset equation
+       RES = Has reset equation
+       PUP = Power-Up initial state: R=Reset, S=Set
+        CE = Has clock enable equation
+        OE = Has output enable equation
+        IR = Input register
+        FP = Fast path used
+       OBP = ORP bypass used
+
+
+<A name="PostFit_Equations"></A><FONT COLOR=maroon><U><B><big>PostFit_Equations</big></B></U></FONT>
+<BR>
+<A name=207>CF.D</A> = <A href=#185>ale</A> & !<A href=#186>alx</A> & !<A href=#187>aly</A> & <A href=#189>areg2.Q</A> & <A href=#190>areg1.Q</A> & <A href=#191>areg0.Q</A> & <A href=#192>db3</A> & <A href=#195>db0</A>
+    # ale & !alx & aly & !areg2.Q & !areg1.Q & !areg0.Q & db3 & db0
+    # ale & !alx & !aly & areg1.Q & areg0.Q & db3 & <A href=#193>db2</A> & db0
+    # ale & !alx & aly & !areg1.Q & !areg0.Q & db3 & db2 & db0
+    # ale & !alx & !aly & areg2.Q & areg0.Q & db3 & <A href=#194>db1</A> & db0
+    # ale & !alx & aly & !areg2.Q & !areg0.Q & db3 & db1 & db0
+    # ale & !alx & !aly & areg0.Q & db3 & db2 & db1 & db0
+    # ale & !alx & aly & !areg0.Q & db3 & db2 & db1 & db0
+    # ale & !alx & !aly & areg2.Q & areg1.Q & db3 & db1
+    # ale & !alx & aly & !areg2.Q & !areg1.Q & db3 & db1
+    # ale & !alx & !aly & areg1.Q & db3 & db2 & db1
+    # ale & !alx & aly & !areg1.Q & db3 & db2 & db1
+    # ale & !alx & !aly & areg2.Q & db3 & db2
+    # ale & !alx & aly & !areg2.Q & db3 & db2
+    # ale & !alx & !aly & <A href=#188>areg3.Q</A> & areg2.Q & areg1.Q & areg0.Q & db0
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg1.Q & !areg0.Q & db0
+    # ale & !alx & !aly & areg3.Q & areg2.Q & areg0.Q & db1 & db0
+    # ale & !alx & !aly & areg3.Q & areg1.Q & areg0.Q & db2 & db0
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg0.Q & db1 & db0
+    # ale & !alx & aly & !areg3.Q & !areg1.Q & !areg0.Q & db2 & db0
+    # ale & !alx & !aly & areg3.Q & areg0.Q & db2 & db1 & db0
+    # ale & !alx & aly & !areg3.Q & !areg0.Q & db2 & db1 & db0
+    # ale & !alx & !aly & areg3.Q & areg2.Q & areg1.Q & db1
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg1.Q & db1
+    # ale & !alx & !aly & areg3.Q & areg1.Q & db2 & db1
+    # ale & !alx & aly & !areg3.Q & !areg1.Q & db2 & db1
+    # ale & !alx & !aly & areg3.Q & areg2.Q & db2
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & db2
+    # !ale & <A href=#207>CF.Q</A>
+    # alx & CF.Q
+    # ale & !alx & !aly & areg3.Q & db3
+    # ale & !alx & aly & !areg3.Q & db3 ; (32 pterms, 12 signals)
+CF.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+CF.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=34>DIS1a</A> = !<A href=#199>dm3</A> & <A href=#200>dm2</A> & !<A href=#201>dm1</A> & !<A href=#202>dm0</A>
+    # dm3 & !dm2 & dm1 & dm0
+    # !dm3 & !dm2 & !dm1 & dm0
+    # dm3 & dm2 & !dm1 & dm0 ; (4 pterms, 4 signals)
+
+<A name=35>DIS1b</A> = !<A href=#199>dm3</A> & <A href=#200>dm2</A> & !<A href=#201>dm1</A> & <A href=#202>dm0</A>
+    # dm3 & dm1 & dm0
+    # dm3 & dm2 & !dm0
+    # dm2 & dm1 & !dm0 ; (4 pterms, 4 signals)
+
+<A name=36>DIS1c</A> = !<A href=#199>dm3</A> & !<A href=#200>dm2</A> & <A href=#201>dm1</A> & !<A href=#202>dm0</A>
+    # dm3 & dm2 & !dm0
+    # dm3 & dm2 & dm1 ; (3 pterms, 4 signals)
+
+<A name=37>DIS1d</A> = <A href=#199>dm3</A> & !<A href=#200>dm2</A> & <A href=#201>dm1</A> & !<A href=#202>dm0</A>
+    # !dm3 & dm2 & !dm1 & !dm0
+    # !dm3 & !dm2 & !dm1 & dm0
+    # dm2 & dm1 & dm0 ; (4 pterms, 4 signals)
+
+<A name=38>DIS1e</A> = !<A href=#199>dm3</A> & <A href=#200>dm2</A> & !<A href=#201>dm1</A>
+    # !dm2 & !dm1 & <A href=#202>dm0</A>
+    # !dm3 & dm0 ; (3 pterms, 4 signals)
+
+<A name=39>DIS1f</A> = <A href=#199>dm3</A> & <A href=#200>dm2</A> & !<A href=#201>dm1</A> & <A href=#202>dm0</A>
+    # !dm3 & !dm2 & dm1
+    # !dm3 & !dm2 & dm0
+    # !dm3 & dm1 & dm0 ; (4 pterms, 4 signals)
+
+<A name=40>DIS1g</A> = <A href=#199>dm3</A> & <A href=#200>dm2</A> & !<A href=#201>dm1</A> & !<A href=#202>dm0</A>
+    # !dm3 & dm2 & dm1 & dm0
+    # !dm3 & !dm2 & !dm1 ; (3 pterms, 4 signals)
+
+<A name=41>DIS2a</A> = <A href=#196>dm6</A> & !<A href=#197>dm5</A> & !<A href=#198>dm4</A>
+    # !dm6 & !dm5 & dm4 ; (2 pterms, 3 signals)
+
+<A name=42>DIS2b</A> = <A href=#196>dm6</A> & <A href=#197>dm5</A> & !<A href=#198>dm4</A>
+    # dm6 & !dm5 & dm4 ; (2 pterms, 3 signals)
+
+<A name=43>DIS2c</A> = !<A href=#196>dm6</A> & <A href=#197>dm5</A> & !<A href=#198>dm4</A> ; (1 pterm, 3 signals)
+
+<A name=44>DIS2d</A> = <A href=#196>dm6</A> & !<A href=#197>dm5</A> & !<A href=#198>dm4</A>
+    # !dm6 & !dm5 & dm4
+    # dm6 & dm5 & dm4 ; (3 pterms, 3 signals)
+
+<A name=45>DIS2e</A> = <A href=#196>dm6</A> & !<A href=#197>dm5</A>
+    # <A href=#198>dm4</A> ; (2 pterms, 3 signals)
+
+<A name=46>DIS2f</A> = !<A href=#196>dm6</A> & <A href=#197>dm5</A>
+    # !dm6 & <A href=#198>dm4</A>
+    # dm5 & dm4 ; (3 pterms, 3 signals)
+
+<A name=47>DIS2g</A> = <A href=#196>dm6</A> & <A href=#197>dm5</A> & <A href=#198>dm4</A>
+    # !dm6 & !dm5 ; (2 pterms, 3 signals)
+
+<A name=48>DIS3a</A> = !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 4 signals)
+
+<A name=49>DIS3b</A> = !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # mar3.Q & mar1.Q & mar0.Q
+    # mar3.Q & mar2.Q & !mar0.Q
+    # mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 4 signals)
+
+<A name=50>DIS3c</A> = !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # mar3.Q & mar2.Q & !mar0.Q
+    # mar3.Q & mar2.Q & mar1.Q ; (3 pterms, 4 signals)
+
+<A name=51>DIS3d</A> = <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 4 signals)
+
+<A name=52>DIS3e</A> = !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A>
+    # !mar2.Q & !mar1.Q & <A href=#206>mar0.Q</A>
+    # !mar3.Q & mar0.Q ; (3 pterms, 4 signals)
+
+<A name=53>DIS3f</A> = <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !mar3.Q & !mar2.Q & mar1.Q
+    # !mar3.Q & !mar2.Q & mar0.Q
+    # !mar3.Q & mar1.Q & mar0.Q ; (4 pterms, 4 signals)
+
+<A name=54>DIS3g</A> = <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # !mar3.Q & !mar2.Q & !mar1.Q ; (3 pterms, 4 signals)
+
+<A name=55>DIS4a</A> = !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # pc3.Q & pc2.Q & !pc1.Q & pc0.Q ; (4 pterms, 4 signals)
+
+<A name=56>DIS4b</A> = !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # pc3.Q & pc1.Q & pc0.Q
+    # pc3.Q & pc2.Q & !pc0.Q
+    # pc2.Q & pc1.Q & !pc0.Q ; (4 pterms, 4 signals)
+
+<A name=57>DIS4c</A> = !<A href=#178>pc3.Q</A> & !<A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # pc3.Q & pc2.Q & !pc0.Q
+    # pc3.Q & pc2.Q & pc1.Q ; (3 pterms, 4 signals)
+
+<A name=58>DIS4d</A> = <A href=#178>pc3.Q</A> & !<A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # !pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # pc2.Q & pc1.Q & pc0.Q ; (4 pterms, 4 signals)
+
+<A name=59>DIS4e</A> = !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A>
+    # !pc2.Q & !pc1.Q & <A href=#181>pc0.Q</A>
+    # !pc3.Q & pc0.Q ; (3 pterms, 4 signals)
+
+<A name=60>DIS4f</A> = <A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # !pc3.Q & !pc2.Q & pc1.Q
+    # !pc3.Q & !pc2.Q & pc0.Q
+    # !pc3.Q & pc1.Q & pc0.Q ; (4 pterms, 4 signals)
+
+<A name=61>DIS4g</A> = <A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # !pc3.Q & pc2.Q & pc1.Q & pc0.Q
+    # !pc3.Q & !pc2.Q & !pc1.Q ; (3 pterms, 4 signals)
+
+<A name=18>LED0</A> = !<A href=#191>areg0.Q</A> ; (1 pterm, 1 signal)
+
+<A name=19>LED1</A> = !<A href=#190>areg1.Q</A> ; (1 pterm, 1 signal)
+
+<A name=28>LED10.D</A> = <A href=#28>LED10.Q</A> & !<A href=#33>LED15.Q</A>
+    # LED15.Q & !<A href=#193>db2</A> ; (2 pterms, 3 signals)
+LED10.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED10.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=29>LED11.D</A> = <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A>
+    # LED15.Q & !<A href=#192>db3</A> ; (2 pterms, 3 signals)
+LED11.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED11.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=30>LED12</A> = !<A href=#184>ir4.Q</A> ; (1 pterm, 1 signal)
+
+<A name=31>LED13</A> = !<A href=#183>ir5.Q</A> ; (1 pterm, 1 signal)
+
+<A name=32>LED14</A> = !<A href=#182>ir6.Q</A> ; (1 pterm, 1 signal)
+
+<A name=33>LED15.D</A> = !<A href=#33>LED15.Q</A> ; (1 pterm, 1 signal)
+LED15.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED15.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=75>LED16.D</A> = 0 ; (0 pterm, 0 signal)
+LED16.C = 0 ; (0 pterm, 0 signal)
+LED16.AR = !<A href=#33>LED15.Q</A> & !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & !<A href=#184>ir4.Q</A> ; (1 pterm, 4 signals)
+LED16.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=62>LED17</A> = <A href=#13>DIP7</A> ; (1 pterm, 1 signal)
+
+<A name=63>LED18</A> = !<A href=#13>DIP7</A> ; (1 pterm, 1 signal)
+
+<A name=20>LED2</A> = !<A href=#189>areg2.Q</A> ; (1 pterm, 1 signal)
+
+<A name=65>LED20</A> = !( <A href=#6>DIP0</A> & <A href=#13>DIP7</A> ) ; (1 pterm, 2 signals)
+
+<A name=66>LED21</A> = !( <A href=#7>DIP1</A> & <A href=#13>DIP7</A> ) ; (1 pterm, 2 signals)
+
+<A name=67>LED22</A> = !( <A href=#8>DIP2</A> & <A href=#13>DIP7</A> ) ; (1 pterm, 2 signals)
+
+<A name=68>LED23</A> = !( <A href=#9>DIP3</A> & <A href=#13>DIP7</A> ) ; (1 pterm, 2 signals)
+
+<A name=69>LED24.D.X1</A> = !<A href=#33>LED15.Q</A> & <A href=#69>LED24.Q</A> & <A href=#182>ir6.Q</A> & <A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#191>areg0.Q</A>
+    # !LED15.Q & !LED24.Q & ir6.Q & ir5.Q & ir4.Q & !areg0.Q ; (2 pterms, 6 signals)
+LED24.D.X2 = <A href=#69>LED24.Q</A> ; (1 pterm, 1 signal)
+LED24.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED24.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=70>LED25.D.X1</A> = !<A href=#33>LED15.Q</A> & <A href=#70>LED25.Q</A> & <A href=#182>ir6.Q</A> & <A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#190>areg1.Q</A>
+    # !LED15.Q & !LED25.Q & ir6.Q & ir5.Q & ir4.Q & !areg1.Q ; (2 pterms, 6 signals)
+LED25.D.X2 = <A href=#70>LED25.Q</A> ; (1 pterm, 1 signal)
+LED25.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED25.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=71>LED26.D.X1</A> = !<A href=#33>LED15.Q</A> & <A href=#71>LED26.Q</A> & <A href=#182>ir6.Q</A> & <A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#189>areg2.Q</A>
+    # !LED15.Q & !LED26.Q & ir6.Q & ir5.Q & ir4.Q & !areg2.Q ; (2 pterms, 6 signals)
+LED26.D.X2 = <A href=#71>LED26.Q</A> ; (1 pterm, 1 signal)
+LED26.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED26.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=72>LED27.D.X1</A> = !<A href=#33>LED15.Q</A> & <A href=#72>LED27.Q</A> & <A href=#182>ir6.Q</A> & <A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#188>areg3.Q</A>
+    # !LED15.Q & !LED27.Q & ir6.Q & ir5.Q & ir4.Q & !areg3.Q ; (2 pterms, 6 signals)
+LED27.D.X2 = <A href=#72>LED27.Q</A> ; (1 pterm, 1 signal)
+LED27.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED27.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=73>LED28.D</A> = 1 ; (1 pterm, 0 signal)
+LED28.C = 0 ; (0 pterm, 0 signal)
+LED28.AR = !<A href=#15>S1_NO</A> ; (1 pterm, 1 signal)
+LED28.AP = !<A href=#14>S1_NC</A> ; (1 pterm, 1 signal)
+
+<A name=74>LED29.D</A> = 1 ; (1 pterm, 0 signal)
+LED29.C = 0 ; (0 pterm, 0 signal)
+LED29.AR = !<A href=#17>S2_NO</A> ; (1 pterm, 1 signal)
+LED29.AP = !<A href=#16>S2_NC</A> ; (1 pterm, 1 signal)
+
+<A name=21>LED3</A> = !<A href=#188>areg3.Q</A> ; (1 pterm, 1 signal)
+
+<A name=22>LED4</A> = !<A href=#210>VF.Q</A> ; (1 pterm, 1 signal)
+
+<A name=23>LED5</A> = !<A href=#209>ZF.Q</A> ; (1 pterm, 1 signal)
+
+<A name=24>LED6</A> = !<A href=#208>NF.Q</A> ; (1 pterm, 1 signal)
+
+<A name=25>LED7</A> = !<A href=#207>CF.Q</A> ; (1 pterm, 1 signal)
+
+<A name=26>LED8.D</A> = <A href=#26>LED8.Q</A> & !<A href=#33>LED15.Q</A>
+    # LED15.Q & !<A href=#195>db0</A> ; (2 pterms, 3 signals)
+LED8.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED8.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=27>LED9.D</A> = <A href=#27>LED9.Q</A> & !<A href=#33>LED15.Q</A>
+    # LED15.Q & !<A href=#194>db1</A> ; (2 pterms, 3 signals)
+LED9.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+LED9.AP = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=208>NF.D.X1</A> = !<A href=#185>ale</A> & <A href=#208>NF.Q</A>
+    # ale & !<A href=#186>alx</A> & !<A href=#187>aly</A> & !<A href=#188>areg3.Q</A> & <A href=#191>areg0.Q</A> & <A href=#193>db2</A> & <A href=#194>db1</A> & <A href=#195>db0</A>
+    # ale & !alx & !aly & !areg3.Q & <A href=#190>areg1.Q</A> & db2 & db1
+    # ale & !alx & !aly & !areg3.Q & areg1.Q & areg0.Q & db2 & db0
+    # ale & !alx & !aly & !areg3.Q & <A href=#189>areg2.Q</A> & db2
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & areg0.Q & db1 & db0
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & areg1.Q & db1
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & areg1.Q & areg0.Q & db0
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & db2
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg1.Q & db1
+    # ale & !alx & aly & !areg3.Q & !areg1.Q & db2 & db1
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg1.Q & !areg0.Q & db0
+    # ale & !alx & aly & !areg3.Q & !areg1.Q & !areg0.Q & db2 & db0
+    # ale & !alx & aly & !areg3.Q & !areg2.Q & !areg0.Q & db1 & db0
+    # ale & !alx & aly & !areg3.Q & !areg0.Q & db2 & db1 & db0
+    # ale & !alx & areg3.Q & !db2 & !db1 & !db0
+    # ale & !alx & aly & areg3.Q & areg2.Q & !db2
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !db2
+    # ale & !alx & areg3.Q & !areg2.Q & areg1.Q & areg0.Q & !db2
+    # ale & !alx & areg3.Q & !areg1.Q & areg0.Q & !db2 & !db1
+    # ale & !alx & areg3.Q & areg1.Q & !areg0.Q & !db2 & !db1
+    # ale & !alx & areg3.Q & !areg2.Q & areg1.Q & !db2 & !db0
+    # ale & !alx & aly & areg3.Q & areg2.Q & areg1.Q & areg0.Q
+    # ale & !alx & aly & areg3.Q & areg2.Q & areg1.Q & !db1
+    # ale & !alx & aly & areg3.Q & areg2.Q & areg0.Q & !db1
+    # ale & !alx & aly & areg3.Q & areg2.Q & areg1.Q & !db0
+    # ale & !alx & aly & areg3.Q & areg2.Q & !db1 & !db0
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !areg1.Q & !areg0.Q
+    # ale & !alx & !aly & areg3.Q & !areg1.Q & !areg0.Q & !db2
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !areg1.Q & !db1
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !areg0.Q & !db1
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !areg1.Q & !db0
+    # ale & !alx & !aly & areg3.Q & !areg1.Q & !db2 & !db0
+    # ale & !alx & !aly & areg3.Q & !areg2.Q & !db1 & !db0
+    # ale & alx & !aly & areg3.Q & <A href=#192>db3</A>
+    # !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & ale & alx & aly & db3
+    # <A href=#9>DIP3</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly ; (37 pterms, 16 signals)
+NF.D.X2 = <A href=#185>ale</A> & !<A href=#186>alx</A> & <A href=#192>db3</A> ; (1 pterm, 3 signals)
+NF.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+NF.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=76>S1BC.D</A> = 0 ; (0 pterm, 0 signal)
+S1BC.C = 0 ; (0 pterm, 0 signal)
+S1BC.AR = !<A href=#14>S1_NC</A> ; (1 pterm, 1 signal)
+S1BC.AP = !<A href=#15>S1_NO</A> ; (1 pterm, 1 signal)
+
+<A name=77>S2BC.D</A> = 0 ; (0 pterm, 0 signal)
+S2BC.C = 0 ; (0 pterm, 0 signal)
+S2BC.AR = !<A href=#16>S2_NC</A> ; (1 pterm, 1 signal)
+S2BC.AP = !<A href=#17>S2_NO</A> ; (1 pterm, 1 signal)
+
+<A name=210>VF.D.X1</A> = !<A href=#185>ale</A> & <A href=#210>VF.Q</A>
+    # ale & !<A href=#186>alx</A> & !<A href=#187>aly</A> & !<A href=#188>areg3.Q</A> & <A href=#189>areg2.Q</A> & <A href=#193>db2</A>
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & <A href=#190>areg1.Q</A> & <A href=#194>db1</A>
+    # ale & !alx & !aly & !areg3.Q & areg1.Q & db2 & db1
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & areg1.Q & <A href=#191>areg0.Q</A> & <A href=#195>db0</A>
+    # ale & !alx & !aly & !areg3.Q & areg1.Q & areg0.Q & db2 & db0
+    # ale & !alx & !aly & !areg3.Q & areg2.Q & areg0.Q & db1 & db0
+    # ale & !alx & !aly & !areg3.Q & areg0.Q & db2 & db1 & db0
+    # ale & !alx & !aly & !areg3.Q & <A href=#192>db3</A>
+    # ale & !alx & !areg3.Q & !areg2.Q & db3 & db2
+    # ale & !alx & !areg3.Q & !areg2.Q & !areg1.Q & db3 & db1
+    # ale & !alx & !areg3.Q & !areg1.Q & db3 & db2 & db1
+    # ale & !alx & !areg3.Q & !areg2.Q & !areg1.Q & !areg0.Q & db3 & db0
+    # ale & !alx & !areg3.Q & !areg1.Q & !areg0.Q & db3 & db2 & db0
+    # ale & !alx & !areg3.Q & !areg2.Q & !areg0.Q & db3 & db1 & db0
+    # ale & !alx & !areg3.Q & !areg0.Q & db3 & db2 & db1 & db0
+    # ale & !alx & aly & areg3.Q & !areg2.Q & db2
+    # ale & !alx & aly & areg3.Q & !areg2.Q & !areg1.Q & db1
+    # ale & !alx & aly & areg3.Q & !areg1.Q & db2 & db1
+    # ale & !alx & aly & areg3.Q & !areg2.Q & !areg1.Q & !areg0.Q & db0
+    # ale & !alx & aly & areg3.Q & !areg1.Q & !areg0.Q & db2 & db0
+    # ale & !alx & aly & areg3.Q & !areg2.Q & !areg0.Q & db1 & db0
+    # ale & !alx & aly & areg3.Q & !areg0.Q & db2 & db1 & db0
+    # ale & !alx & aly & areg3.Q & db3
+    # ale & !alx & areg3.Q & areg2.Q & db3 & db2
+    # ale & !alx & areg3.Q & areg2.Q & areg1.Q & db3 & db1
+    # ale & !alx & areg3.Q & areg1.Q & db3 & db2 & db1
+    # ale & !alx & areg3.Q & areg2.Q & areg1.Q & areg0.Q & db3 & db0
+    # ale & !alx & areg3.Q & areg1.Q & areg0.Q & db3 & db2 & db0
+    # ale & !alx & areg3.Q & areg2.Q & areg0.Q & db3 & db1 & db0
+    # ale & !alx & areg3.Q & areg0.Q & db3 & db2 & db1 & db0
+    # alx & VF.Q ; (32 pterms, 12 signals)
+VF.D.X2 = <A href=#185>ale</A> & !<A href=#186>alx</A> & <A href=#192>db3</A> ; (1 pterm, 3 signals)
+VF.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+VF.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=209>ZF.D</A> = !( !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#185>ale</A> & <A href=#186>alx</A> & <A href=#187>aly</A> & <A href=#192>db3</A>
+    # ale & !alx & !aly & !<A href=#188>areg3.Q</A> & !db3 & <A href=#193>db2</A>
+    # !ir6.Q & !ir5.Q & ir4.Q & ale & alx & aly & db2
+    # !ir6.Q & !ir5.Q & ir4.Q & ale & alx & aly & <A href=#195>db0</A>
+    # ale & !aly & !areg3.Q & <A href=#191>areg0.Q</A> & !db3 & db0
+    # ale & !aly & <A href=#189>areg2.Q</A> & db2 & db0
+    # !ir6.Q & !ir5.Q & ir4.Q & ale & alx & aly & <A href=#194>db1</A>
+    # ale & !alx & areg2.Q & !<A href=#190>areg1.Q</A> & !areg0.Q & !db2
+    # ale & !alx & !areg2.Q & !areg1.Q & !areg0.Q & db2
+    # ale & !alx & aly & !areg1.Q & db1
+    # ale & !alx & areg3.Q & !areg2.Q & !db3 & !db2
+    # ale & !alx & !areg3.Q & !areg2.Q & db3 & !db2
+    # ale & !aly & areg1.Q & db1 & db0
+    # ale & !aly & areg3.Q & areg1.Q & db3
+    # ale & !aly & !areg1.Q & areg0.Q & !db1 & db0
+    # ale & !alx & areg1.Q & !areg0.Q & !db1
+    # ale & !alx & areg3.Q & !areg1.Q & db3 & db1
+    # ale & !alx & !aly & !areg3.Q & !db3 & db1
+    # ale & !aly & areg3.Q & db3 & db2
+    # ale & !aly & areg2.Q & db2 & db1
+    # ale & !alx & aly & areg2.Q & !db2
+    # ale & !alx & aly & !areg2.Q & db2
+    # ale & !alx & aly & areg1.Q & !db1
+    # <A href=#6>DIP0</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly
+    # <A href=#7>DIP1</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly
+    # <A href=#8>DIP2</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly
+    # <A href=#9>DIP3</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly
+    # ale & alx & !aly & areg0.Q & db0
+    # ale & alx & !aly & areg1.Q & db1
+    # ale & alx & !aly & areg2.Q & db2
+    # ale & alx & !aly & areg3.Q & db3
+    # ale & !alx & aly & areg3.Q & !db3
+    # ale & !alx & aly & !areg3.Q & db3
+    # ale & !alx & areg0.Q & !db0
+    # ale & !alx & !areg0.Q & db0
+    # !ale & !<A href=#209>ZF.Q</A> ) ; (36 pterms, 19 signals)
+ZF.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+ZF.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=177>ab3</A> = <A href=#13>DIP7</A> & <A href=#33>LED15.Q</A> & <A href=#178>pc3.Q</A>
+    # !DIP7 & <A href=#203>mar3.Q</A>
+    # DIP7 & !<A href=#29>LED11.Q</A> & !LED15.Q ; (3 pterms, 5 signals)
+
+<A name=185>ale</A> = !<A href=#33>LED15.Q</A> & <A href=#75>LED16.Q</A> & <A href=#183>ir5.Q</A> & !<A href=#184>ir4.Q</A>
+    # !LED15.Q & LED16.Q & !<A href=#182>ir6.Q</A> & ir4.Q
+    # !LED15.Q & LED16.Q & ir6.Q & !ir4.Q ; (3 pterms, 5 signals)
+
+<A name=186>alx</A> = !<A href=#33>LED15.Q</A> & !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # !LED15.Q & ir6.Q & !ir4.Q ; (2 pterms, 4 signals)
+
+<A name=187>aly</A> = !<A href=#33>LED15.Q</A> & <A href=#182>ir6.Q</A> & <A href=#183>ir5.Q</A> & !<A href=#184>ir4.Q</A>
+    # !LED15.Q & !ir6.Q & ir4.Q ; (2 pterms, 4 signals)
+
+<A name=191>areg0.D</A> = !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & <A href=#185>ale</A> & <A href=#186>alx</A> & <A href=#187>aly</A> & <A href=#195>db0</A>
+    # <A href=#6>DIP0</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly
+    # ale & !alx & !<A href=#191>areg0.Q</A> & db0
+    # alx & !aly & areg0.Q & db0
+    # !alx & areg0.Q & !db0
+    # !ale & areg0.Q ; (6 pterms, 9 signals)
+areg0.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+areg0.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=190>areg1.D.X1</A> = <A href=#185>ale</A> & !<A href=#186>alx</A> & <A href=#187>aly</A> & !<A href=#191>areg0.Q</A> & !<A href=#194>db1</A> & <A href=#195>db0</A>
+    # ale & !alx & !aly & areg0.Q & !db1 & db0
+    # ale & !alx & db1 & !db0
+    # ale & !alx & !aly & !areg0.Q & db1
+    # ale & !alx & aly & areg0.Q & db1
+    # alx & !aly & <A href=#190>areg1.Q</A> & db1
+    # !ale & alx & areg1.Q
+    # !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & ale & alx & aly & db1
+    # <A href=#7>DIP1</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly ; (9 pterms, 11 signals)
+areg1.D.X2 = !<A href=#186>alx</A> & <A href=#190>areg1.Q</A> ; (1 pterm, 2 signals)
+areg1.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+areg1.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=189>areg2.D.X1</A> = <A href=#185>ale</A> & !<A href=#186>alx</A> & !<A href=#187>aly</A> & <A href=#190>areg1.Q</A> & !<A href=#193>db2</A> & <A href=#194>db1</A>
+    # ale & !alx & !aly & areg1.Q & <A href=#191>areg0.Q</A> & !db2 & <A href=#195>db0</A>
+    # ale & !alx & !aly & areg0.Q & !db2 & db1 & db0
+    # ale & !alx & aly & !areg1.Q & !db2 & db1
+    # ale & !alx & aly & !areg1.Q & !areg0.Q & !db2 & db0
+    # ale & !alx & aly & !areg0.Q & !db2 & db1 & db0
+    # ale & !alx & !aly & !areg1.Q & !areg0.Q & db2
+    # ale & !alx & db2 & !db1 & !db0
+    # ale & !alx & !areg1.Q & areg0.Q & db2 & !db1
+    # ale & !alx & !aly & !areg1.Q & db2 & !db0
+    # ale & !alx & areg1.Q & !areg0.Q & db2 & !db1
+    # ale & !alx & aly & areg1.Q & db2 & !db0
+    # ale & !alx & aly & areg1.Q & areg0.Q & db2
+    # alx & !aly & <A href=#189>areg2.Q</A> & db2
+    # !ale & alx & areg2.Q
+    # !<A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & ale & alx & aly & db2
+    # <A href=#8>DIP2</A> & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly ; (17 pterms, 13 signals)
+areg2.D.X2 = !<A href=#186>alx</A> & <A href=#189>areg2.Q</A> ; (1 pterm, 2 signals)
+areg2.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+areg2.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=188>areg3.T</A> = <A href=#185>ale</A> & !<A href=#186>alx</A> & !<A href=#189>areg2.Q</A> & <A href=#190>areg1.Q</A> & <A href=#191>areg0.Q</A> & !<A href=#192>db3</A> & <A href=#193>db2</A> & <A href=#195>db0</A>
+    # ale & !alx & !<A href=#187>aly</A> & areg0.Q & !db3 & db2 & <A href=#194>db1</A> & db0
+    # !<A href=#9>DIP3</A> & <A href=#182>ir6.Q</A> & ale & alx & aly & <A href=#188>areg3.Q</A>
+    # ale & !alx & areg2.Q & !areg1.Q & !areg0.Q & !db3 & db2 & db0
+    # ale & !alx & aly & !areg0.Q & !db3 & db2 & db1 & db0
+    # ale & !alx & areg2.Q & !areg1.Q & db3 & !db2 & !db0
+    # !ir6.Q & ale & alx & areg3.Q & !db3
+    # ale & !alx & areg2.Q & !areg1.Q & !areg0.Q & db3 & !db2
+    # ale & !alx & !areg2.Q & areg1.Q & db3 & !db2 & !db0
+    # ale & !alx & !areg2.Q & areg1.Q & areg0.Q & db3 & !db2
+    # ale & !alx & areg1.Q & !areg0.Q & db3 & !db2 & !db1
+    # ale & !alx & !areg1.Q & areg0.Q & db3 & !db2 & !db1
+    # ale & !alx & !areg2.Q & areg1.Q & !db3 & db2 & db1
+    # ale & !alx & areg2.Q & !areg1.Q & !db3 & db2 & db1
+    # !ir6.Q & !<A href=#184>ir4.Q</A> & ale & alx & aly & areg3.Q
+    # <A href=#183>ir5.Q</A> & ir4.Q & ale & alx & aly & areg3.Q
+    # ir6.Q & !ir5.Q & ale & alx & aly & areg3.Q
+    # DIP3 & ir6.Q & ir5.Q & !ir4.Q & ale & alx & aly & !areg3.Q
+    # !ir6.Q & !ir5.Q & ir4.Q & ale & alx & aly & !areg3.Q & db3
+    # ale & !alx & !aly & areg2.Q & areg0.Q & !db3 & db1 & db0
+    # ale & !alx & !aly & areg2.Q & areg1.Q & areg0.Q & !db3 & db0
+    # ale & !alx & aly & !areg2.Q & !areg0.Q & !db3 & db1 & db0
+    # ale & !alx & aly & !areg2.Q & !areg1.Q & !areg0.Q & !db3 & db0
+    # ale & !alx & !aly & areg2.Q & areg1.Q & !db3 & db1
+    # ale & !alx & !aly & !areg2.Q & db3 & !db1 & !db0
+    # ale & !alx & !aly & !areg2.Q & !areg1.Q & db3 & !db0
+    # ale & !alx & !aly & !areg2.Q & !areg0.Q & db3 & !db1
+    # ale & !alx & !aly & !areg2.Q & !areg1.Q & !areg0.Q & db3
+    # ale & !alx & !aly & !areg2.Q & !areg1.Q & db3 & !db1
+    # ale & !alx & aly & !areg2.Q & !areg1.Q & !db3 & db1
+    # ale & !alx & aly & areg2.Q & db3 & !db1 & !db0
+    # ale & !alx & aly & areg2.Q & areg1.Q & db3 & !db0
+    # ale & !alx & aly & areg2.Q & areg0.Q & db3 & !db1
+    # ale & !alx & aly & areg2.Q & areg1.Q & areg0.Q & db3
+    # ale & !alx & aly & areg2.Q & areg1.Q & db3 & !db1
+    # ale & !alx & db3 & !db2 & !db1 & !db0
+    # ale & !alx & !aly & areg2.Q & !db3 & db2
+    # ale & alx & !aly & areg3.Q & !db3
+    # ale & !alx & !aly & !areg2.Q & db3 & !db2
+    # ale & !alx & aly & !areg2.Q & !db3 & db2
+    # ale & !alx & aly & areg2.Q & db3 & !db2 ; (41 pterms, 15 signals)
+areg3.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+areg3.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=195>db0</A> = !<A href=#13>DIP7</A> & <A href=#84>m0q0.Q</A> & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP7 & <A href=#91>m1q0.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#98>m2q0.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#105>m3q0.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#112>m4q0.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#119>m5q0.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#126>m6q0.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#133>m7q0.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#140>m8q0.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#147>m9q0.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#154>m10q0.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#161>m11q0.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#168>m12q0.Q</A> & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#175>m13q0.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # DIP7 & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & m7q0.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m11q0.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m3q0.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m13q0.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m5q0.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m9q0.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m1q0.Q
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m6q0.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m10q0.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m2q0.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m12q0.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m4q0.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m8q0.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m0q0.Q
+    # DIP7 & LED15.Q & m7q0.Q & !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & m11q0.Q & pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m3q0.Q & !pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m13q0.Q & pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m5q0.Q & !pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m9q0.Q & pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m1q0.Q & !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m6q0.Q & !pc3.Q & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m10q0.Q & pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m2q0.Q & !pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m12q0.Q & pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m4q0.Q & !pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m8q0.Q & pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m0q0.Q & !pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q ; (42 pterms, 28 signals)
+
+<A name=194>db1</A> = !<A href=#13>DIP7</A> & <A href=#83>m0q1.Q</A> & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP7 & <A href=#90>m1q1.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#97>m2q1.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#104>m3q1.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#111>m4q1.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#118>m5q1.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#125>m6q1.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#132>m7q1.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#139>m8q1.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#146>m9q1.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#153>m10q1.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#160>m11q1.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#167>m12q1.Q</A> & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#174>m13q1.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # DIP7 & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & m7q1.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m11q1.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m3q1.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m13q1.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m5q1.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m9q1.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m1q1.Q
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m6q1.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m10q1.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m2q1.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m12q1.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m4q1.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m8q1.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m0q1.Q
+    # DIP7 & LED15.Q & m7q1.Q & !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & m11q1.Q & pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m3q1.Q & !pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m13q1.Q & pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m5q1.Q & !pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m9q1.Q & pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m1q1.Q & !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m6q1.Q & !pc3.Q & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m10q1.Q & pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m2q1.Q & !pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m12q1.Q & pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m4q1.Q & !pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m8q1.Q & pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m0q1.Q & !pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q ; (42 pterms, 28 signals)
+
+<A name=193>db2</A> = !<A href=#13>DIP7</A> & <A href=#82>m0q2.Q</A> & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP7 & <A href=#89>m1q2.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#96>m2q2.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#103>m3q2.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#110>m4q2.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#117>m5q2.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#124>m6q2.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#131>m7q2.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#138>m8q2.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#145>m9q2.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#152>m10q2.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#159>m11q2.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#166>m12q2.Q</A> & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#173>m13q2.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # DIP7 & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & m7q2.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m11q2.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m3q2.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m13q2.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m5q2.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m9q2.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m1q2.Q
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m6q2.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m10q2.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m2q2.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m12q2.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m4q2.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m8q2.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m0q2.Q
+    # DIP7 & LED15.Q & m7q2.Q & !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & m11q2.Q & pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m3q2.Q & !pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m13q2.Q & pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m5q2.Q & !pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m9q2.Q & pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m1q2.Q & !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m6q2.Q & !pc3.Q & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m10q2.Q & pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m2q2.Q & !pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m12q2.Q & pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m4q2.Q & !pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m8q2.Q & pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m0q2.Q & !pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q ; (42 pterms, 28 signals)
+
+<A name=192>db3</A> = !<A href=#13>DIP7</A> & <A href=#81>m0q3.Q</A> & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP7 & <A href=#88>m1q3.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#95>m2q3.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#102>m3q3.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#109>m4q3.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#116>m5q3.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#123>m6q3.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#130>m7q3.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#137>m8q3.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#144>m9q3.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & <A href=#151>m10q3.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#158>m11q3.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & <A href=#165>m12q3.Q</A> & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & <A href=#172>m13q3.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # DIP7 & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & m7q3.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m11q3.Q
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m3q3.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m13q3.Q
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m5q3.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m9q3.Q
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m1q3.Q
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m6q3.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m10q3.Q
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m2q3.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & m12q3.Q
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & m4q3.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & m8q3.Q
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & m0q3.Q
+    # DIP7 & LED15.Q & m7q3.Q & !<A href=#178>pc3.Q</A> & <A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & m11q3.Q & pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m3q3.Q & !pc3.Q & !pc2.Q & pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m13q3.Q & pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m5q3.Q & !pc3.Q & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m9q3.Q & pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m1q3.Q & !pc3.Q & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & m6q3.Q & !pc3.Q & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m10q3.Q & pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m2q3.Q & !pc3.Q & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m12q3.Q & pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m4q3.Q & !pc3.Q & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m8q3.Q & pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & m0q3.Q & !pc3.Q & !pc2.Q & !pc1.Q & !pc0.Q ; (42 pterms, 28 signals)
+
+<A name=202>dm0</A> = <A href=#168>m12q0.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#161>m11q0.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#133>m7q0.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#154>m10q0.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#126>m6q0.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#147>m9q0.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#119>m5q0.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#140>m8q0.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#112>m4q0.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#105>m3q0.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#98>m2q0.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#91>m1q0.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#84>m0q0.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#175>m13q0.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=201>dm1</A> = <A href=#167>m12q1.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#160>m11q1.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#132>m7q1.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#153>m10q1.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#125>m6q1.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#146>m9q1.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#118>m5q1.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#139>m8q1.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#111>m4q1.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#104>m3q1.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#97>m2q1.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#90>m1q1.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#83>m0q1.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#174>m13q1.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=200>dm2</A> = <A href=#166>m12q2.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#159>m11q2.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#131>m7q2.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#152>m10q2.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#124>m6q2.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#145>m9q2.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#117>m5q2.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#138>m8q2.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#110>m4q2.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#103>m3q2.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#96>m2q2.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#89>m1q2.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#82>m0q2.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#173>m13q2.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=199>dm3</A> = <A href=#165>m12q3.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#158>m11q3.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#130>m7q3.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#151>m10q3.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#123>m6q3.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#144>m9q3.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#116>m5q3.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#137>m8q3.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#109>m4q3.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#102>m3q3.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#95>m2q3.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#88>m1q3.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#81>m0q3.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#172>m13q3.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=198>dm4</A> = <A href=#164>m12q4.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#157>m11q4.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#129>m7q4.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#150>m10q4.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#122>m6q4.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#143>m9q4.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#115>m5q4.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#136>m8q4.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#108>m4q4.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#101>m3q4.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#94>m2q4.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#87>m1q4.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#80>m0q4.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#171>m13q4.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=197>dm5</A> = <A href=#163>m12q5.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#156>m11q5.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#128>m7q5.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#149>m10q5.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#121>m6q5.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#142>m9q5.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#114>m5q5.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#135>m8q5.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#107>m4q5.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#100>m3q5.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#93>m2q5.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#86>m1q5.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#79>m0q5.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#170>m13q5.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=196>dm6</A> = <A href=#162>m12q6.Q</A> & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # <A href=#155>m11q6.Q</A> & mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#127>m7q6.Q</A> & !mar3.Q & mar2.Q & mar1.Q & mar0.Q
+    # <A href=#148>m10q6.Q</A> & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#120>m6q6.Q</A> & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#141>m9q6.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#113>m5q6.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#134>m8q6.Q</A> & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#106>m4q6.Q</A> & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#99>m3q6.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q
+    # <A href=#92>m2q6.Q</A> & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q
+    # <A href=#85>m1q6.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q
+    # <A href=#78>m0q6.Q</A> & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q
+    # <A href=#169>m13q6.Q</A> & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (14 pterms, 18 signals)
+
+<A name=184>ir4.D</A> = <A href=#13>DIP7</A> & <A href=#33>LED15.Q</A> & <A href=#164>m12q4.Q</A> & <A href=#177>ab3</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & <A href=#150>m10q4.Q</A> & ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#171>m13q4.Q</A> & ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#157>m11q4.Q</A> & ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m13q4.Q & ab3 & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP7 & LED15.Q & m12q4.Q & ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m11q4.Q & ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m10q4.Q & ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#136>m8q4.Q</A> & ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#122>m6q4.Q</A> & !ab3 & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#143>m9q4.Q</A> & ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#129>m7q4.Q</A> & !ab3 & pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m7q4.Q & !ab3 & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m6q4.Q & !ab3 & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m9q4.Q & ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m8q4.Q & ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#108>m4q4.Q</A> & !ab3 & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#94>m2q4.Q</A> & !ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#115>m5q4.Q</A> & !ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#101>m3q4.Q</A> & !ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m5q4.Q & !ab3 & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m4q4.Q & !ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m3q4.Q & !ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m2q4.Q & !ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#80>m0q4.Q</A> & !ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#87>m1q4.Q</A> & !ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m1q4.Q & !ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m0q4.Q & !ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # !LED15.Q & <A href=#184>ir4.Q</A> ; (29 pterms, 24 signals)
+ir4.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+ir4.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=183>ir5.D</A> = <A href=#13>DIP7</A> & <A href=#33>LED15.Q</A> & <A href=#163>m12q5.Q</A> & <A href=#177>ab3</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & <A href=#149>m10q5.Q</A> & ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#170>m13q5.Q</A> & ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#156>m11q5.Q</A> & ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m13q5.Q & ab3 & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP7 & LED15.Q & m12q5.Q & ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m11q5.Q & ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m10q5.Q & ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#135>m8q5.Q</A> & ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#121>m6q5.Q</A> & !ab3 & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#142>m9q5.Q</A> & ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#128>m7q5.Q</A> & !ab3 & pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m7q5.Q & !ab3 & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m6q5.Q & !ab3 & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m9q5.Q & ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m8q5.Q & ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#107>m4q5.Q</A> & !ab3 & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#93>m2q5.Q</A> & !ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#114>m5q5.Q</A> & !ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#100>m3q5.Q</A> & !ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m5q5.Q & !ab3 & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m4q5.Q & !ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m3q5.Q & !ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m2q5.Q & !ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#79>m0q5.Q</A> & !ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#86>m1q5.Q</A> & !ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m1q5.Q & !ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m0q5.Q & !ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # !LED15.Q & <A href=#183>ir5.Q</A> ; (29 pterms, 24 signals)
+ir5.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+ir5.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=182>ir6.D</A> = <A href=#13>DIP7</A> & <A href=#33>LED15.Q</A> & <A href=#162>m12q6.Q</A> & <A href=#177>ab3</A> & <A href=#179>pc2.Q</A> & !<A href=#180>pc1.Q</A> & !<A href=#181>pc0.Q</A>
+    # DIP7 & LED15.Q & <A href=#148>m10q6.Q</A> & ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#169>m13q6.Q</A> & ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#155>m11q6.Q</A> & ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m13q6.Q & ab3 & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP7 & LED15.Q & m12q6.Q & ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m11q6.Q & ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m10q6.Q & ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#134>m8q6.Q</A> & ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#120>m6q6.Q</A> & !ab3 & pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#141>m9q6.Q</A> & ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#127>m7q6.Q</A> & !ab3 & pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m7q6.Q & !ab3 & mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m6q6.Q & !ab3 & mar2.Q & mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m9q6.Q & ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m8q6.Q & ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#106>m4q6.Q</A> & !ab3 & pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#92>m2q6.Q</A> & !ab3 & !pc2.Q & pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#113>m5q6.Q</A> & !ab3 & pc2.Q & !pc1.Q & pc0.Q
+    # DIP7 & LED15.Q & <A href=#99>m3q6.Q</A> & !ab3 & !pc2.Q & pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m5q6.Q & !ab3 & mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m4q6.Q & !ab3 & mar2.Q & !mar1.Q & !mar0.Q
+    # !DIP7 & LED15.Q & m3q6.Q & !ab3 & !mar2.Q & mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m2q6.Q & !ab3 & !mar2.Q & mar1.Q & !mar0.Q
+    # DIP7 & LED15.Q & <A href=#78>m0q6.Q</A> & !ab3 & !pc2.Q & !pc1.Q & !pc0.Q
+    # DIP7 & LED15.Q & <A href=#85>m1q6.Q</A> & !ab3 & !pc2.Q & !pc1.Q & pc0.Q
+    # !DIP7 & LED15.Q & m1q6.Q & !ab3 & !mar2.Q & !mar1.Q & mar0.Q
+    # !DIP7 & LED15.Q & m0q6.Q & !ab3 & !mar2.Q & !mar1.Q & !mar0.Q
+    # !LED15.Q & <A href=#182>ir6.Q</A> ; (29 pterms, 24 signals)
+ir6.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+ir6.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=84>m0q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#84>m0q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m0q0.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m0q0.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m0q0.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m0q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=83>m0q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#83>m0q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m0q1.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m0q1.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m0q1.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m0q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=82>m0q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#82>m0q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m0q2.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m0q2.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m0q2.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m0q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=81>m0q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#81>m0q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m0q3.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m0q3.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m0q3.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m0q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=80>m0q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#80>m0q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m0q4.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m0q4.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m0q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=79>m0q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#79>m0q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m0q5.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m0q5.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m0q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=78>m0q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#78>m0q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m0q6.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m0q6.Q & !mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m0q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=154>m10q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#154>m10q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m10q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m10q0.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m10q0.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m10q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=153>m10q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#153>m10q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m10q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m10q1.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m10q1.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m10q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=152>m10q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#152>m10q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m10q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m10q2.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m10q2.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m10q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=151>m10q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#151>m10q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m10q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m10q3.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m10q3.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m10q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=150>m10q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#150>m10q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m10q4.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m10q4.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m10q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=149>m10q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#149>m10q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m10q5.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m10q5.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m10q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=148>m10q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#148>m10q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m10q6.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m10q6.Q & mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m10q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=161>m11q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#161>m11q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m11q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m11q0.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m11q0.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m11q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=160>m11q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#160>m11q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m11q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m11q1.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m11q1.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m11q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=159>m11q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#159>m11q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m11q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m11q2.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m11q2.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m11q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=158>m11q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#158>m11q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m11q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m11q3.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m11q3.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m11q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=157>m11q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#157>m11q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m11q4.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m11q4.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m11q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=156>m11q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#156>m11q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m11q5.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m11q5.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m11q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=155>m11q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#155>m11q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m11q6.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m11q6.Q & mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m11q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=168>m12q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#168>m12q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m12q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m12q0.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m12q0.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m12q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=167>m12q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#167>m12q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m12q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m12q1.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m12q1.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m12q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=166>m12q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#166>m12q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m12q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m12q2.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m12q2.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m12q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=165>m12q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#165>m12q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m12q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m12q3.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m12q3.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m12q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=164>m12q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#164>m12q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m12q4.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m12q4.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m12q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=163>m12q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#163>m12q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m12q5.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m12q5.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m12q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=162>m12q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#162>m12q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m12q6.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m12q6.Q & mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m12q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=175>m13q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#175>m13q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m13q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m13q0.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m13q0.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m13q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=174>m13q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#174>m13q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m13q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m13q1.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m13q1.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m13q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=173>m13q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#173>m13q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m13q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m13q2.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m13q2.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m13q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=172>m13q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#172>m13q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & !LED11.Q & !LED15.Q & !m13q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m13q3.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m13q3.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m13q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=171>m13q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#171>m13q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m13q4.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m13q4.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m13q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=170>m13q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#170>m13q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m13q5.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m13q5.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m13q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=169>m13q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#169>m13q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m13q6.Q & <A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m13q6.Q & mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m13q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=91>m1q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#91>m1q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m1q0.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m1q0.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m1q0.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m1q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=90>m1q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#90>m1q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m1q1.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m1q1.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m1q1.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m1q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=89>m1q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#89>m1q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m1q2.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m1q2.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m1q2.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m1q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=88>m1q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#88>m1q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m1q3.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m1q3.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m1q3.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m1q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=87>m1q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#87>m1q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m1q4.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m1q4.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m1q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=86>m1q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#86>m1q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m1q5.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m1q5.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m1q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=85>m1q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#85>m1q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m1q6.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m1q6.Q & !mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m1q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=98>m2q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#98>m2q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m2q0.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m2q0.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m2q0.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m2q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=97>m2q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#97>m2q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m2q1.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m2q1.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m2q1.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m2q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=96>m2q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#96>m2q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m2q2.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m2q2.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m2q2.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m2q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=95>m2q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#95>m2q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m2q3.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m2q3.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m2q3.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m2q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=94>m2q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#94>m2q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m2q4.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m2q4.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m2q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=93>m2q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#93>m2q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m2q5.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m2q5.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m2q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=92>m2q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#92>m2q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m2q6.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m2q6.Q & !mar3.Q & !mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m2q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=105>m3q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#105>m3q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m3q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m3q0.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m3q0.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m3q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=104>m3q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#104>m3q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m3q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m3q1.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m3q1.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m3q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=103>m3q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#103>m3q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m3q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m3q2.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m3q2.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m3q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=102>m3q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#102>m3q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & LED10.Q & LED11.Q & !LED15.Q & !m3q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m3q3.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m3q3.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m3q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=101>m3q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#101>m3q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m3q4.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m3q4.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m3q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=100>m3q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#100>m3q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m3q5.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m3q5.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m3q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=99>m3q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#99>m3q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m3q6.Q & !<A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m3q6.Q & !mar3.Q & !mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m3q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=112>m4q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#112>m4q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m4q0.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m4q0.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m4q0.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m4q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=111>m4q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#111>m4q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m4q1.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m4q1.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m4q1.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m4q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=110>m4q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#110>m4q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m4q2.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m4q2.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m4q2.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m4q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=109>m4q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#109>m4q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m4q3.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m4q3.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m4q3.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m4q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=108>m4q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#108>m4q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m4q4.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m4q4.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m4q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=107>m4q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#107>m4q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m4q5.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m4q5.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m4q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=106>m4q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#106>m4q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m4q6.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m4q6.Q & !mar3.Q & mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m4q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=119>m5q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#119>m5q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m5q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m5q0.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m5q0.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m5q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=118>m5q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#118>m5q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m5q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m5q1.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m5q1.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m5q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=117>m5q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#117>m5q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m5q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m5q2.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m5q2.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m5q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=116>m5q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#116>m5q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m5q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m5q3.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m5q3.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m5q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=115>m5q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#115>m5q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m5q4.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m5q4.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m5q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=114>m5q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#114>m5q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m5q5.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m5q5.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m5q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=113>m5q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#113>m5q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m5q6.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m5q6.Q & !mar3.Q & mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m5q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=126>m6q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#126>m6q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m6q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m6q0.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m6q0.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m6q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=125>m6q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#125>m6q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m6q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m6q1.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m6q1.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m6q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=124>m6q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#124>m6q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m6q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m6q2.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m6q2.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m6q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=123>m6q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#123>m6q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m6q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m6q3.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m6q3.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m6q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=122>m6q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#122>m6q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m6q4.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m6q4.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m6q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=121>m6q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#121>m6q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m6q5.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m6q5.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m6q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=120>m6q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#120>m6q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m6q6.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m6q6.Q & !mar3.Q & mar2.Q & mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m6q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=133>m7q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#133>m7q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m7q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m7q0.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m7q0.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m7q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=132>m7q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#132>m7q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m7q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m7q1.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m7q1.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m7q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=131>m7q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#131>m7q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m7q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m7q2.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m7q2.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m7q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=130>m7q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#130>m7q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & !LED9.Q & !LED10.Q & LED11.Q & !LED15.Q & !m7q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m7q3.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m7q3.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m7q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=129>m7q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#129>m7q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m7q4.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m7q4.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m7q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=128>m7q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#128>m7q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m7q5.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m7q5.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m7q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=127>m7q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & !<A href=#27>LED9.Q</A> & !<A href=#28>LED10.Q</A> & <A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#127>m7q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m7q6.Q & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m7q6.Q & !mar3.Q & mar2.Q & mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m7q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=140>m8q0.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#140>m8q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m8q0.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m8q0.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m8q0.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m8q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=139>m8q1.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#139>m8q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m8q1.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m8q1.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m8q1.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m8q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=138>m8q2.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#138>m8q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m8q2.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m8q2.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m8q2.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m8q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=137>m8q3.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#137>m8q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m8q3.Q & ir6.Q
+       & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m8q3.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m8q3.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (4 pterms, 16 signals)
+m8q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=136>m8q4.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#136>m8q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m8q4.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m8q4.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m8q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=135>m8q5.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#135>m8q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m8q5.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m8q5.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m8q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=134>m8q6.T</A> = <A href=#13>DIP7</A> & <A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#134>m8q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m8q6.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & !<A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m8q6.Q & mar3.Q & !mar2.Q & !mar1.Q & !mar0.Q ; (3 pterms, 15 signals)
+m8q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=147>m9q0.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#147>m9q0.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#191>areg0.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m9q0.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg0.Q
+    # !<A href=#6>DIP0</A> & !DIP7 & m9q0.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP0 & !DIP7 & !m9q0.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m9q0.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=146>m9q1.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#146>m9q1.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#190>areg1.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m9q1.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg1.Q
+    # !<A href=#7>DIP1</A> & !DIP7 & m9q1.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP1 & !DIP7 & !m9q1.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m9q1.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=145>m9q2.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#145>m9q2.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#189>areg2.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m9q2.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg2.Q
+    # !<A href=#8>DIP2</A> & !DIP7 & m9q2.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP2 & !DIP7 & !m9q2.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m9q2.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=144>m9q3.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#144>m9q3.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A> & !<A href=#188>areg3.Q</A>
+    # DIP7 & !LED8.Q & LED9.Q & LED10.Q & !LED11.Q & !LED15.Q & !m9q3.Q
+       & ir6.Q & !ir5.Q & ir4.Q & areg3.Q
+    # !<A href=#9>DIP3</A> & !DIP7 & m9q3.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # DIP3 & !DIP7 & !m9q3.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (4 pterms, 16 signals)
+m9q3.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=143>m9q4.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#143>m9q4.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#10>DIP4</A> & !DIP7 & !m9q4.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP4 & !DIP7 & m9q4.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m9q4.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=142>m9q5.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#142>m9q5.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#11>DIP5</A> & !DIP7 & !m9q5.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP5 & !DIP7 & m9q5.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m9q5.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=141>m9q6.T</A> = <A href=#13>DIP7</A> & !<A href=#26>LED8.Q</A> & <A href=#27>LED9.Q</A> & <A href=#28>LED10.Q</A> & !<A href=#29>LED11.Q</A> & !<A href=#33>LED15.Q</A> & <A href=#141>m9q6.Q</A>
+       & <A href=#182>ir6.Q</A> & !<A href=#183>ir5.Q</A> & <A href=#184>ir4.Q</A>
+    # <A href=#12>DIP6</A> & !DIP7 & !m9q6.Q & <A href=#203>mar3.Q</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP6 & !DIP7 & m9q6.Q & mar3.Q & !mar2.Q & !mar1.Q & mar0.Q ; (3 pterms, 15 signals)
+m9q6.C = <A href=#176>memclk</A> ; (1 pterm, 1 signal)
+
+<A name=206>mar0.D</A> = !<A href=#13>DIP7</A> & !<A href=#206>mar0.Q</A>
+    # DIP7 & mar0.Q ; (2 pterms, 2 signals)
+mar0.C = !<A href=#13>DIP7</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=205>mar1.D</A> = !<A href=#13>DIP7</A> & !<A href=#204>mar2.Q</A> & !<A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !DIP7 & !<A href=#203>mar3.Q</A> & !mar1.Q & mar0.Q
+    # DIP7 & mar1.Q
+    # mar1.Q & !mar0.Q ; (4 pterms, 5 signals)
+mar1.C = !<A href=#13>DIP7</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=204>mar2.D</A> = !<A href=#13>DIP7</A> & !<A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # !<A href=#203>mar3.Q</A> & mar2.Q & !mar1.Q
+    # DIP7 & mar2.Q
+    # mar2.Q & !mar0.Q ; (4 pterms, 5 signals)
+mar2.C = !<A href=#13>DIP7</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=203>mar3.D</A> = !<A href=#13>DIP7</A> & !<A href=#203>mar3.Q</A> & <A href=#204>mar2.Q</A> & <A href=#205>mar1.Q</A> & <A href=#206>mar0.Q</A>
+    # mar3.Q & !mar2.Q
+    # DIP7 & mar3.Q
+    # mar3.Q & !mar0.Q ; (4 pterms, 5 signals)
+mar3.C = !<A href=#13>DIP7</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=176>memclk</A> = !<A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A>
+    # DIP7 & <A href=#76>S1BC.Q</A> ; (2 pterms, 3 signals)
+
+<A name=181>pc0.D</A> = <A href=#33>LED15.Q</A> & !<A href=#181>pc0.Q</A>
+    # !LED15.Q & pc0.Q ; (2 pterms, 2 signals)
+pc0.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+pc0.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=180>pc1.D</A> = <A href=#33>LED15.Q</A> & !<A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # !LED15.Q & pc1.Q
+    # pc1.Q & !pc0.Q ; (3 pterms, 3 signals)
+pc1.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+pc1.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=179>pc2.D</A> = <A href=#33>LED15.Q</A> & !<A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A>
+    # pc2.Q & !pc1.Q
+    # !LED15.Q & pc2.Q
+    # pc2.Q & !pc0.Q ; (4 pterms, 4 signals)
+pc2.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+pc2.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<A name=178>pc3.D.X1</A> = <A href=#178>pc3.Q</A> ; (1 pterm, 1 signal)
+pc3.D.X2 = <A href=#33>LED15.Q</A> & <A href=#179>pc2.Q</A> & <A href=#180>pc1.Q</A> & <A href=#181>pc0.Q</A> ; (1 pterm, 4 signals)
+pc3.C = <A href=#13>DIP7</A> & <A href=#75>LED16.Q</A> & <A href=#76>S1BC.Q</A> ; (1 pterm, 3 signals)
+pc3.AR = <A href=#13>DIP7</A> & <A href=#77>S2BC.Q</A> ; (1 pterm, 2 signals)
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+
+

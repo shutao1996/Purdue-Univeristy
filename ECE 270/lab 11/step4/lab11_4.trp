@@ -1,0 +1,90 @@
+
+Timing Report
+
+//  Project = lab11_4
+//  Family  = lc4k
+//  Device  = LC4256ZE
+//  Speed   = -5.8
+//  Voltage = 1.8
+//  Operating Condition = COM
+//  Data sheet version  = 0.9
+
+//  Pass Bidirection = OFF
+//  Pass S/R = OFF
+//  Pass Latch = OFF
+//  Pass Clock = OFF
+//  Maximum Paths = 20
+//  T_SU Endpoints D/T inputs = ON
+//  T_SU Endpoints CE inputs = OFF
+//  T_SU Endpoints S/R inputs = OFF
+//  T_SU Endpoints RAM gated = ON
+//  Fmax of CE = ON
+//  Fmax of RAM = ON
+
+//  Location(From => To)
+//    Pin number: numeric number preceded by "p", BGA number as is
+//    Macrocell number: Segment#,GLB#,Macrocell#
+//                      Segment#: starts from 0 (if applicable)
+//                      GLB#: starts from A..Z, AA..ZZ
+//                      Macrocell#: starts from 0 to 31
+
+
+Section tSU
+
+   tSU,    tHD   Level   Location(From => To)    Source                        Destination                   Reference_Clock
+  ===========   =====   ====================    ======                        ===========                   ===============
+  6.05,- 2.05     1     p79       =>  H3        DIP0                          X0.D.X1                       DIP0
+  6.05,- 2.05     1     p79       =>  H3        DIP0                          X0.D.X2                       DIP0
+  6.05,- 2.05     1     p79       =>  H5        DIP0                          X1.D                          DIP0
+  6.05,- 2.05     1     p79       =>  C1        DIP0                          X2.D                          DIP0
+  6.05,- 2.05     1     p79       =>  H12       DIP0                          X3.D                          DIP0
+  6.05,- 2.05     1     p79       =>  C3        DIP0                          X4.D                          DIP0
+  6.05,- 2.05     1     p79       =>  C6        DIP0                          X5.D                          DIP0
+  6.05,- 2.05     1     p79       =>  E6        DIP0                          X6.D                          DIP0
+  6.05,- 2.05     1     p79       =>  E10       DIP0                          X7.D                          DIP0
+  6.05,- 2.05     1     p61       =>  F3        S2_NO                         Q0.D.X2                       S2_NO
+  6.05,- 2.05     1     p61       =>  D7        S2_NO                         Q1.D                          S2_NO
+  6.05,- 2.05     1     p61       =>  F5        S2_NO                         Q2.D.X1                       S2_NO
+  6.05,- 2.05     1     p61       =>  F5        S2_NO                         Q2.D.X2                       S2_NO
+  6.05,- 2.05     1     p61       =>  G11       S2_NO                         Q3.D                          S2_NO
+  5.95,- 1.95     1     p77       =>  G11       DIP2                          Q3.D                          DIP2
+
+
+Section tRCV
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   7.65           1     p26       =>  M1        DIP7                          DIS2a.AP
+   7.65           1     p26       =>  M12       DIP7                          DIS2b.AP
+   7.65           1     p26       =>  M9        DIP7                          DIS2c.AP
+   7.65           1     p26       =>  M7        DIP7                          DIS2d.AP
+   7.65           1     p26       =>  M5        DIP7                          DIS2e.AP
+   7.65           1     p26       =>  M3        DIP7                          DIS2f.AP
+   7.65           1     p26       =>  L5        DIP7                          DIS2g.AP
+   7.65           1     p26       =>  P2        DIP7                          DIS3a.AP
+   7.65           1     p26       =>  P4        DIP7                          DIS3b.AP
+   7.65           1     p26       =>  P6        DIP7                          DIS3c.AP
+   7.65           1     p26       =>  P8        DIP7                          DIS3d.AP
+   7.65           1     p26       =>  P0        DIP7                          DIS3e.AP
+   7.65           1     p26       =>  P1        DIP7                          DIS3f.AP
+   7.65           1     p26       =>  O2        DIP7                          DIS3g.AP
+   7.65           1     p26       =>  G3        DIP7                          DIS4a.AP
+   7.65           1     p26       =>  H1        DIP7                          DIS4b.AP
+   7.65           1     p26       =>  H0        DIP7                          DIS4c.AP
+   7.65           1     p26       =>  H9        DIP7                          DIS4d.AP
+   7.65           1     p26       =>  H7        DIP7                          DIS4e.AP
+   7.65           1     p26       =>  H4        DIP7                          DIS4f.AP
+
+
+Section tPD
+
+   Delay         Level   Location(From => To)    Source                        Destination
+  =====         =====   ====================    ======                        ===========
+   5.85           1     p78       => p40        DIP1                          LED0
+   5.85           1     p78       => p39        DIP1                          LED1
+   5.85           1     p78       => p33        DIP1                          LED2
+   5.85           1     p78       => p32        DIP1                          LED3
+   5.85           1     p78       => p31        DIP1                          LED4
+   5.85           1     p78       => p30        DIP1                          LED5
+   5.85           1     p78       => p29        DIP1                          LED6
+   5.85           1     p78       => p28        DIP1                          LED7

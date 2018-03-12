@@ -1,0 +1,149 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+DIS1a = 1 ; (1 pterm, 0 signal)
+
+DIS1b = 1 ; (1 pterm, 0 signal)
+
+DIS1c = 1 ; (1 pterm, 0 signal)
+
+DIS1d = !DIP7 ; (1 pterm, 1 signal)
+
+DIS1e = !DIP7 ; (1 pterm, 1 signal)
+
+DIS1f = !DIP7 ; (1 pterm, 1 signal)
+
+DIS1g = 1 ; (1 pterm, 0 signal)
+
+DIS2a = 1 ; (1 pterm, 0 signal)
+
+DIS2b = !DIP7 ; (1 pterm, 1 signal)
+
+DIS2c = !DIP7 ; (1 pterm, 1 signal)
+
+DIS2d = !DIP7 ; (1 pterm, 1 signal)
+
+DIS2e = !DIP7 ; (1 pterm, 1 signal)
+
+DIS2f = !DIP7 ; (1 pterm, 1 signal)
+
+DIS2g = 1 ; (1 pterm, 0 signal)
+
+DIS3a = !DIP7 ; (1 pterm, 1 signal)
+
+DIS3b = !DIP7 ; (1 pterm, 1 signal)
+
+DIS3c = !DIP7 ; (1 pterm, 1 signal)
+
+DIS3d = 1 ; (1 pterm, 0 signal)
+
+DIS3e = !DIP7 ; (1 pterm, 1 signal)
+
+DIS3f = !DIP7 ; (1 pterm, 1 signal)
+
+DIS3g = !DIP7 ; (1 pterm, 1 signal)
+
+DIS4a = 1 ; (1 pterm, 0 signal)
+
+DIS4b = 1 ; (1 pterm, 0 signal)
+
+DIS4c = 1 ; (1 pterm, 0 signal)
+
+DIS4d = 1 ; (1 pterm, 0 signal)
+
+DIS4e = !DIP7 ; (1 pterm, 1 signal)
+
+DIS4f = 1 ; (1 pterm, 0 signal)
+
+DIS4g = !DIP7 ; (1 pterm, 1 signal)
+
+LED0.D = !LED0.Q ; (1 pterm, 1 signal)
+LED0.C = S1.Q ; (1 pterm, 1 signal)
+LED0.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED1.D = DIP6 & !LED0.Q & !LED1.Q
+    # !DIP6 & LED0.Q & !LED1.Q
+    # !DIP6 & !LED0.Q & LED1.Q
+    # DIP6 & LED0.Q & LED1.Q ; (4 pterms, 3 signals)
+LED1.C = S1.Q ; (1 pterm, 1 signal)
+LED1.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED2.D.X1 = DIP6 & !LED0.Q & !LED1.Q
+    # !DIP6 & LED0.Q & LED1.Q ; (2 pterms, 3 signals)
+LED2.D.X2 = LED2.Q ; (1 pterm, 1 signal)
+LED2.C = S1.Q ; (1 pterm, 1 signal)
+LED2.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED20 = !DIP0 ; (1 pterm, 1 signal)
+
+LED21 = !DIP1 ; (1 pterm, 1 signal)
+
+LED22 = !DIP2 ; (1 pterm, 1 signal)
+
+LED23 = !DIP3 ; (1 pterm, 1 signal)
+
+LED24 = !DIP4 ; (1 pterm, 1 signal)
+
+LED25 = !DIP5 ; (1 pterm, 1 signal)
+
+LED26 = !DIP6 ; (1 pterm, 1 signal)
+
+LED27 = !DIP7 ; (1 pterm, 1 signal)
+
+LED28.D = 1 ; (1 pterm, 0 signal)
+LED28.C = 0 ; (0 pterm, 0 signal)
+LED28.AR = !S1_NO ; (1 pterm, 1 signal)
+LED28.AP = !S1_NC ; (1 pterm, 1 signal)
+
+LED29.D = 1 ; (1 pterm, 0 signal)
+LED29.C = 0 ; (0 pterm, 0 signal)
+LED29.AR = !S2_NO ; (1 pterm, 1 signal)
+LED29.AP = !S2_NC ; (1 pterm, 1 signal)
+
+LED3.T = DIP6 & !LED0.Q & !LED1.Q & !LED2.Q
+    # !DIP6 & LED0.Q & LED1.Q & LED2.Q ; (2 pterms, 4 signals)
+LED3.C = S1.Q ; (1 pterm, 1 signal)
+LED3.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED4.D = !LED4.Q ; (1 pterm, 1 signal)
+LED4.C = S2.Q ; (1 pterm, 1 signal)
+LED4.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED5.D = !LED4.Q & !LED5.Q
+    # LED4.Q & LED5.Q ; (2 pterms, 2 signals)
+LED5.C = S2.Q ; (1 pterm, 1 signal)
+LED5.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED6.D = !LED4.Q & !LED5.Q & !LED6.Q
+    # LED5.Q & LED6.Q
+    # LED4.Q & LED6.Q ; (3 pterms, 3 signals)
+LED6.C = S2.Q ; (1 pterm, 1 signal)
+LED6.AP = DIP0 ; (1 pterm, 1 signal)
+
+LED7.D = !LED4.Q & !LED5.Q & !LED6.Q & !LED7.Q
+    # LED6.Q & LED7.Q
+    # LED5.Q & LED7.Q
+    # LED4.Q & LED7.Q ; (4 pterms, 4 signals)
+LED7.C = S2.Q ; (1 pterm, 1 signal)
+LED7.AP = DIP0 ; (1 pterm, 1 signal)
+
+S1.D = 0 ; (0 pterm, 0 signal)
+S1.C = 0 ; (0 pterm, 0 signal)
+S1.AR = !S1_NC ; (1 pterm, 1 signal)
+S1.AP = !S1_NO ; (1 pterm, 1 signal)
+
+S2.D = 0 ; (0 pterm, 0 signal)
+S2.C = 0 ; (0 pterm, 0 signal)
+S2.AR = !S2_NC ; (1 pterm, 1 signal)
+S2.AP = !S2_NO ; (1 pterm, 1 signal)
+
+_dup_osc_dis = 0 ; (0 pterm, 0 signal)
+
+osc_dis = 0 ; (0 pterm, 0 signal)
+

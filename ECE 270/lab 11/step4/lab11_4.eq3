@@ -1,0 +1,446 @@
+|--------------------------------------------------- ----------|
+|- ispLEVER Classic 1.7.00.05.28.13 Equations File            -|
+|- Copyright(C), 1992-2012, Lattice Semiconductor Corporation -|
+|- All Rights Reserved.                                       -|
+|--------------------------------------------------------------|
+
+
+Equations:
+
+
+BFC.D = 0 ; (0 pterm, 0 signal)
+BFC.C = 0 ; (0 pterm, 0 signal)
+BFC.AR = !S1_NC ; (1 pterm, 1 signal)
+BFC.AP = !S1_NO ; (1 pterm, 1 signal)
+
+DIS1a = !( !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & P1.Q & !P3.Q
+    # P0.Q & !P2.Q ) ; (3 pterms, 4 signals)
+
+DIS1b = !( !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q ) ; (2 pterms, 4 signals)
+
+DIS1c = !( P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # !P0.Q & P1.Q & P3.Q
+    # P0.Q & P1.Q & P2.Q & !P3.Q ) ; (4 pterms, 4 signals)
+
+DIS1d = !( !P0.Q & P1.Q & P2.Q
+    # !P0.Q & P2.Q & !P3.Q
+    # P1.Q & !P3.Q
+    # P0.Q & !P2.Q ) ; (4 pterms, 4 signals)
+
+DIS1e = !P1.Q & !P2.Q & !P3.Q ; (1 pterm, 3 signals)
+
+DIS1f = !P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & P1.Q & P3.Q
+    # P2.Q & P3.Q
+    # P0.Q & P2.Q ; (4 pterms, 4 signals)
+
+DIS1g = P0.Q & P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & !P3.Q ; (2 pterms, 4 signals)
+
+DIS2a.D = !( !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & P1.Q & !P3.Q
+    # P0.Q & !P2.Q ) ; (3 pterms, 4 signals)
+DIS2a.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2a.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2b.D = !( !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q ) ; (2 pterms, 4 signals)
+DIS2b.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2b.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2c.D = !( P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # !P0.Q & P1.Q & P3.Q
+    # P0.Q & P1.Q & P2.Q & !P3.Q ) ; (4 pterms, 4 signals)
+DIS2c.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2c.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2d.D = !( !P0.Q & P1.Q & P2.Q
+    # !P0.Q & P2.Q & !P3.Q
+    # P1.Q & !P3.Q
+    # P0.Q & !P2.Q ) ; (4 pterms, 4 signals)
+DIS2d.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2d.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2e.D = !P1.Q & !P2.Q & !P3.Q ; (1 pterm, 3 signals)
+DIS2e.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2e.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2f.D = !P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & P1.Q & P3.Q
+    # P2.Q & P3.Q
+    # P0.Q & P2.Q ; (4 pterms, 4 signals)
+DIS2f.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2f.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS2g.D = P0.Q & P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & !P3.Q ; (2 pterms, 4 signals)
+DIS2g.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS2g.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3a.D = !RDIS2a.Q ; (1 pterm, 1 signal)
+DIS3a.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3a.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3b.D = !RDIS2b.Q ; (1 pterm, 1 signal)
+DIS3b.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3b.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3c.D = !RDIS2c.Q ; (1 pterm, 1 signal)
+DIS3c.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3c.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3d.D = !RDIS2d.Q ; (1 pterm, 1 signal)
+DIS3d.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3d.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3e.D = !RDIS2e.Q ; (1 pterm, 1 signal)
+DIS3e.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3e.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3f.D = !RDIS2f.Q ; (1 pterm, 1 signal)
+DIS3f.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3f.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS3g.D = !RDIS2g.Q ; (1 pterm, 1 signal)
+DIS3g.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS3g.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4a.D = !RDIS3a.Q ; (1 pterm, 1 signal)
+DIS4a.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4a.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4b.D = !RDIS3b.Q ; (1 pterm, 1 signal)
+DIS4b.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4b.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4c.D = !RDIS3c.Q ; (1 pterm, 1 signal)
+DIS4c.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4c.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4d.D = !RDIS3d.Q ; (1 pterm, 1 signal)
+DIS4d.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4d.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4e.D = !RDIS3e.Q ; (1 pterm, 1 signal)
+DIS4e.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4e.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4f.D = !RDIS3f.Q ; (1 pterm, 1 signal)
+DIS4f.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4f.AP = DIP7 ; (1 pterm, 1 signal)
+
+DIS4g.D = !RDIS3g.Q ; (1 pterm, 1 signal)
+DIS4g.C = timdiv2.Q ; (1 pterm, 1 signal)
+DIS4g.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED0 = !( DIP1 & X0.Q ) ; (1 pterm, 2 signals)
+
+LED1 = !( DIP1 & X1.Q ) ; (1 pterm, 2 signals)
+
+LED10.D.X1 = LED9.Q & !Q3.Q
+    # !LED9.Q & LED10.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED9.Q & !LED10.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED10.D.X2 = LED10.Q & Q3.Q ; (1 pterm, 2 signals)
+LED10.C = BFC.Q ; (1 pterm, 1 signal)
+LED10.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED11.D.X1 = LED10.Q & !Q3.Q
+    # !LED10.Q & LED11.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED10.Q & !LED11.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED11.D.X2 = LED11.Q & Q3.Q ; (1 pterm, 2 signals)
+LED11.C = BFC.Q ; (1 pterm, 1 signal)
+LED11.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED12.D.X1 = LED11.Q & !Q3.Q
+    # !LED11.Q & LED12.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED11.Q & !LED12.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED12.D.X2 = LED12.Q & Q3.Q ; (1 pterm, 2 signals)
+LED12.C = BFC.Q ; (1 pterm, 1 signal)
+LED12.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED13.D.X1 = LED12.Q & !Q3.Q
+    # !LED12.Q & LED13.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED12.Q & !LED13.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED13.D.X2 = LED13.Q & Q3.Q ; (1 pterm, 2 signals)
+LED13.C = BFC.Q ; (1 pterm, 1 signal)
+LED13.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED14.D.X1 = LED13.Q & !Q3.Q
+    # !LED13.Q & LED14.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED13.Q & !LED14.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED14.D.X2 = LED14.Q & Q3.Q ; (1 pterm, 2 signals)
+LED14.C = BFC.Q ; (1 pterm, 1 signal)
+LED14.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED15.D.X1 = LED14.Q & !Q3.Q
+    # !LED14.Q & LED15.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED14.Q & !LED15.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED15.D.X2 = LED15.Q & Q3.Q ; (1 pterm, 2 signals)
+LED15.C = BFC.Q ; (1 pterm, 1 signal)
+LED15.AP = DIP7 ; (1 pterm, 1 signal)
+
+LED16.D = !( LED16.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ) ; (1 pterm, 5 signals)
+LED16.C = timdiv2.Q ; (1 pterm, 1 signal)
+
+LED17 = !Q1.Q & !Q2.Q & Q3.Q ; (1 pterm, 3 signals)
+
+LED18 = Q0.Q & !Q1.Q & !Q2.Q
+    # !Q3.Q ; (2 pterms, 4 signals)
+
+LED2 = !( DIP1 & X2.Q ) ; (1 pterm, 2 signals)
+
+LED3 = !( DIP1 & X3.Q ) ; (1 pterm, 2 signals)
+
+LED4 = !( DIP1 & X4.Q ) ; (1 pterm, 2 signals)
+
+LED5 = !( DIP1 & X5.Q ) ; (1 pterm, 2 signals)
+
+LED6 = !( DIP1 & X6.Q ) ; (1 pterm, 2 signals)
+
+LED7 = !( DIP1 & X7.Q ) ; (1 pterm, 2 signals)
+
+LED8.D = !( LED8.Q & LED9.Q & LED10.Q & LED11.Q & LED12.Q & LED13.Q & LED14.Q
+       & Q0.Q & !Q1.Q & !Q2.Q
+    # LED8.Q & LED9.Q & LED10.Q & LED11.Q & LED12.Q & LED13.Q & LED14.Q
+       & !Q3.Q
+    # !LED8.Q & Q1.Q & Q3.Q
+    # !LED8.Q & Q2.Q & Q3.Q
+    # !LED8.Q & !Q0.Q & Q3.Q ) ; (5 pterms, 11 signals)
+LED8.C = BFC.Q ; (1 pterm, 1 signal)
+LED8.AR = DIP7 ; (1 pterm, 1 signal)
+
+LED9.D.X1 = LED8.Q & !Q3.Q
+    # !LED8.Q & LED9.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # LED8.Q & !LED9.Q & Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (3 pterms, 6 signals)
+LED9.D.X2 = LED9.Q & Q3.Q ; (1 pterm, 2 signals)
+LED9.C = BFC.Q ; (1 pterm, 1 signal)
+LED9.AP = DIP7 ; (1 pterm, 1 signal)
+
+P0.D.X1 = !Q3.Q & !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # Q2.Q & !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # Q1.Q & !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # !Q0.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # Q1.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # Q2.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & P2.Q & P3.Q
+    # !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & P1.Q & !P2.Q & !P3.Q ; (8 pterms, 8 signals)
+P0.D.X2 = !P0.Q & !P2.Q & !P3.Q ; (1 pterm, 3 signals)
+P0.C = timdiv2.Q ; (1 pterm, 1 signal)
+P0.AR = DIP7 ; (1 pterm, 1 signal)
+
+P1.D.X1 = Q1.Q & P0.Q & !P1.Q & !P3.Q
+    # Q2.Q & P0.Q & !P1.Q & !P3.Q
+    # !Q3.Q & P0.Q & !P1.Q & !P3.Q
+    # Q3.Q & P0.Q & !P1.Q & !P2.Q & P3.Q
+    # !Q3.Q & !P0.Q & P1.Q & !P2.Q & !P3.Q
+    # Q2.Q & !P0.Q & P1.Q & !P2.Q & !P3.Q
+    # Q1.Q & !P0.Q & P1.Q & !P2.Q & !P3.Q
+    # !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P0.Q & P1.Q & P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P1.Q & P2.Q & P3.Q ; (10 pterms, 8 signals)
+P1.D.X2 = Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P0.Q & P3.Q ; (1 pterm, 6 signals)
+P1.C = timdiv2.Q ; (1 pterm, 1 signal)
+P1.AR = DIP7 ; (1 pterm, 1 signal)
+
+P2.D = Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P0.Q & P1.Q & !P2.Q & P3.Q
+    # !Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P1.Q & P2.Q & P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & P2.Q & P3.Q
+    # Q1.Q & P0.Q & P1.Q & !P2.Q & !P3.Q
+    # Q2.Q & P0.Q & P1.Q & !P2.Q & !P3.Q
+    # !Q3.Q & P0.Q & P1.Q & !P2.Q & !P3.Q
+    # Q1.Q & !P1.Q & P2.Q & !P3.Q
+    # Q2.Q & !P1.Q & P2.Q & !P3.Q
+    # !Q3.Q & !P1.Q & P2.Q & !P3.Q ; (10 pterms, 8 signals)
+P2.C = timdiv2.Q ; (1 pterm, 1 signal)
+P2.AR = DIP7 ; (1 pterm, 1 signal)
+
+P3.D.X1 = Q3.Q & !P1.Q & !P2.Q & P3.Q
+    # !Q0.Q & Q3.Q & P0.Q & P1.Q & P2.Q & !P3.Q
+    # Q1.Q & Q3.Q & P0.Q & P1.Q & P2.Q & !P3.Q
+    # Q2.Q & Q3.Q & P0.Q & P1.Q & P2.Q & !P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & !P1.Q & !P2.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & !P0.Q & P1.Q & !P2.Q & P3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P0.Q & P1.Q & P2.Q & P3.Q ; (7 pterms, 8 signals)
+P3.D.X2 = Q0.Q & !Q1.Q & !Q2.Q & Q3.Q & P3.Q ; (1 pterm, 5 signals)
+P3.C = timdiv2.Q ; (1 pterm, 1 signal)
+P3.AR = DIP7 ; (1 pterm, 1 signal)
+
+Q0.D.X1 = !Q0.Q & !Q3.Q
+    # X1.Q & !Q1.Q & !Q2.Q & !Q3.Q
+    # X3.Q & Q1.Q & !Q2.Q & !Q3.Q
+    # X7.Q & Q1.Q & Q2.Q & !Q3.Q
+    # X5.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q ; (6 pterms, 8 signals)
+Q0.D.X2 = !S2_NO & Q0.Q & !Q3.Q ; (1 pterm, 3 signals)
+Q0.C = BFC.Q ; (1 pterm, 1 signal)
+Q0.AR = DIP7 ; (1 pterm, 1 signal)
+
+Q1.D = !S2_NO & X2.Q & !Q0.Q & Q1.Q & !Q2.Q & !Q3.Q
+    # !S2_NO & X6.Q & !Q0.Q & Q1.Q & Q2.Q & !Q3.Q
+    # !S2_NO & X1.Q & Q0.Q & !Q1.Q & !Q2.Q & !Q3.Q
+    # !S2_NO & X5.Q & Q0.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # S2_NO & !X2.Q & !Q0.Q & Q1.Q & !Q2.Q & !Q3.Q
+    # S2_NO & !X6.Q & !Q0.Q & Q1.Q & Q2.Q & !Q3.Q
+    # S2_NO & !X1.Q & Q0.Q & !Q1.Q & !Q2.Q & !Q3.Q
+    # S2_NO & !X5.Q & Q0.Q & !Q1.Q & Q2.Q & !Q3.Q ; (8 pterms, 9 signals)
+Q1.C = BFC.Q ; (1 pterm, 1 signal)
+Q1.AR = DIP7 ; (1 pterm, 1 signal)
+
+Q2.D.X1 = !S2_NO & Q0.Q & Q1.Q & Q2.Q & !Q3.Q
+    # !S2_NO & X3.Q & Q0.Q & Q1.Q & !Q3.Q
+    # !X5.Q & Q0.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # !X6.Q & !Q0.Q & Q1.Q & Q2.Q & !Q3.Q
+    # !X4.Q & !Q0.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # S2_NO & !X3.Q & Q0.Q & Q1.Q & !Q2.Q & !Q3.Q ; (6 pterms, 9 signals)
+Q2.D.X2 = !S2_NO & Q2.Q & !Q3.Q ; (1 pterm, 3 signals)
+Q2.C = BFC.Q ; (1 pterm, 1 signal)
+Q2.AR = DIP7 ; (1 pterm, 1 signal)
+
+Q3.D = !S2_NO & !X4.Q & !Q0.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # !S2_NO & !X6.Q & Q1.Q & Q2.Q & !Q3.Q
+    # S2_NO & X4.Q & !Q0.Q & !Q1.Q & Q2.Q & !Q3.Q
+    # !S2_NO & !X0.Q & !Q0.Q & !Q1.Q & !Q2.Q & !Q3.Q
+    # !S2_NO & !X2.Q & !Q0.Q & Q1.Q & !Q2.Q & !Q3.Q
+    # S2_NO & X0.Q & !Q0.Q & !Q1.Q & !Q2.Q & !Q3.Q
+    # S2_NO & X2.Q & !Q0.Q & Q1.Q & !Q2.Q & !Q3.Q
+    # !S2_NO & !X5.Q & Q0.Q & Q2.Q & !Q3.Q
+    # !S2_NO & !X1.Q & Q0.Q & !Q1.Q & !Q2.Q
+    # !S2_NO & !X3.Q & Q0.Q & Q1.Q & !Q3.Q
+    # S2_NO & X3.Q & Q0.Q & Q1.Q & !Q3.Q
+    # S2_NO & X1.Q & Q0.Q & !Q1.Q & !Q2.Q
+    # S2_NO & X6.Q & Q1.Q & Q2.Q & !Q3.Q
+    # S2_NO & X5.Q & Q0.Q & Q2.Q & !Q3.Q
+    # Q0.Q & !Q1.Q & !Q2.Q & Q3.Q
+    # Q0.Q & Q1.Q & Q2.Q & !Q3.Q
+    # !DIP2 & !Q1.Q & !Q2.Q & Q3.Q ; (17 pterms, 13 signals)
+Q3.C = BFC.Q ; (1 pterm, 1 signal)
+Q3.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2a.D = !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & P1.Q & !P3.Q
+    # P0.Q & !P2.Q ; (3 pterms, 4 signals)
+RDIS2a.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2a.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2b.D = !P0.Q & !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q ; (2 pterms, 4 signals)
+RDIS2b.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2b.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2c.D = P0.Q & !P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & P2.Q & !P3.Q
+    # !P0.Q & P1.Q & P3.Q
+    # P0.Q & P1.Q & P2.Q & !P3.Q ; (4 pterms, 4 signals)
+RDIS2c.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2c.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2d.D = !P0.Q & P1.Q & P2.Q
+    # !P0.Q & P2.Q & !P3.Q
+    # P1.Q & !P3.Q
+    # P0.Q & !P2.Q ; (4 pterms, 4 signals)
+RDIS2d.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2d.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2e.D = !( !P1.Q & !P2.Q & !P3.Q ) ; (1 pterm, 3 signals)
+RDIS2e.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2e.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2f.D = !P0.Q & P1.Q & !P3.Q
+    # !P1.Q & !P2.Q & P3.Q
+    # !P0.Q & P2.Q & !P3.Q
+    # P0.Q & !P2.Q ; (4 pterms, 4 signals)
+RDIS2f.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2f.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS2g.D = !( P0.Q & P1.Q & !P2.Q & !P3.Q
+    # !P0.Q & !P1.Q & !P3.Q ) ; (2 pterms, 4 signals)
+RDIS2g.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS2g.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3a.D = RDIS2a.Q ; (1 pterm, 1 signal)
+RDIS3a.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3a.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3b.D = RDIS2b.Q ; (1 pterm, 1 signal)
+RDIS3b.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3b.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3c.D = RDIS2c.Q ; (1 pterm, 1 signal)
+RDIS3c.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3c.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3d.D = RDIS2d.Q ; (1 pterm, 1 signal)
+RDIS3d.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3d.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3e.D = RDIS2e.Q ; (1 pterm, 1 signal)
+RDIS3e.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3e.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3f.D = RDIS2f.Q ; (1 pterm, 1 signal)
+RDIS3f.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3f.AR = DIP7 ; (1 pterm, 1 signal)
+
+RDIS3g.D = RDIS2g.Q ; (1 pterm, 1 signal)
+RDIS3g.C = timdiv2.Q ; (1 pterm, 1 signal)
+RDIS3g.AR = DIP7 ; (1 pterm, 1 signal)
+
+X0.D.X1 = !DIP0 & X0.Q
+    # X0.Q & X2.Q & X3.Q
+    # !X0.Q & !X2.Q & X3.Q
+    # X0.Q & !X2.Q & !X3.Q
+    # !X0.Q & X2.Q & !X3.Q ; (5 pterms, 4 signals)
+X0.D.X2 = DIP0 & X4.Q ; (1 pterm, 2 signals)
+X0.C = timdiv2.Q ; (1 pterm, 1 signal)
+X0.AP = DIP7 ; (1 pterm, 1 signal)
+
+X1.D = DIP0 & X0.Q
+    # !DIP0 & X1.Q ; (2 pterms, 3 signals)
+X1.C = timdiv2.Q ; (1 pterm, 1 signal)
+X1.AP = DIP7 ; (1 pterm, 1 signal)
+
+X2.D = !DIP0 & X2.Q
+    # DIP0 & X1.Q ; (2 pterms, 3 signals)
+X2.C = timdiv2.Q ; (1 pterm, 1 signal)
+X2.AP = DIP7 ; (1 pterm, 1 signal)
+
+X3.D = !DIP0 & X3.Q
+    # DIP0 & X2.Q ; (2 pterms, 3 signals)
+X3.C = timdiv2.Q ; (1 pterm, 1 signal)
+X3.AP = DIP7 ; (1 pterm, 1 signal)
+
+X4.D = !DIP0 & X4.Q
+    # DIP0 & X3.Q ; (2 pterms, 3 signals)
+X4.C = timdiv2.Q ; (1 pterm, 1 signal)
+X4.AP = DIP7 ; (1 pterm, 1 signal)
+
+X5.D = DIP0 & X4.Q
+    # !DIP0 & X5.Q ; (2 pterms, 3 signals)
+X5.C = timdiv2.Q ; (1 pterm, 1 signal)
+X5.AP = DIP7 ; (1 pterm, 1 signal)
+
+X6.D = DIP0 & X5.Q
+    # !DIP0 & X6.Q ; (2 pterms, 3 signals)
+X6.C = timdiv2.Q ; (1 pterm, 1 signal)
+X6.AP = DIP7 ; (1 pterm, 1 signal)
+
+X7.D = DIP0 & X6.Q
+    # !DIP0 & X7.Q ; (2 pterms, 3 signals)
+X7.C = timdiv2.Q ; (1 pterm, 1 signal)
+X7.AP = DIP7 ; (1 pterm, 1 signal)
+
+_dup_osc_dis = 0 ; (0 pterm, 0 signal)
+
+osc_dis = 0 ; (0 pterm, 0 signal)
+
+timdiv1.D = !timdiv1.Q ; (1 pterm, 1 signal)
+timdiv1.C = tmr_out ; (1 pterm, 1 signal)
+
+timdiv2.D = !timdiv2.Q ; (1 pterm, 1 signal)
+timdiv2.C = timdiv1.Q ; (1 pterm, 1 signal)
+

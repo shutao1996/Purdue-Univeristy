@@ -1,0 +1,361 @@
+#include <string.h>
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "mapping.h"
+
+int main(int argc, char * argv[]){
+	int size = 0;
+	Vnode * map = Load_From_File(argv[1], &size);
+	
+	if (map == NULL){
+		printf("File did not load correctly\n");
+		return EXIT_FAILURE;
+	}
+
+/*
+// queue test
+	Vnode* queue = NULL;
+	map[0].depth = 100;
+	map[1].depth = 724;
+	map[2].depth = 521;
+	//push
+	queue = push(queue, &(map[2]));
+
+
+    //test case for pop one element
+	Vnode* Node = pop(&queue);
+	printqueue(Node);
+*/
+/*
+	queue = push(queue, &(map[0]));
+    //test case for pop two elements
+	Vnode* Node = pop(&queue);
+	printqueue(Node);
+	Node = pop(&queue);
+	printqueue(Node);
+
+	queue = push(queue, &(map[1]));
+	queue = push(queue, &(map[3]));
+	map[3].depth = 12;
+	queue = push(queue, &(map[3]));
+
+	map[1].depth = 10;
+	queue = push(queue, &(map[1]));
+	map[0].depth = 724;
+	queue = push(queue, &(map[0]));
+
+
+	//multiple elements in queue
+	Vnode* Node = pop(&queue);
+	printqueue(Node);
+	Node = pop(&queue);
+	printqueue(Node);	
+
+	printqueue(queue);
+
+	printGraph(map,size);	
+*/
+	Load_Query(argv[2], map, size);
+
+	freeGraph(map,size);
+	free(map);
+
+	return EXIT_SUCCESS;
+}
+
+void Load_Query(char* Filename, Vnode* map, int size) {
+	FILE * fp = fopen(Filename,"r");
+	if(fp == NULL) return;
+	printf("Filename is %s\n", Filename);
+	int num = 0;
+	int start = 0;
+	int end = 0;
+	int i;
+	fscanf(fp,"%d\n", &num);
+	//printf("num is %d\n", num);
+	for(i = 0;i < num; i++) { // load all things in query
+		Clear_map(map, size); // clear map before second run
+		fscanf(fp,"%d %d\n", &start, &end);
+		//printf("start is %d, end is %d\n", start, end);
+		if (start >= size || end >= size) {
+			printf("INF\n%d %d\n", start, end);
+		}
+		else {
+			int length = Dijk(start, end, map);
+			if (length > 0) {
+				printf("%d\n", length);
+				//printf("start trace back:\n");
+
+
+				Trace_back(&(map[end]));	/////////////////////////////////
+
+
+				printf("\n");
+			}
+			else if (start == end) {
+				printf("0\n%d %d\n", start, end);
+			}
+			else {
+				printf("INF\n%d %d\n", start, end);
+			}
+		}
+	}
+	
+	fclose(fp);
+}
+
+void Clear_map(Vnode* map, int size) {
+	int i = 0;
+	for (i = 0; i < size; i++) {
+		map[i].prev = NULL;
+		map[i].depth = 0;
+		map[i].qprev = NULL;
+		map[i].qnext = NULL;
+		Adj_Node* children = map[i].children;
+		while (children != NULL) {
+			children->check = 0;
+			children = children->next;
+		}
+	}
+}
+
+void Trace_back(Vnode* Node) {
+	if (Node->prev != NULL) {
+		Trace_back(Node->prev);
+	}
+	printf("%d ", Node->vertices);
+}
+
+void _print_children(Adj_Node* children) {
+	printf("Print Children:\n");
+	while (children != NULL) {
+		printf("index: %d, weight: %d, check: %d\n", children->index, children->weight, children->check);
+		children = children->next;
+	}
+	printf("end\n");
+}
+
+int Dijk(int start, int end, Vnode* map) {
+	//printf("\n\n\n DIJK start \n\n\n");
+	Vnode* queue = NULL;
+	Vnode* parent = &(map[start]);
+	Adj_Node* children = parent->children;
+
+	while(children != NULL) { // children of starting point
+		map[children->index].depth = parent->depth + children->weight;
+		map[children->index].prev = parent;
+		queue = push(queue, &(map[children->index]));
+		children->check = 1;
+		children = children->next;
+	}
+
+	while(queue != NULL && !(map[end].depth != 0 && queue->depth >= map[end].depth)){
+		parent = pop(&queue);
+		children = parent->children;
+
+		while(children != NULL) {
+			if (children->check == 1) break;
+			if ((parent->prev->vertices != children->index) && ((((map[children->index].depth <= 0) || (map[children->index].depth > (parent->depth + children->weight))) && children->index != start))) { // this is a new node or the new path is shorter than previous path
+				map[children->index].depth = parent->depth + children->weight;
+				map[children->index].prev = parent;
+				queue = push(queue, &(map[children->index]));			
+			}
+			children->check = 1;
+			children = children->next;
+		}
+	}
+	return map[end].depth;
+}
+
+Vnode * pop(Vnode** queue) {
+	if (*queue == NULL) printf("\n\n\nPOP ERROR!!\n\nEMPTY QUEUE!!!\n\n\n");
+
+	Vnode* temp = *queue;
+	*queue = (*queue)->qnext;
+	if (temp->qnext != NULL) {
+		temp->qnext->qprev = NULL;
+		temp->qnext = NULL;
+	}
+
+	return temp;
+}
+		
+Vnode * pop_Node(Vnode* queue, Vnode* Node) {
+	if (queue == NULL) 
+		return queue;
+	if (Node->qprev == NULL && Node->qnext == NULL) { // Node is not in queue
+		if (queue == Node) 
+			return NULL;
+		else
+			return queue;
+	}
+	Vnode* head = queue;
+	if (head == Node) { // Node is head
+		head = head->qnext;
+		head->qprev = NULL;
+		Node->qnext = NULL;
+		return head;
+	}
+
+	if (Node->qnext == NULL) { // Node is tail
+		Node->qprev->qnext = NULL;
+		Node->qprev = NULL;
+	}
+
+	while (queue != Node && queue->qnext != NULL) { // in the middle
+		queue = queue->qnext;
+		if (queue == Node) { // delete Node
+			queue->qprev->qnext = queue->qnext;
+			queue->qnext->qprev = queue->qprev;
+			queue->qprev = NULL;
+			queue->qnext = NULL;			
+			return head;
+		}
+	}
+
+	return head;
+}
+
+Vnode * push(Vnode* queue, Vnode* Node) {
+	queue = pop_Node(queue, Node); // make sure Node is not currently in the queue
+
+	if (queue == NULL) 
+		return Node;
+
+	Vnode * head = queue;
+	if (queue->depth > Node->depth) { // add at head
+		Node->qnext = queue;
+		queue->qprev = Node;
+		return Node;
+	}
+
+	while (queue->depth <= Node->depth && queue->qnext != NULL) {
+		queue = queue->qnext;
+		if (queue->depth > Node->depth) { // add at head
+			Node->qprev = queue->qprev;
+			queue->qprev->qnext = Node;
+			Node->qnext = queue;
+			queue->qprev = Node;
+			return head;
+		}
+	}
+	// add at tail
+	Node->qprev = queue;
+	queue->qnext = Node;
+	return head;	
+}
+
+void printqueue(Vnode* queue) {
+	printf("start to print queue\n");
+	if (queue == NULL) printf("empty queue\n");
+	while (queue!= NULL) {
+		printf("index is %d, depth is %d\n", queue->vertices, queue->depth);
+		queue = queue->qnext;
+	}
+}
+
+Vnode * Load_From_File(char * Filename, int* size){
+	FILE * fp = fopen(Filename,"r");
+	if(fp == NULL) return NULL;
+	
+	int num_vertex;//number of vertex
+	int num_edges;//number of edges
+	int i;
+	int k;
+	fscanf(fp,"%d %d\n",&num_vertex,&num_edges);
+	*size = num_vertex;
+	Vnode * vertex = malloc(num_vertex * sizeof(Vnode));//initialize array head
+	for(i = 0;i < num_vertex; i++){                     //load all Nodes
+		fscanf(fp,"%d %d %d\n",&(vertex[i].vertices),&(vertex[i].x),&(vertex[i].y));
+		vertex[i].depth = 0;	
+		vertex[i].children = NULL;//create_adj_node(0,0);
+		vertex[i].prev = NULL;
+		vertex[i].qprev = NULL;
+		vertex[i].qnext = NULL;
+	}
+	
+	int adj_weight;
+	int parent;
+	int child;
+	//adding edges onto the adjacency array
+	for(k = 0;k < num_edges;k++){
+		fscanf(fp,"%d %d\n",&parent,&child);
+		adj_weight = calc_length(vertex[parent].x,vertex[parent].y,vertex[child].x,vertex[child].y);
+		
+	//	printf("%d %d %d\n",parent,child,adj_weight);///////////
+
+	    //creat edge nodes for array
+		if (vertex[parent].children == NULL){
+			vertex[parent].children = create_adj_node(child,adj_weight);
+		}
+		else{
+			Adj_Node* temp = create_adj_node(child,adj_weight);
+			temp -> next = vertex[parent].children;
+			vertex[parent].children = temp;
+		} 
+
+	//	printf("%d %d\n",(vertex[parent].children -> index),(vertex[parent].children -> weight));/////
+		if (vertex[child].children == NULL){ 
+			vertex[child].children = create_adj_node(parent,adj_weight);
+		}
+		else{
+			Adj_Node * temp2 = create_adj_node(parent,adj_weight);
+			temp2 -> next = vertex[child].children;
+			vertex[child].children = temp2;
+		}
+	//	printf("%d %d\n",(vertex[child].children -> index),(vertex[child].children -> weight));/////
+	}
+
+	fclose(fp);
+	return vertex;	
+}
+
+void printGraph(Vnode * graph,int size){
+	int i;
+	for(i = 0; i < size; i++){
+		printf("vertices: %d, x: %d, y: %d, depth: %d\n\n",graph[i].vertices, graph[i].x, graph[i].y, graph[i].depth);
+		Adj_Node * temp = graph[i].children;
+		while(temp != NULL){
+			printf("%d\n",temp -> index);	
+			temp = temp -> next;
+		}
+		printf("\n");
+	}
+	return;
+}
+
+void freeGraph(Vnode * map,int size){
+	int k;
+//	printf("size to be free:%d",size);
+	for(k = 0;k < size;k++){
+		freeList(map[k].children);
+	}
+	return;
+}
+void freeList(Adj_Node * list){
+	Adj_Node * temp;
+	while(list != NULL){
+		temp = list;
+		list = list -> next;
+		free(temp);
+	}
+	return;
+}
+
+int calc_length(int x1,int y1,int x2, int y2){
+	int num;
+	num = (int)pow((pow((x2 - x1),2) + pow((y2 - y1),2)),0.5);
+	return num;
+}
+
+Adj_Node * create_adj_node(int index,int weight){
+	Adj_Node * node = malloc(sizeof(Adj_Node));
+	node -> next = NULL;
+	node -> index = index;
+	node -> weight = weight;
+	node -> check = 0;
+	return node;
+}
+

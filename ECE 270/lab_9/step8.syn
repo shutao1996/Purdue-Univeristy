@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 1.7 
+PROJECT step8
+DESIGN step8 Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY ABEL/Schematic
+MODULE ..\lab\step8.abl
+MODSTYLE step8 Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE step8

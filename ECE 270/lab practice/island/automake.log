@@ -1,0 +1,168 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\ahdl2blf.exe island.abl -mod myLP -ojhd compile -ret -def _AMDMACH_ _MACH_ _LSI5K_ _LATTICE_ _PLSI_ _MACH4ZE_  -err automake.err -gui'
+
+AHDL2BLF  ABEL-HDL Processor
+ispLEVER Classic 1.7 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Module: 'myLP'
+
+  Processing equations......
+
+  Module parsing complete. Building logic network...
+
+  Creating Open-ABEL 2 (BLIF) file mylp.bl0...
+
+
+
+Module 'mylp' processing complete.
+
+AHDL2BLF complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe myLP.bl0 -collapse none -reduce none -err automake.err -gui -keepwires'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file myLP.bl0...
+Writing Open-ABEL 2 (BLIF) file myLP.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblflink.exe "myLP.bl1" -o "island.bl2" -omod "island" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'myLP.bl1'
+	Referring to External Module 'osctimer'.
+
+Hierarchical BLIF: 'island.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\impsrc.exe -gui -prj island -lci island.lct -log island.imp -err automake.err -tti island.bl2 -dir u:\ece 270\lab practice\island'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci island.lct -blifopt island.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe island.bl2 -sweep -mergefb -err automake.err -o island.bl3 @island.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file island.bl2...
+Merging feedbacks...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Warning 13707:Unused node 'Ch46' removed.
+Warning 13707:Unused node 'Ch45' removed.
+Warning 13707:Unused node 'Ch44' removed.
+Warning 13707:Unused node 'Ch43' removed.
+Warning 13707:Unused node 'Ch42' removed.
+Warning 13707:Unused node 'Ch41' removed.
+Warning 13707:Unused node 'Ch40' removed.
+Performing 'bypin choose' optimization...
+........Note    0: 
+Estimated (clusters + macrocells): 96, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file island.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci island.lct -dev lc4k -diofft island.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mdiofft.exe island.bl3 -family AMDMACH -idev van -o island.bl4 -oxrf island.xrf -err automake.err @island.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Input file: island.bl3.
+Output file: island.bl4.
+Cross reference file: island.xrf.
+
+.......................................................................
+.......................................................................
+.......................
+Shortening signal names...
+Writing signal name cross reference file island.xrf... 
+
+Note 13707: Removing redundant GND node osc_rst.
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci island.lct -dev lc4k -prefit island.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp island.bl4 -out island.bl5 -err automake.err -log island.log -mod myLP @island.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Tue Apr 25 20:15:27 2017
+
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp island.bl4 -out island.bl5 -err automake.err -log island.log -mod myLP @island.l0 -gui -sc 
+<Note> F34000: S2BC is removed
+<Note> F34000: Q2 is removed
+<Note> F34000: Q1 is removed
+<Note> F34000: Q0 is removed
+<Note> F34000: Ch36 is removed
+<Note> F34000: Ch35 is removed
+<Note> F34000: Ch34 is removed
+<Note> F34000: Ch33 is removed
+<Note> F34000: Ch32 is removed
+<Note> F34000: Ch31 is removed
+<Note> F34000: Ch30 is removed
+<Note> F34000: buried node SUM1_0 generated
+Number of pins (IO)    :    70
+Number of outputs (MC) :    55
+Number of registers    :    46
+Number of logic pterms :   297
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\lpf4k.exe @"island.rs2"'
+
+<Warning>  P38466:  DYNOSCDIS and TIMERRES have the same logic.
+Project 'island' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\tda.exe -i island.bl5 -o island.tda -lci island.lct -dev m4e_256_96 -family lc4k -mod myLP -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj island -if island.jed -j2s -log island.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if island.jed -oft -svf -of "U:\ECE 270\lab practice\island\island_epvs.svf" -lever
+svf file '"U:\ECE 270\lab practice\island\island_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if island.jed -oft -svf -of "U:\ECE 270\lab practice\island\island_epv.svf" -lever
+svf file '"U:\ECE 270\lab practice\island\island_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if island.jed -oft -svf -of "U:\ECE 270\lab practice\island\island_v.svf" -lever
+svf file '"U:\ECE 270\lab practice\island\island_v.svf"' is generated successfully
+
+Done: completed successfully.

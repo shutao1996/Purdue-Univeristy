@@ -1,0 +1,174 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fit Design
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\ahdl2blf.exe dao.abl -mod Friday -ojhd compile -ret -def _AMDMACH_ _MACH_ _LSI5K_ _LATTICE_ _PLSI_ _MACH4ZE_  -err automake.err -gui'
+
+AHDL2BLF  ABEL-HDL Processor
+ispLEVER Classic 1.7 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Module: 'Friday'
+
+  Processing state diagram......
+  Processing truth table...
+  Processing truth table...
+  Processing equations.....
+
+  Module parsing complete. Building logic network...
+
+  Creating Open-ABEL 2 (BLIF) file friday.bl0...
+
+
+
+Module 'friday' processing complete.
+
+AHDL2BLF complete - 0 errors, 0 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe Friday.bl0 -collapse none -reduce none -err automake.err -gui -keepwires'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file Friday.bl0...
+Writing Open-ABEL 2 (BLIF) file Friday.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblflink.exe "Friday.bl1" -o "dao.bl2" -omod "dao" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'Friday.bl1'
+	Referring to External Module 'osctimer'.
+
+Hierarchical BLIF: 'dao.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\impsrc.exe -gui -prj dao -lci dao.lct -log dao.imp -err automake.err -tti dao.bl2 -dir u:\ece 270\lab practice\test'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci dao.lct -blifopt dao.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe dao.bl2 -sweep -mergefb -err automake.err -o dao.bl3 @dao.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file dao.bl2...
+Merging feedbacks...
+Note 13707: Node rdis46 is collapsed...
+Note 13707: Node rdis40 is collapsed...
+Note 13707: Node rdis41 is collapsed...
+Note 13707: Node rdis42 is collapsed...
+Note 13707: Node rdis43 is collapsed...
+Note 13707: Node rdis44 is collapsed...
+Note 13707: Node rdis45 is collapsed...
+Note 13707: Node rdis16 is collapsed...
+Note 13707: Node rdis10 is collapsed...
+Note 13707: Node rdis11 is collapsed...
+Note 13707: Node rdis12 is collapsed...
+Note 13707: Node rdis13 is collapsed...
+Note 13707: Node rdis14 is collapsed...
+Note 13707: Node rdis15 is collapsed...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Warning 13707:Unused node 'Temp' removed.
+Performing 'bypin choose' optimization...
+..................Note    0: 
+Estimated (clusters + macrocells): 100, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file dao.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci dao.lct -dev lc4k -diofft dao.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mdiofft.exe dao.bl3 -family AMDMACH -idev van -o dao.bl4 -oxrf dao.xrf -err automake.err @dao.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Input file: dao.bl3.
+Output file: dao.bl4.
+Cross reference file: dao.xrf.
+
+.......................................................................
+................................................................
+Shortening signal names...
+Writing signal name cross reference file dao.xrf... 
+
+Note 13707: Removing redundant GND node osc_rst.
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci dao.lct -dev lc4k -prefit dao.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp dao.bl4 -out dao.bl5 -err automake.err -log dao.log -mod Friday @dao.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Thu Apr 27 20:28:26 2017
+
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp dao.bl4 -out dao.bl5 -err automake.err -log dao.log -mod Friday @dao.l0 -gui -sc 
+<Note> F34000: rdis36 is removed
+<Note> F34000: rdis35 is removed
+<Note> F34000: rdis34 is removed
+<Note> F34000: rdis33 is removed
+<Note> F34000: rdis32 is removed
+<Note> F34000: rdis31 is removed
+<Note> F34000: rdis30 is removed
+<Note> F34000: buried node s2_0 generated
+Number of pins (IO)    :    70
+Number of outputs (MC) :    64
+Number of registers    :    35
+Number of logic pterms :   367
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\lpf4k.exe @"dao.rs2"'
+
+<Warning>  P38466:  DYNOSCDIS and TIMERRES have the same logic.
+Project 'dao' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\tda.exe -i dao.bl5 -o dao.tda -lci dao.lct -dev m4e_256_96 -family lc4k -mod Friday -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj dao -if dao.jed -j2s -log dao.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if dao.jed -oft -svf -of "U:\ECE 270\lab practice\test\dao_epvs.svf" -lever
+svf file '"U:\ECE 270\lab practice\test\dao_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if dao.jed -oft -svf -of "U:\ECE 270\lab practice\test\dao_epv.svf" -lever
+svf file '"U:\ECE 270\lab practice\test\dao_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if dao.jed -oft -svf -of "U:\ECE 270\lab practice\test\dao_v.svf" -lever
+svf file '"U:\ECE 270\lab practice\test\dao_v.svf"' is generated successfully
+
+Done: completed successfully.

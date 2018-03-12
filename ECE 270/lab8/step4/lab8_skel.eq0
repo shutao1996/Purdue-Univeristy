@@ -1,0 +1,52 @@
+ispLEVER Classic 1.7.00.05.28.13 Linked Equations File
+Copyright(C), 1992-2013, Lattice Semiconductor Corp.
+All Rights Reserved.
+
+Design lab8_skel created Thu Mar 09 20:46:26 2017
+
+Title: Experiment 8 Skeleton File
+
+ P-Terms   Fan-in  Fan-out  Type  Name (attributes)
+---------  ------  -------  ----  -----------------
+   2          3        1    Pin   QS_N 
+   2          3        1    Pin   QS 
+   2          3        1    Pin   QM_N 
+   2          3        1    Pin   QM 
+   1/1        1        1    Pin   QFF.REG 
+   1/1        1        1    Pin   QFF.C 
+   2          3        1    Pin   BQ 
+=========
+  12/2          Best P-Term Total: 12
+                       Total Pins: 10
+                      Total Nodes: 0
+            Average P-Term/Output: 1
+
+
+Equations:
+
+QS_N = (QM_N & !CLKIN
+     # !QS);
+
+QS = (!CLKIN & QM
+     # !QS_N);
+
+QM_N = (!D & CLKIN
+     # !QM);
+
+QM = (D & CLKIN
+     # !QM_N);
+
+QFF := (D);
+
+QFF.C = (CLKIN);
+
+BQ = (NC & BQ
+     # !NO);
+
+
+Reverse-Polarity Equations:
+
+!QFF := (!D);
+
+!QFF.C = (!CLKIN);
+

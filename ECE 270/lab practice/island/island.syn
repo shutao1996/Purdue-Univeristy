@@ -1,0 +1,11 @@
+JDF B
+// Created by Version 1.7 
+PROJECT island
+DESIGN island Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY ABEL/Schematic
+MODULE island.abl
+MODSTYLE myLP Normal
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE myLP

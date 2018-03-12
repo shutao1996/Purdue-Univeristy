@@ -1,0 +1,44 @@
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIP3' : Can not lock this signal to the pin '76' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIP5' : Can not lock this signal to the pin '24' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIP6' : Can not lock this signal to the pin '25' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIP7' : Can not lock this signal to the pin '26' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'LED0' : Can not lock this signal to the pin '40' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0112> : Location Assignment 'LED1' : input pin '39' can not be locked by this non-input signal.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'LED2' : Can not lock this signal to the pin '33' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'LED3' : Can not lock this signal to the pin '32' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED8' : Can not find pin '139'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED9' : Can not find pin '138'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED10' : Can not find pin '135'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED11' : Can not find pin '134'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED12' : Can not find pin '133'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED13' : Can not find pin '132'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED14' : Can not find pin '131'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED15' : Can not find pin '130'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIS1e' : Can not lock this signal to the pin '83' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIS2c' : Can not lock this signal to the pin '96' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIS2d' : Can not lock this signal to the pin '95' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0112> : Location Assignment 'DIS2g' : input pin '88' can not be locked by this non-input signal.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3a' : Can not find pin '125'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3b' : Can not find pin '124'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3c' : Can not find pin '123'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3d' : Can not find pin '122'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3e' : Can not find pin '121'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3f' : Can not find pin '120'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'DIS3g' : Can not find pin '116'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIS4e' : Can not lock this signal to the pin '51' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'DIS4f' : Can not lock this signal to the pin '52' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED16' : Can not find pin '140'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED17' : Can not find pin '141'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED18' : Can not find pin '142'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED19' : Can not find pin '143'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED21' : Can not find pin '101'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED22' : Can not find pin '102'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED23' : Can not find pin '103'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED24' : Can not find pin '104'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED25' : Can not find pin '105'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED26' : Can not find pin '111'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0101> : Location Assignment 'LED27' : Can not find pin '112'.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0111> : Location Assignment 'LED28' : Can not lock this signal to the pin '63' which type is NC or unknown.
+U:\ECE 270\lab12\lab12_rr\untitled.lct : <W0112> : Location Assignment 'LED29' : input pin '62' can not be locked by this non-input signal.
+Loading Lattice Constraint File 'U:\ECE 270\lab12\lab12_rr\untitled.lct' done!
+

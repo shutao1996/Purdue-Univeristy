@@ -1,0 +1,186 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: JEDEC File
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\ahdl2blf.exe lab11_3.abl -mod lab11_3 -ojhd compile -ret -def _AMDMACH_ _MACH_ _LSI5K_ _LATTICE_ _PLSI_ _MACH4ZE_  -err automake.err -gui'
+
+AHDL2BLF  ABEL-HDL Processor
+ispLEVER Classic 1.7 Copyright(C), 1992-2005, Lattice Semiconductor Corporation. All rights reserved
+Portions Copyright(c), 1992-1999, Vantis Corporation
+Portions Copyright(C), 1993-1998, Data I/O Corporation
+Portions Copyright(C), 1997-1998, MINC Washington Corporation
+Portions Copyright(C), Alan Phillips, Lancaster University Computer Centre 1992-1998
+Module: 'lab11_3'
+
+  Processing equations...
+
+0274 |BFC.D = 0;
+              ^
+Warning 1124:In "lab11_3.abl":489:'INVERT' or 'BUFFER' not specified for 'BFC' - assuming 'BUFFER'.
+...
+  Processing state diagram....
+  Processing truth table...
+
+  Module parsing complete. Building logic network...
+
+  Creating Open-ABEL 2 (BLIF) file lab11_3.bl0...
+
+
+
+Module 'lab11_3' processing complete.
+
+AHDL2BLF complete - 0 errors, 1 warnings. Time: 1 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe lab11_3.bl0 -collapse none -reduce none -err automake.err -gui -keepwires'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file lab11_3.bl0...
+Writing Open-ABEL 2 (BLIF) file lab11_3.bl1...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblflink.exe "lab11_3.bl1" -o "lab113.bl2" -omod "lab113" -gui -err "automake.err"'
+
+BLIFLINK  Top-Down Design Linker
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+Top-level file: 'lab11_3.bl1'
+	Referring to External Module 'osctimer'.
+
+Hierarchical BLIF: 'lab113.bl2'
+
+BLIFLINK complete.  Time: 1 second 
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\impsrc.exe -gui -prj lab113 -lci lab113.lct -log lab113.imp -err automake.err -tti lab113.bl2 -dir u:\ece 270\lab 11\step3'
+
+Source constraints were successfully imported to the current project.
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci lab113.lct -blifopt lab113.b2_'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mblifopt.exe lab113.bl2 -sweep -mergefb -err automake.err -o lab113.bl3 @lab113.b2_ -gui'
+
+BLIFOPT  Open-ABEL Optimizer 
+U.C. Berkeley, SIS Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Reading Open-ABEL 2 file lab113.bl2...
+Merging feedbacks...
+Note 13707: Node RED_STATUS is collapsed...
+Note 13707: Fmax mode optimizing 8 critical paths, 2 levels ...
+Note 13707: Fmax mode satisfied
+Control path optimization...
+Warning 13707:Unused node 'P0' removed.
+Warning 13707:Unused node 'P1' removed.
+Warning 13707:Unused node 'P2' removed.
+Warning 13707:Unused node 'P3' removed.
+Performing 'bypin choose' optimization...
+.............Note    0: 
+Estimated (clusters + macrocells): 92, Fmax Logic Level: 1
+Writing Open-ABEL 2 (BLIF) file lab113.bl3...
+Note    0: 
+BLIFOPT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci lab113.lct -dev lc4k -diofft lab113.d0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\mdiofft.exe lab113.bl3 -family AMDMACH -idev van -o lab113.bl4 -oxrf lab113.xrf -err automake.err @lab113.d0 -gui'
+
+DIOFFT  Flip-Flop Transformation program
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+Input file: lab113.bl3.
+Output file: lab113.bl4.
+Cross reference file: lab113.xrf.
+
+.......................................................................
+.......................................................................
+.......................................................................
+............
+Shortening signal names...
+Writing signal name cross reference file lab113.xrf... 
+
+Note 13707: Removing redundant GND node osc_rst.
+
+DIOFFT complete - Time 0 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\abelvci.exe -vci lab113.lct -dev lc4k -prefit lab113.l0'
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp lab113.bl4 -out lab113.bl5 -err automake.err -log lab113.log -mod lab11_3 @lab113.l0 -gui -sc'
+
+Prefit Logic Optimizer (May 31 2012)  Fri Apr 07 11:24:49 2017
+
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe -blif -inp lab113.bl4 -out lab113.bl5 -err automake.err -log lab113.log -mod lab11_3 @lab113.l0 -gui -sc 
+<Note> F34000: R0 is removed
+<Note> F34000: R1 is removed
+<Note> F34000: R2 is removed
+<Note> F34000: R3 is removed
+<Note> F34000: R4 is removed
+<Note> F34000: R5 is removed
+<Note> F34000: R6 is removed
+<Note> F34000: R7 is removed
+<Note> F34000: RED_OSC is removed
+<Note> F34000: RDIS1a is removed
+<Note> F34000: RDIS1b is removed
+<Note> F34000: RDIS1c is removed
+<Note> F34000: RDIS1d is removed
+<Note> F34000: RDIS1e is removed
+<Note> F34000: RDIS1f is removed
+<Note> F34000: RDIS1g is removed
+<Note> F34000: RDIS4a is removed
+<Note> F34000: RDIS4b is removed
+<Note> F34000: RDIS4c is removed
+<Note> F34000: RDIS4d is removed
+<Note> F34000: RDIS4e is removed
+<Note> F34000: RDIS4f is removed
+<Note> F34000: RDIS4g is removed
+Number of pins (IO)    :    70
+Number of outputs (MC) :    70
+Number of registers    :    59
+Number of logic pterms :   133
+C:\ispLEVER_Classic1_7\ispcpld\BIN\prefit.exe complete - Time 0 seconds
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\lpf4k.exe @"lab113.rs2"'
+
+<Warning>  P38466:  DYNOSCDIS and TIMERRES have the same logic.
+Project 'lab113' was Fitted Successfully!
+
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\tda.exe -i lab113.bl5 -o lab113.tda -lci lab113.lct -dev m4e_256_96 -family lc4k -mod lab11_3 -ovec NoInput.tmv -err tda.err -gui'
+
+TDA  - Timing Driven Analyze 
+Ver. 1.0, supported by Lattice Semiconductor
+ispLEVER Classic 1.7 Copyright 1992-2013 Lattice Semiconductor. All Rights Reserved.
+
+TDA complete - Time 1 seconds
+Done: completed successfully.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj lab113 -if lab113.jed -j2s -log lab113.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if lab113.jed -oft -svf -of "U:\ECE 270\lab 11\step3\lab113_epvs.svf" -lever
+svf file '"U:\ECE 270\lab 11\step3\lab113_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if lab113.jed -oft -svf -of "U:\ECE 270\lab 11\step3\lab113_epv.svf" -lever
+svf file '"U:\ECE 270\lab 11\step3\lab113_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if lab113.jed -oft -svf -of "U:\ECE 270\lab 11\step3\lab113_v.svf" -lever
+svf file '"U:\ECE 270\lab 11\step3\lab113_v.svf"' is generated successfully
+
+Done: completed successfully.

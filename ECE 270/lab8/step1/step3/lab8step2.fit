@@ -1,0 +1,5 @@
+$DEVICE         p22v10g    fit   lab8step2.tt3
+$PINS   13  QFF:18   BQ:23   QM:17   QM_N:16   QS:15   QS_N:14   RS:3   
+CS:2   SS:4   CLKIN:1   D:8   NC:9   NO:10   
+--------------------------------------------------------------
+

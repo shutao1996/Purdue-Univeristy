@@ -1,0 +1,17 @@
+JDF B
+// Created by Version 1.7 
+PROJECT lab12rz
+DESIGN lab12rz Normal
+DEVKIT LC4256ZE-5TN144C
+ENTRY ABEL/Schematic
+DOCUMENT ..\step6\lab 12.txt
+MODULE lab12_6.abl
+MODSTYLE lab12 Normal
+MODULE step4.abl
+MODSTYLE lab12_4 Normal
+MODULE step6.abl
+MODSTYLE isp4256ZEio Normal
+MODULE lab12.abl
+SYNTHESIS_TOOL Synplify
+SIMULATOR_TOOL ActiveHDL
+TOPMODULE isp4256ZEio

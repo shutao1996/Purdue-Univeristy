@@ -1,0 +1,19 @@
+ispLEVER Auto-Make Log File
+---------------------------
+
+Updating: Fitter Report (Text)
+Start to record tcl script...
+Finished recording TCL script.
+
+Starting: 'C:\ispLEVER_Classic1_7\ispcpld\BIN\synsvf.exe -exe "C:\ispLEVER_Classic1_7\ispvmsystem/ispufw" -prj lab11_4 -if lab11_4.jed -j2s -log lab11_4.svl -gui'
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPVS -if lab11_4.jed -oft -svf -of "U:\ECE 270\lab 11\step4\lab11_4_epvs.svf" -lever
+svf file '"U:\ECE 270\lab 11\step4\lab11_4_epvs.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JPV -if lab11_4.jed -oft -svf -of "U:\ECE 270\lab 11\step4\lab11_4_epv.svf" -lever
+svf file '"U:\ECE 270\lab 11\step4\lab11_4_epv.svf"' is generated successfully
+
+Invoke process : C:\ispLEVER_Classic1_7\ispvmsystem/ispufw -dev LC4256ZE-XXTN144 -op JV -if lab11_4.jed -oft -svf -of "U:\ECE 270\lab 11\step4\lab11_4_v.svf" -lever
+svf file '"U:\ECE 270\lab 11\step4\lab11_4_v.svf"' is generated successfully
+
+Done: completed successfully.

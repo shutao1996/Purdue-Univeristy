@@ -1,0 +1,18 @@
+#! /usr/bin/env python3.4
+
+def find(pattern):
+    with open('sequence.txt', 'r') as sequence:
+        content = sequence.read()
+
+
+
+
+
+
+
+
+
+def main():
+
+    if __name__ == "__main__":
+      main()
